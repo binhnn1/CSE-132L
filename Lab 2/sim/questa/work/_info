@@ -1,0 +1,482 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/sim
+Ealu
+Z1 w1453685354
+Z2 DPx4 work 14 processor_pack 0 22 <LUzBGzAg>Ifd@BRN9NhF2
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu.vhd
+Z7 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu.vhd
+l0
+L6
+VTL=OUfdfA2XPV^HlLNM[O0
+!s100 1NCXKg_FS7:80YnX280_N2
+Z8 OL;C;10.4c;61
+32
+Z9 !s110 1453770522
+!i10b 1
+Z10 !s108 1453770522.000000
+Z11 !s90 -64|-f|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/rtl.cfg|
+Z12 !s107 /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/processor.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/sign_extender.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/pc.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/mux2to1.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/regfile.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/ram.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu_controller.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/controller.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/rom.vhd|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/package.vhd|
+!i113 0
+Z13 tExplicit 1
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 TL=OUfdfA2XPV^HlLNM[O0
+l19
+L17
+V_2SLfKn9<SC5]8>`QVkB41
+!s100 8];W3JHKiA1YOPYT>O7Xf3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Ealu_controller
+Z14 w1453685353
+R2
+R3
+R4
+R5
+R0
+Z15 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu_controller.vhd
+Z16 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/alu_controller.vhd
+l0
+L6
+Vh<Q7AlG_=z4]DH5Y1FD;c3
+!s100 TfjozHFch6G9jblCWlhhh2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 14 alu_controller 0 22 h<Q7AlG_=z4]DH5Y1FD;c3
+l16
+L14
+VNM;;Im@67GbkbTl6fJb<=0
+!s100 OVC^eChBfXi];bl::60Xm3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Econtroller
+Z17 w1453685352
+R2
+R3
+R4
+R5
+R0
+Z18 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/controller.vhd
+Z19 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/controller.vhd
+l0
+L6
+VZOd@L2bk`e:iJA1TUWdgI2
+!s100 KUc7CRbWMhaHZoCH:bF:R0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 10 controller 0 22 ZOd@L2bk`e:iJA1TUWdgI2
+l20
+L19
+V5I1:>oICc73emBQ:GB0W90
+!s100 O0Ro5gAe]g`_PiN009TaD3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Emux2to1
+Z20 w1453685351
+R2
+R4
+R5
+R0
+Z21 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/mux2to1.vhd
+Z22 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/mux2to1.vhd
+l0
+L5
+V7>eEHJ:ZSCi@A^JI1;nm21
+!s100 h_fka`e>ASh?3:SPFSE>C1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R4
+R5
+DEx4 work 7 mux2to1 0 22 7>eEHJ:ZSCi@A^JI1;nm21
+l16
+L15
+V[T@jB0:o]]Hk[Ji@IZ<l11
+!s100 >8_63b4C4VZC86g4HeFc43
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Epc
+Z23 w1453685350
+R2
+R3
+R4
+R5
+R0
+Z24 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/pc.vhd
+Z25 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/pc.vhd
+l0
+L6
+V3EeVF2nDhH>?Z12zaIQk63
+!s100 k<1RLF2R=c3NV[RZ3lPTm3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 2 pc 0 22 3EeVF2nDhH>?Z12zaIQk63
+l15
+L14
+VLZKgfkQPz7g42Lm<`0^Jo1
+!s100 ENF;f45n`6SlVdb:QGKzk3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Eprocessor
+R23
+R2
+R3
+R4
+R5
+R0
+Z26 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/processor.vhd
+Z27 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/processor.vhd
+l0
+L6
+V:PJS6YjZYagF7;678E<J>2
+!s100 ?YVG]Q315@;Lg3XI]6L;60
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 9 processor 0 22 :PJS6YjZYagF7;678E<J>2
+l115
+L13
+VdURYGYF3lAhC5VglFMJ^X2
+!s100 lPl7G1AO>oRQ8=:b9YAhN2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Pprocessor_pack
+R4
+R5
+R20
+R0
+8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/package.vhd
+F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/package.vhd
+l0
+L4
+V<LUzBGzAg>Ifd@BRN9NhF2
+!s100 O=Y?V[ebUOV`e=GWbCjJe3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Eprocessor_tb
+Z28 w1453770508
+R2
+R4
+R5
+R0
+Z29 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/verif/processor_tb.vhd
+Z30 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/verif/processor_tb.vhd
+l0
+L6
+VdQ^zS0kB=]zHiQK^QeJ853
+!s100 2]^T7^R9CKI:oG;9PfEbE0
+R8
+32
+Z31 !s110 1453770525
+!i10b 1
+Z32 !s108 1453770525.000000
+Z33 !s90 -64|-f|/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/verif/tb.cfg|
+Z34 !s107 /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/verif/processor_tb.vhd|
+!i113 0
+R13
+Alogic
+R2
+R4
+R5
+DEx4 work 12 processor_tb 0 22 dQ^zS0kB=]zHiQK^QeJ853
+l23
+L10
+VETgcWP4H]jBMiTGU?<TiT3
+!s100 :8C44>G=]^AWgM[2LSmnL0
+R8
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 0
+R13
+Tprocessor_tb_opt
+R31
+VE?6L`W:ObnjOTU7n]6g583
+04 12 5 work processor_tb logic 1
+o+acc
+nprocessor_tb_opt
+OL;O;10.4c;61
+Eram
+Z35 w1453685349
+R2
+R3
+R4
+R5
+R0
+Z36 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/ram.vhd
+Z37 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/ram.vhd
+l0
+L6
+VJJoVc`4JnFJALElP;Moz40
+!s100 A04j2IGC_eO7d3o]NGzPh1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 3 ram 0 22 JJoVc`4JnFJALElP;Moz40
+l23
+L17
+V;7EBUHW75I_D^^jUS2C_o2
+!s100 <_a=MnFUBa0OAzGMk[iD<0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Eregfile
+Z38 w1453685348
+R2
+R3
+R4
+R5
+R0
+Z39 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/regfile.vhd
+Z40 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/regfile.vhd
+l0
+L6
+Vf>1zGo^;?L?gYI=5BgH0b1
+!s100 SYhLJ0C_G4[9X_eI2YQ[U0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R3
+R4
+R5
+DEx4 work 7 regfile 0 22 f>1zGo^;?L?gYI=5BgH0b1
+l31
+L21
+V]Om6z07fE18oU0^:n?`4P1
+!s100 o_jc533l3L>d`5iLj>L6P2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Erom
+Z41 w1453685347
+R2
+Z42 DPx4 ieee 20 numeric_std_unsigned 0 22 jF^[l6kSe0l<k3W[UC=P83
+R4
+R5
+R0
+Z43 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/rom.vhd
+Z44 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/rom.vhd
+l0
+L7
+VT2=Hn_Rk3XSoW;hYRCaY72
+!s100 U7ccQ_5iJlafMXa6UWYHf0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R42
+R4
+R5
+DEx4 work 3 rom 0 22 T2=Hn_Rk3XSoW;hYRCaY72
+l16
+L15
+V]CRWW?ZA]BAH1V<1]`RDZ2
+!s100 5fN8kcUn=OQBjcS`e=QY71
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Esign_extender
+Z45 w1453685346
+R2
+R4
+R5
+R0
+Z46 8/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/sign_extender.vhd
+Z47 F/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment2/design/sign_extender.vhd
+l0
+L6
+V3g[U=C2<C?fO^fIc^5jQ20
+!s100 aoa`azY6>4Hza[jmEGEMe0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+Alogic
+R2
+R4
+R5
+DEx4 work 13 sign_extender 0 22 3g[U=C2<C?fO^fIc^5jQ20
+l19
+L14
+Vc`GA@1IM:ShAn208JKLXi1
+!s100 9_RFcN^1=GEhVjEzchD1T2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
