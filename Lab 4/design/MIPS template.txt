@@ -1,0 +1,70 @@
+MIPS Opcode
+J-TYPE
+J				0000 10ii iiii iiii iiii iiii iiii iiii
+JAL			0000 11ii iiii iiii iiii iiii iiii iiii
+
+
+I-TYPE
+
+-- Branch
+BEQ			0001 00ss ssst tttt iiii iiii iiii iiii					=> alu_code: 111100
+BNE			0001 01ss ssst tttt iiii iiii iiii iiii					=> alu_code: 111101
+
+BLTZ			0000 01ss sss0 0000 iiii iiii iiii iiii				=> alu_code: 111000
+BGEZ		0000 01ss sss0 0001 iiii iiii iiii iiii				=> alu_code: 111001
+
+BLEZ			0001 10ss sss0 0000 iiii iiii iiii iiii				=> alu_code: 111110
+BGTZ		0001 11ss sss0 0000 iiii iiii iiii iiii				=> alu_code: 111111
+
+-- Imm Arith
+ADDIU		0010 01ss ssst tttt iiii iiii iiii iiii
+ORI			0011 01ss ssst tttt iiii iiii iiii iiii
+XORI			0011 10ss ssst tttt iiii iiii iiii iiii
+
+ANDI			0011 00ss ssst tttt iiii iiii iiii iiii
+SLTI			0010 10ss ssst tttt iiii iiii iiii iiii
+SLTIU		0010 11ss ssst tttt iiii iiii iiii iiii
+LUI			0011 11-- ---t tttt iiii iiii iiii iiii
+
+-- Load
+LW			1000 11ss ssst tttt iiii iiii iiii iiii
+
+LH			1000 01ss ssst tttt iiii iiii iiii iiii
+LHU			1001 01ss ssst tttt iiii iiii iiii iiii
+
+LB			1000 00ss ssst tttt iiii iiii iiii iiii
+LBU			1001 00ss ssst tttt iiii iiii iiii iiii
+
+
+
+-- Store
+SW			1010 11ss ssst tttt iiii iiii iiii iiii
+SH			1010 01ss ssst tttt iiii iiii iiii iiii
+SB			1010 00ss ssst tttt iiii iiii iiii iiii
+
+
+R-TYPE
+ADD			0000 00ss ssst tttt dddd d000 0010 0000
+ADDU		0000 00ss ssst tttt dddd d000 0010 0001
+SUB			0000 00ss ssst tttt dddd d000 0010 0010
+SUBU		0000 00ss ssst tttt dddd d000 0010 0011
+AND			0000 00ss ssst tttt dddd d000 0010 0100
+OR			0000 00ss ssst tttt dddd d000 0010 0101
+XOR			0000 00ss ssst tttt dddd d000 0010 0110
+NOR			0000 00ss ssst tttt dddd d000 0010 0111
+SLT			0000 00ss ssst tttt dddd d000 0010 1000
+SLTU		0000 00ss ssst tttt dddd d000 0010 1001
+
+
+
+JR				0000 00ss sss0 0000 0000 0000 0000 1000
+JALR			0000 00ss sss0 0000 dddd d000 0000 1001
+
+SLL			0000 00ss ssst tttt dddd dhhh hh00 0000
+SRL			0000 00-- ---t tttt dddd dhhh hh00 0010
+SRA			0000 00-- ---t tttt dddd dhhh hh00 0011
+
+SLLV			0000 00ss ssst tttt dddd d--- --00 0100
+SRLV		0000 00ss ssst tttt dddd d000 0000 0110
+SRAV		0000 00ss ssst tttt dddd d000 0000 0111
+
