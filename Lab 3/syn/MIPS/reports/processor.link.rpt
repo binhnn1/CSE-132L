@@ -1,0 +1,31 @@
+
+  Linking design 'processor'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (8 designs)               /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/processor.db, etc
+  saed32lvt_tt1p05vn40c (library) /users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db
+  saed32sram_tt1p05vn40c (library) /users/ugrad2/2012/spring/pooriam/libraries/saed32sram_tt1p05vn40c.db
+  dw_foundation.sldb (library) /ecelib/linware/synopsys15/dc/libraries/syn/dw_foundation.sldb
+
+Information: Building the design 'rom' instantiated from design 'processor' with
+	the parameters "SIZE=512". (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/rom.vhd:19: Access types are not supported for synthesis. (ELAB-926)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'regfile' instantiated from design 'processor' with
+	the parameters "SIZE=32". (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/regfile.vhd:29: An if statement containing a clock event has an illegal else branch and is not supported for synthesis. (ELAB-928)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/regfile.vhd:29: An if statement containing a clock event has an illegal else branch and is not supported for synthesis. (ELAB-928)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/regfile.vhd:29: An if statement containing a clock event has an illegal else branch and is not supported for synthesis. (ELAB-928)
+*** Presto compilation terminated with 3 errors. ***
+Information: Building the design 'alu'. (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/alu.vhd:28: Constant value required. (ELAB-922)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'ram' instantiated from design 'processor' with
+	the parameters "SIZE=512". (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment3/syn/design/ram.vhd:32: Constant value required. (ELAB-922)
+*** Presto compilation terminated with 1 errors. ***
+Warning: Unable to resolve reference 'rom' in 'processor'. (LINK-5)
+Warning: Unable to resolve reference 'regfile' in 'processor'. (LINK-5)
+Warning: Unable to resolve reference 'alu' in 'processor'. (LINK-5)
+Warning: Unable to resolve reference 'ram' in 'processor'. (LINK-5)
+0

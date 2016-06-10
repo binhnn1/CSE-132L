@@ -1,0 +1,57 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+        -verbose
+Design : processor
+Version: J-2014.09-SP4
+Date   : Sun Feb 14 19:21:57 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_tt1p05vn40c (File: /users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db)
+
+
+Operating Conditions: tt1p05vn40c   Library: saed32lvt_tt1p05vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+processor              8000              saed32lvt_tt1p05vn40c
+mux2to1_S32_0          ForQA             saed32lvt_tt1p05vn40c
+controller             ForQA             saed32lvt_tt1p05vn40c
+mux2to1_S5_0           ForQA             saed32lvt_tt1p05vn40c
+sign_extender_SIZE16   ForQA             saed32lvt_tt1p05vn40c
+mux2to1_S5_1           ForQA             saed32lvt_tt1p05vn40c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+processor                                17.572  129.350 8.79e+08 1.03e+03 100.0
+  inst9 (ram)                             0.521    0.000    0.000    0.521   0.1
+  inst8 (alu)                             1.319    0.000    0.000    1.319   0.1
+  inst5 (sign_extender_SIZE16)            2.363    0.000    0.000    2.363   0.2
+  inst4 (regfile)                         1.095    0.000    0.000    1.095   0.1
+  instb (mux2to1_S5_1)                    1.325    0.893 8.27e+06   10.484   1.0
+  insta (mux2to1_S5_0)                    0.849    0.356 9.93e+06   11.139   1.1
+  inst2 (controller)                      3.085    2.612 4.93e+07   55.024   5.4
+  inst1mj (mux2to1_S32_0)                 3.037    1.704 5.14e+07   56.110   5.5
+1
