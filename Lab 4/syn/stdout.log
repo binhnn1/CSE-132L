@@ -1,0 +1,176 @@
+Initializing gui preferences from file  /users/ugrad2/2015/summer/binhnn1/.synopsys_dv_prefs.tcl
+#==============================================================================
+#                      D E S I G N    P A R A M E T E R S
+#==============================================================================
+#
+#
+#
+set PROJECT_NAME                "OUTPUT"
+OUTPUT
+set TOP                         "processor"
+processor
+set FILES                       "files_reg"
+files_reg
+set clock_period                2.0
+2.0
+set_option -vhdl2008 1
+1
+#==============================================================================
+##                  D I R E C T O R Y   S T R U C T U R E
+##==============================================================================
+#
+set synopsys_path                       [getenv "SYNOPSYS"]
+/ecelib/linware/synopsys15/dc
+set DESIGN                              $env(design)
+/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design
+set SOURCE                              "${DESIGN}"
+/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design
+set SCRIPTS                             "${PROJECT_NAME}/scripts"
+OUTPUT/scripts
+set DBDIR                               "${PROJECT_NAME}/db"
+OUTPUT/db
+set NETLIST                             "${PROJECT_NAME}/netlist"
+OUTPUT/netlist
+set LOG                                 "${PROJECT_NAME}/log"
+OUTPUT/log
+set REPORTS                             "${PROJECT_NAME}/reports"
+OUTPUT/reports
+if { ![file exists $NETLIST] || ![file isdirectory $NETLIST] } {
+        file mkdir $NETLIST;
+}
+if { ![file exists $REPORTS] || ![file isdirectory $REPORTS] } {
+        file mkdir $REPORTS;
+}
+if { ![file exists $LOG] || ![file isdirectory $LOG] } {
+        file mkdir $LOG;
+}
+if { ![file exists $DBDIR] || ![file isdirectory $DBDIR] } {
+        file mkdir $DBDIR;
+}
+#==============================================================================
+##                       S E T U P    L I B R A R I E S
+##==============================================================================
+#
+set LVT_TSMCHOME "/users/ugrad2/2012/spring/pooriam/libraries/"
+/users/ugrad2/2012/spring/pooriam/libraries/
+set TECH_LIB_PATH_LVT_1P05_N40  "$LVT_TSMCHOME/saed32lvt_tt1p05vn40c.db"
+/users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db
+set TECH_LIB_PATH  $TECH_LIB_PATH_LVT_1P05_N40;  
+/users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db
+set MEM_LIB_LVT_1P05_N40    "saed32sram_tt1p05vn40c"
+saed32sram_tt1p05vn40c
+set MEM_LIB $MEM_LIB_LVT_1P05_N40;  
+saed32sram_tt1p05vn40c
+set DRIVE_CELL BUFFD12BWP12TLVT; 
+BUFFD12BWP12TLVT
+set WC_OP_CONDS WCZ0D81COM;
+WCZ0D81COM
+set search_path [list . [format "%s%s"  $synopsys_path "/libraries/syn"]                         [format "%s%s"  $synopsys_path "/packages"]                         [format "%s%s"  $synopsys_path "/packages/IEEE"]                                                         ${LVT_TSMCHOME}                                                                 ${DESIGN}         /ecelib/linware/synopsys15/dc/packages/IEEE/src/ /ecelib/linware/synopsys15/dc/packages/IEEE_asic/src/                                                 ]
+. /ecelib/linware/synopsys15/dc/libraries/syn /ecelib/linware/synopsys15/dc/packages /ecelib/linware/synopsys15/dc/packages/IEEE /users/ugrad2/2012/spring/pooriam/libraries/ /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design /ecelib/linware/synopsys15/dc/packages/IEEE/src/ /ecelib/linware/synopsys15/dc/packages/IEEE_asic/src/
+set search_path "$search_path ${SOURCE} ${DBDIR} ./"
+. /ecelib/linware/synopsys15/dc/libraries/syn /ecelib/linware/synopsys15/dc/packages /ecelib/linware/synopsys15/dc/packages/IEEE /users/ugrad2/2012/spring/pooriam/libraries/ /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design /ecelib/linware/synopsys15/dc/packages/IEEE/src/ /ecelib/linware/synopsys15/dc/packages/IEEE_asic/src/ /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design OUTPUT/db ./
+set link_library   "* $TECH_LIB_PATH $MEM_LIB_LVT_1P05_N40"
+* /users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db saed32sram_tt1p05vn40c
+set target_library   "$TECH_LIB_PATH "
+/users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db 
+set symbol_library   "generic.sdb "
+generic.sdb 
+set WIRELOAD_MODEL "tcForQA"
+tcForQA
+set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set_app_var link_library "* $link_library $target_library $synthetic_library"
+* * /users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db saed32sram_tt1p05vn40c /users/ugrad2/2012/spring/pooriam/libraries//saed32lvt_tt1p05vn40c.db  dw_foundation.sldb
+#==============================================================================
+##                        R E A D I N G   D E S I G N
+##==============================================================================
+define_design_lib WORK -path ./WORK
+1
+#
+source scripts/${FILES}.tcl -v -e  > ${LOG}/files_${TOP}.log
+#==============================================================================
+##     E L B O R A T I N G    A N D    O P T I M I Z I N G     D E S I G N S
+##==============================================================================
+#
+elaborate ${TOP} -update > ${REPORTS}/${TOP}.elab.rpt
+current_design ${TOP}
+Current design is 'processor'.
+{processor}
+#==============================================================================
+#                      S Y N T H E S I S    C O N S T R A I N T S
+#==============================================================================
+set CORE_CLK_PERIOD            ${clock_period}
+2.0
+set CLK_NAME                       clk
+clk
+set INPUT_DELAY                    2.0
+2.0
+set OUTPUT_DELAY                   0.5
+0.5
+set MAX_AREA                       0; # Optimize the design for the smallest possible size
+0
+set CLK_SKEW                       0.14
+0.14
+set MAX_OUTPUT_LOAD                0
+0
+#==============================================================================
+#                       D E F I N E    C L O C K    P E R I O D S
+#==============================================================================
+create_clock -name $CLK_NAME    -period $CORE_CLK_PERIOD  -waveform  "0 [expr $CORE_CLK_PERIOD/2]"  [get_ports clk]
+Warning: Design 'processor' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+#set_clock_uncertainty $CLK_SKEW [get_clocks $CLK_NAME]
+#set_input_delay  $INPUT_DELAY  -max -clock $CLK_NAME [remove_from_collection [all_inputs] $CLK_PORT]
+#set_output_delay $OUTPUT_DELAY -max -clock $CLK_NAME [all_outputs]
+#set_max_area $MAX_AREA
+#set_driving_cell -lib_cell $DRIVE_CELL -pin $DRIVE_PIN [remove_from_collection [all_inputs] $CLK_PORT]
+#set_load  $MAX_OUTPUT_LOAD [all_outputs]
+#set_clock_uncertainty $CLK_SKEW [get_clocks $CLK_NAME]
+#set_clock_latency     0.2  [all_clocks]
+set_clock_transition 0 $CLK_NAME
+Warning: Design 'processor' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+puts "Linking"
+Linking
+redirect -tee -file ${REPORTS}/${TOP}.link.rpt  {link}
+#puts "Uniquifying"
+#redirect -tee -file ${REPORTS}/${TOP}.uniquify.rpt { uniquify };
+redirect -tee -file ${REPORTS}/${TOP}.compile.rpt     { compile_ultra -no_autoungroup};
+#==============================================================================
+##                                     W R I T E   O U T   D E S I G N
+##==============================================================================
+#
+write                           -format verilog -hierarchy -output  ${NETLIST}/${TOP}.vg
+Information: Building the design 'alu'. (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/alu.vhd:30: Constant value required. (ELAB-922)
+*** Presto compilation terminated with 1 errors. ***
+Warning: Unable to resolve reference 'alu' in 'processor'. (LINK-5)
+Writing verilog file '/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/OUTPUT/netlist/processor.vg'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+#==============================================================================
+##                               G E N E R A T E    F I N A L    R E P O R T S
+##==============================================================================
+#
+#
+redirect -tee -file ${REPORTS}/${TOP}.qor.rpt           { report_qor }
+redirect -tee -file ${REPORTS}/${TOP}.units.rpt { report_units  }
+redirect -tee -file ${REPORTS}/${TOP}.design.rpt { report_design -nosplit }
+redirect -tee -file ${REPORTS}/${TOP}.area.rpt { report_area -nosplit -designware -hierarchy -physical -nosplit }
+redirect -tee -file ${REPORTS}/${TOP}.power_hier.rpt {         report_power -analysis_effort medium -verbose -nosplit -hierarchy }
+redirect -tee -file ${REPORTS}/${TOP}.power_flat.rpt {         report_power -net -cell -analysis_effort medium -verbose -nosplit -flat }
+# clean up
+exec rm -rf *.syn *.mr *.pvl
+#exit
+dc_shell> cd ..
+dc_shell> cd ..
+dc_shell> ;s
+Error: ambiguous command 's' matched 261 commands:
+        (saif_map, save_qtm_model, save_upf ...) (CMD-006)
+dc_shell> ls
+.   assignment1  assignment2.tar  assignment4  test
+..  assignment2  assignment3      lab-3.tar
+dc_shell> quit
+
+Thank you...
+

@@ -1,0 +1,10 @@
+#! /bin/sh 
+
+source /ecelib/linware/synopsys15/env/dc.csh
+
+setenv design `pwd`/design
+
+clear
+
+dc_shell-t -f scripts/synth.tcl -output_log_file stdout.log
+

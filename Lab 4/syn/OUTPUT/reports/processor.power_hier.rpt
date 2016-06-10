@@ -1,0 +1,53 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+        -verbose
+Design : processor
+Version: J-2014.09-SP4
+Date   : Sat Mar 12 01:01:09 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_tt1p05vn40c (File: /users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db)
+
+
+Operating Conditions: tt1p05vn40c   Library: saed32lvt_tt1p05vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+processor              8000              saed32lvt_tt1p05vn40c
+rom_SIZE512            ForQA             saed32lvt_tt1p05vn40c
+flipflop_S32_1         8000              saed32lvt_tt1p05vn40c
+flipflop_S32_5         8000              saed32lvt_tt1p05vn40c
+mux2to1_S32_1          ForQA             saed32lvt_tt1p05vn40c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+processor                                 0.982  184.219 5.59e+08  743.846 100.0
+  inst_mux_ResultW (mux2to1_S32_1)        0.000    0.000    0.000    0.000   0.0
+  inst_ALUOut_ff_MW (flipflop_S32_1)   3.64e-03   88.439 2.79e+08  367.765  49.4
+  inst_ALUOut_ff_EM (flipflop_S32_5)      0.478   95.780 2.79e+08  375.580  50.5
+  inst_alu (alu)                          0.501    0.000    0.000    0.501   0.1
+  inst_rom (rom_SIZE512)                  0.000    0.000    0.000    0.000   0.0
+1

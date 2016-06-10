@@ -1,0 +1,66 @@
+analyze -f vhdl { package.vhd flipflop.vhd flipflop1bit.vhd mux4to1.vhd mux2to1.vhd pc.vhd rom.vhd pc_adder.vhd regfile.vhd controller.vhd sign_extender.vhd hazard_control.vhd alu.vhd ram.vhd processor.vhd }
+Running PRESTO HDLC
+Compiling Package Declaration PROCESSOR_PACK
+Compiling Entity Declaration FLIPFLOP
+Compiling Architecture LOGIC of FLIPFLOP
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/flipflop.vhd:17: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration FLIPFLOP1BIT
+Compiling Architecture LOGIC of FLIPFLOP1BIT
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/flipflop1bit.vhd:16: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration MUX4TO1
+Compiling Architecture LOGIC of MUX4TO1
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/mux4to1.vhd:17: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration MUX2TO1
+Compiling Architecture LOGIC of MUX2TO1
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/mux2to1.vhd:15: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration PC_CLOCK
+Compiling Architecture LOGIC of PC_CLOCK
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/pc.vhd:17: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+
+-------------------
+     4: use IEEE.NUMERIC_STD_UNSIGNED.all;
+                 ^^^^^^^^^^^^^^^^^^^^^
+[Error] NUMERIC_STD_UNSIGNED is not a primary unit of library IEEE
+Compiling Entity Declaration ROM
+
+-------------------
+    15: ARCHITECTURE logic OF rom IS
+        ^^^^^^^^^^^^
+[Failure] End of compilation: error(s) in design unit ROM
+Compiling Architecture LOGIC of ROM
+
+-------------------
+    15: ARCHITECTURE logic OF rom IS
+                              ^^^
+[Failure] Entity declaration ROM not found in library WORK
+Compiling Entity Declaration ADDER
+Compiling Architecture BEHAV of ADDER
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/pc_adder.vhd:15: The architecture behav has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration REGFILE
+Compiling Architecture LOGIC of REGFILE
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/regfile.vhd:21: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration CONTROLLER
+Compiling Architecture LOGIC of CONTROLLER
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/controller.vhd:29: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration SIGN_EXTENDER
+Compiling Architecture LOGIC of SIGN_EXTENDER
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/sign_extender.vhd:15: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration HAZARD_CONTROL
+Compiling Architecture LOGIC of HAZARD_CONTROL
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/hazard_control.vhd:31: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration ALU
+Compiling Architecture LOGIC of ALU
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/alu.vhd:16: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration RAM
+Compiling Architecture LOGIC of RAM
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/ram.vhd:18: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Compiling Entity Declaration PROCESSOR
+Compiling Architecture LOGIC of PROCESSOR
+Warning:  /users/ugrad2/2013/fall/yixiany/eecs112L/final/regfile_synthesis/regfile_syn/design/processor.vhd:13: The architecture logic has already been analyzed. It is being replaced. (VHD-4)
+Warning:  The entity 'regfile' has multiple architectures defined. The last defined architecture 'logic' will be used to build the design by default. (VHD-6)
+*** Presto compilation was unsuccessful. ***
+Loading db file '/users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db'
+Loading db file '/users/ugrad2/2012/spring/pooriam/libraries/saed32sram_tt1p05vn40c.db'
+Loading db file '/ecelib/linware/synopsys15/dc/libraries/syn/dw_foundation.sldb'
+0
+0

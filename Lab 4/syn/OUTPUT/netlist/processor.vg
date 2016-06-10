@@ -1,0 +1,200 @@
+
+module rom_SIZE512 ( addr, dataIO );
+  input [31:0] addr;
+  inout [31:0] dataIO;
+
+  assign dataIO[0] = 1'b0;
+  assign dataIO[1] = 1'b0;
+  assign dataIO[2] = 1'b0;
+  assign dataIO[3] = 1'b0;
+  assign dataIO[4] = 1'b0;
+  assign dataIO[5] = 1'b0;
+  assign dataIO[6] = 1'b0;
+  assign dataIO[7] = 1'b0;
+  assign dataIO[8] = 1'b0;
+  assign dataIO[9] = 1'b0;
+  assign dataIO[10] = 1'b0;
+  assign dataIO[11] = 1'b0;
+  assign dataIO[12] = 1'b0;
+  assign dataIO[13] = 1'b0;
+  assign dataIO[14] = 1'b0;
+  assign dataIO[15] = 1'b0;
+  assign dataIO[16] = 1'b0;
+  assign dataIO[17] = 1'b0;
+  assign dataIO[18] = 1'b0;
+  assign dataIO[19] = 1'b0;
+  assign dataIO[20] = 1'b0;
+  assign dataIO[21] = 1'b0;
+  assign dataIO[22] = 1'b0;
+  assign dataIO[23] = 1'b0;
+  assign dataIO[24] = 1'b0;
+  assign dataIO[25] = 1'b0;
+  assign dataIO[26] = 1'b0;
+  assign dataIO[27] = 1'b0;
+  assign dataIO[28] = 1'b0;
+  assign dataIO[29] = 1'b0;
+  assign dataIO[30] = 1'b0;
+  assign dataIO[31] = 1'b0;
+
+endmodule
+
+
+module flipflop_S32_1 ( Set, Reset, Data, clk, Q );
+  input [31:0] Data;
+  output [31:0] Q;
+  input Set, Reset, clk;
+
+
+  DFFX1_LVT \temp_reg[31]  ( .D(Data[31]), .CLK(clk), .Q(Q[31]) );
+  DFFX1_LVT \temp_reg[30]  ( .D(Data[30]), .CLK(clk), .Q(Q[30]) );
+  DFFX1_LVT \temp_reg[29]  ( .D(Data[29]), .CLK(clk), .Q(Q[29]) );
+  DFFX1_LVT \temp_reg[28]  ( .D(Data[28]), .CLK(clk), .Q(Q[28]) );
+  DFFX1_LVT \temp_reg[27]  ( .D(Data[27]), .CLK(clk), .Q(Q[27]) );
+  DFFX1_LVT \temp_reg[26]  ( .D(Data[26]), .CLK(clk), .Q(Q[26]) );
+  DFFX1_LVT \temp_reg[25]  ( .D(Data[25]), .CLK(clk), .Q(Q[25]) );
+  DFFX1_LVT \temp_reg[24]  ( .D(Data[24]), .CLK(clk), .Q(Q[24]) );
+  DFFX1_LVT \temp_reg[23]  ( .D(Data[23]), .CLK(clk), .Q(Q[23]) );
+  DFFX1_LVT \temp_reg[22]  ( .D(Data[22]), .CLK(clk), .Q(Q[22]) );
+  DFFX1_LVT \temp_reg[21]  ( .D(Data[21]), .CLK(clk), .Q(Q[21]) );
+  DFFX1_LVT \temp_reg[20]  ( .D(Data[20]), .CLK(clk), .Q(Q[20]) );
+  DFFX1_LVT \temp_reg[19]  ( .D(Data[19]), .CLK(clk), .Q(Q[19]) );
+  DFFX1_LVT \temp_reg[18]  ( .D(Data[18]), .CLK(clk), .Q(Q[18]) );
+  DFFX1_LVT \temp_reg[17]  ( .D(Data[17]), .CLK(clk), .Q(Q[17]) );
+  DFFX1_LVT \temp_reg[16]  ( .D(Data[16]), .CLK(clk), .Q(Q[16]) );
+  DFFX1_LVT \temp_reg[15]  ( .D(Data[15]), .CLK(clk), .Q(Q[15]) );
+  DFFX1_LVT \temp_reg[14]  ( .D(Data[14]), .CLK(clk), .Q(Q[14]) );
+  DFFX1_LVT \temp_reg[13]  ( .D(Data[13]), .CLK(clk), .Q(Q[13]) );
+  DFFX1_LVT \temp_reg[12]  ( .D(Data[12]), .CLK(clk), .Q(Q[12]) );
+  DFFX1_LVT \temp_reg[11]  ( .D(Data[11]), .CLK(clk), .Q(Q[11]) );
+  DFFX1_LVT \temp_reg[10]  ( .D(Data[10]), .CLK(clk), .Q(Q[10]) );
+  DFFX1_LVT \temp_reg[9]  ( .D(Data[9]), .CLK(clk), .Q(Q[9]) );
+  DFFX1_LVT \temp_reg[8]  ( .D(Data[8]), .CLK(clk), .Q(Q[8]) );
+  DFFX1_LVT \temp_reg[7]  ( .D(Data[7]), .CLK(clk), .Q(Q[7]) );
+  DFFX1_LVT \temp_reg[6]  ( .D(Data[6]), .CLK(clk), .Q(Q[6]) );
+  DFFX1_LVT \temp_reg[5]  ( .D(Data[5]), .CLK(clk), .Q(Q[5]) );
+  DFFX1_LVT \temp_reg[4]  ( .D(Data[4]), .CLK(clk), .Q(Q[4]) );
+  DFFX1_LVT \temp_reg[3]  ( .D(Data[3]), .CLK(clk), .Q(Q[3]) );
+  DFFX1_LVT \temp_reg[2]  ( .D(Data[2]), .CLK(clk), .Q(Q[2]) );
+  DFFX1_LVT \temp_reg[1]  ( .D(Data[1]), .CLK(clk), .Q(Q[1]) );
+  DFFX1_LVT \temp_reg[0]  ( .D(Data[0]), .CLK(clk), .Q(Q[0]) );
+endmodule
+
+
+module flipflop_S32_5 ( Set, Reset, Data, clk, Q );
+  input [31:0] Data;
+  output [31:0] Q;
+  input Set, Reset, clk;
+
+
+  DFFX1_LVT \temp_reg[31]  ( .D(Data[31]), .CLK(clk), .Q(Q[31]) );
+  DFFX1_LVT \temp_reg[30]  ( .D(Data[30]), .CLK(clk), .Q(Q[30]) );
+  DFFX1_LVT \temp_reg[29]  ( .D(Data[29]), .CLK(clk), .Q(Q[29]) );
+  DFFX1_LVT \temp_reg[28]  ( .D(Data[28]), .CLK(clk), .Q(Q[28]) );
+  DFFX1_LVT \temp_reg[27]  ( .D(Data[27]), .CLK(clk), .Q(Q[27]) );
+  DFFX1_LVT \temp_reg[26]  ( .D(Data[26]), .CLK(clk), .Q(Q[26]) );
+  DFFX1_LVT \temp_reg[25]  ( .D(Data[25]), .CLK(clk), .Q(Q[25]) );
+  DFFX1_LVT \temp_reg[24]  ( .D(Data[24]), .CLK(clk), .Q(Q[24]) );
+  DFFX1_LVT \temp_reg[23]  ( .D(Data[23]), .CLK(clk), .Q(Q[23]) );
+  DFFX1_LVT \temp_reg[22]  ( .D(Data[22]), .CLK(clk), .Q(Q[22]) );
+  DFFX1_LVT \temp_reg[21]  ( .D(Data[21]), .CLK(clk), .Q(Q[21]) );
+  DFFX1_LVT \temp_reg[20]  ( .D(Data[20]), .CLK(clk), .Q(Q[20]) );
+  DFFX1_LVT \temp_reg[19]  ( .D(Data[19]), .CLK(clk), .Q(Q[19]) );
+  DFFX1_LVT \temp_reg[18]  ( .D(Data[18]), .CLK(clk), .Q(Q[18]) );
+  DFFX1_LVT \temp_reg[17]  ( .D(Data[17]), .CLK(clk), .Q(Q[17]) );
+  DFFX1_LVT \temp_reg[16]  ( .D(Data[16]), .CLK(clk), .Q(Q[16]) );
+  DFFX1_LVT \temp_reg[15]  ( .D(Data[15]), .CLK(clk), .Q(Q[15]) );
+  DFFX1_LVT \temp_reg[14]  ( .D(Data[14]), .CLK(clk), .Q(Q[14]) );
+  DFFX1_LVT \temp_reg[13]  ( .D(Data[13]), .CLK(clk), .Q(Q[13]) );
+  DFFX1_LVT \temp_reg[12]  ( .D(Data[12]), .CLK(clk), .Q(Q[12]) );
+  DFFX1_LVT \temp_reg[11]  ( .D(Data[11]), .CLK(clk), .Q(Q[11]) );
+  DFFX1_LVT \temp_reg[10]  ( .D(Data[10]), .CLK(clk), .Q(Q[10]) );
+  DFFX1_LVT \temp_reg[9]  ( .D(Data[9]), .CLK(clk), .Q(Q[9]) );
+  DFFX1_LVT \temp_reg[8]  ( .D(Data[8]), .CLK(clk), .Q(Q[8]) );
+  DFFX1_LVT \temp_reg[7]  ( .D(Data[7]), .CLK(clk), .Q(Q[7]) );
+  DFFX1_LVT \temp_reg[6]  ( .D(Data[6]), .CLK(clk), .Q(Q[6]) );
+  DFFX1_LVT \temp_reg[5]  ( .D(Data[5]), .CLK(clk), .Q(Q[5]) );
+  DFFX1_LVT \temp_reg[4]  ( .D(Data[4]), .CLK(clk), .Q(Q[4]) );
+  DFFX1_LVT \temp_reg[3]  ( .D(Data[3]), .CLK(clk), .Q(Q[3]) );
+  DFFX1_LVT \temp_reg[2]  ( .D(Data[2]), .CLK(clk), .Q(Q[2]) );
+  DFFX1_LVT \temp_reg[1]  ( .D(Data[1]), .CLK(clk), .Q(Q[1]) );
+  DFFX1_LVT \temp_reg[0]  ( .D(Data[0]), .CLK(clk), .Q(Q[0]) );
+endmodule
+
+
+module mux2to1_S32_1 ( input_1, input_2, sel, \output  );
+  input [31:0] input_1;
+  input [31:0] input_2;
+  output [31:0] \output ;
+  input sel;
+
+  assign \output  [31] = input_1[31];
+  assign \output  [30] = input_1[30];
+  assign \output  [29] = input_1[29];
+  assign \output  [28] = input_1[28];
+  assign \output  [27] = input_1[27];
+  assign \output  [26] = input_1[26];
+  assign \output  [25] = input_1[25];
+  assign \output  [24] = input_1[24];
+  assign \output  [23] = input_1[23];
+  assign \output  [22] = input_1[22];
+  assign \output  [21] = input_1[21];
+  assign \output  [20] = input_1[20];
+  assign \output  [19] = input_1[19];
+  assign \output  [18] = input_1[18];
+  assign \output  [17] = input_1[17];
+  assign \output  [16] = input_1[16];
+  assign \output  [15] = input_1[15];
+  assign \output  [14] = input_1[14];
+  assign \output  [13] = input_1[13];
+  assign \output  [12] = input_1[12];
+  assign \output  [11] = input_1[11];
+  assign \output  [10] = input_1[10];
+  assign \output  [9] = input_1[9];
+  assign \output  [8] = input_1[8];
+  assign \output  [7] = input_1[7];
+  assign \output  [6] = input_1[6];
+  assign \output  [5] = input_1[5];
+  assign \output  [4] = input_1[4];
+  assign \output  [3] = input_1[3];
+  assign \output  [2] = input_1[2];
+  assign \output  [1] = input_1[1];
+  assign \output  [0] = input_1[0];
+
+endmodule
+
+
+module processor ( clk, reset, out1 );
+  output [31:0] out1;
+  input clk, reset;
+  wire   net10974, net10975, net10976, net10977, net10978, net10979, net10980,
+         net10981, net10982, net10983, net10984, net10985, net10986, net10987,
+         net10988, net10989, net10990, net10991, net10992, net10993, net10994,
+         net10995, net10996, net10997, net10998, net10999, net11000, net11001,
+         net11002, net11003, net11004, net11005, net11006;
+  wire   [31:0] InstrF;
+  wire   [31:0] ALUOutM;
+  wire   [31:0] ALUOutE;
+  wire   [31:0] ALUOutW;
+
+  rom_SIZE512 inst_rom ( .addr({1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0}), .dataIO(InstrF) );
+  alu inst_alu ( .Func_in({1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0}), .A_in({1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0}), .B_in({1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 1'b0, 
+        1'b0, 1'b0, 1'b0, 1'b0, 1'b0}), .O_out(ALUOutE) );
+  flipflop_S32_5 inst_ALUOut_ff_EM ( .Set(1'b0), .Reset(1'b0), .Data(ALUOutE), 
+        .clk(clk), .Q(ALUOutM) );
+  flipflop_S32_1 inst_ALUOut_ff_MW ( .Set(1'b0), .Reset(1'b0), .Data(ALUOutM), 
+        .clk(clk), .Q(ALUOutW) );
+  mux2to1_S32_1 inst_mux_ResultW ( .input_1(ALUOutW), .input_2({net10974, 
+        net10975, net10976, net10977, net10978, net10979, net10980, net10981, 
+        net10982, net10983, net10984, net10985, net10986, net10987, net10988, 
+        net10989, net10990, net10991, net10992, net10993, net10994, net10995, 
+        net10996, net10997, net10998, net10999, net11000, net11001, net11002, 
+        net11003, net11004, net11005}), .sel(net11006), .\output (out1) );
+endmodule
+

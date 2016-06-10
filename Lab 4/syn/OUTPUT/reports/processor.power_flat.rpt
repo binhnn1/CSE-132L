@@ -1,0 +1,2279 @@
+ 
+****************************************
+Report : power
+        -net
+        -cell
+        -analysis_effort medium
+        -verbose
+        -flat
+        -sort_mode dynamic_power
+Design : processor
+Version: J-2014.09-SP4
+Date   : Sat Mar 12 01:01:09 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_tt1p05vn40c (File: /users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db)
+
+
+Operating Conditions: tt1p05vn40c   Library: saed32lvt_tt1p05vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+processor              8000              saed32lvt_tt1p05vn40c
+rom_SIZE512            ForQA             saed32lvt_tt1p05vn40c
+flipflop_S32_1         8000              saed32lvt_tt1p05vn40c
+flipflop_S32_5         8000              saed32lvt_tt1p05vn40c
+mux2to1_S32_1          ForQA             saed32lvt_tt1p05vn40c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+ALUOutM[18]                    0.568    0.506    0.0464      0.0145  
+ALUOutM[11]                    0.568    0.496    0.0465      0.0146  
+ALUOutM[3]                     0.568    0.496    0.0467      0.0146  
+ALUOutM[22]                    0.568    0.512    0.0474      0.0148  
+ALUOutM[12]                    0.568    0.502    0.0471      0.0147  
+ALUOutM[17]                    0.568    0.497    0.0471      0.0147  
+ALUOutM[20]                    0.568    0.507    0.0474      0.0149  
+ALUOutM[25]                    0.568    0.500    0.0472      0.0148  
+ALUOutM[28]                    0.568    0.501    0.0473      0.0148  
+ALUOutM[31]                    0.568    0.487    0.0469      0.0147  
+ALUOutM[7]                     0.568    0.509    0.0476      0.0149  
+ALUOutM[8]                     0.568    0.500    0.0474      0.0148  
+ALUOutM[13]                    0.568    0.499    0.0473      0.0148  
+ALUOutM[9]                     0.568    0.502    0.0477      0.0149  
+ALUOutM[23]                    0.568    0.491    0.0473      0.0148  
+ALUOutM[19]                    0.568    0.504    0.0478      0.0150  
+ALUOutM[10]                    0.568    0.505    0.0479      0.0150  
+ALUOutM[4]                     0.568    0.504    0.0479      0.0150  
+ALUOutM[26]                    0.568    0.492    0.0477      0.0149  
+ALUOutM[27]                    0.568    0.495    0.0477      0.0150  
+ALUOutM[14]                    0.568    0.508    0.0482      0.0151  
+ALUOutM[5]                     0.568    0.491    0.0477      0.0149  
+ALUOutM[16]                    0.568    0.492    0.0477      0.0149  
+ALUOutM[6]                     0.568    0.489    0.0477      0.0150  
+ALUOutM[0]                     0.568    0.489    0.0478      0.0150  
+ALUOutM[15]                    0.568    0.511    0.0487      0.0152  
+ALUOutM[30]                    0.568    0.489    0.0481      0.0151  
+ALUOutM[21]                    0.568    0.503    0.0486      0.0152  
+ALUOutM[2]                     0.568    0.501    0.0485      0.0152  
+ALUOutM[29]                    0.568    0.488    0.0482      0.0151  
+ALUOutM[1]                     0.568    0.498    0.0487      0.0152  
+ALUOutM[24]                    0.568    0.502    0.0489      0.0153  
+ALUOutW[18]                    0.004    0.506    0.0464      0.0001  
+ALUOutW[11]                    0.004    0.496    0.0465      0.0001  
+ALUOutW[3]                     0.004    0.496    0.0467      0.0001  
+ALUOutW[12]                    0.004    0.502    0.0471      0.0001  
+ALUOutW[31]                    0.004    0.487    0.0469      0.0001  
+ALUOutW[17]                    0.004    0.497    0.0471      0.0001  
+ALUOutW[25]                    0.004    0.500    0.0472      0.0001  
+ALUOutW[22]                    0.004    0.512    0.0474      0.0001  
+ALUOutW[28]                    0.004    0.501    0.0473      0.0001  
+ALUOutW[13]                    0.004    0.499    0.0473      0.0001  
+ALUOutW[8]                     0.004    0.500    0.0474      0.0001  
+ALUOutW[20]                    0.004    0.507    0.0474      0.0001  
+ALUOutW[23]                    0.004    0.491    0.0473      0.0001  
+ALUOutW[7]                     0.004    0.509    0.0476      0.0001  
+ALUOutW[9]                     0.004    0.502    0.0477      0.0001  
+ALUOutW[19]                    0.004    0.504    0.0478      0.0001  
+ALUOutW[26]                    0.004    0.492    0.0477      0.0001  
+ALUOutW[27]                    0.004    0.495    0.0477      0.0001  
+ALUOutW[5]                     0.004    0.491    0.0477      0.0001  
+ALUOutW[16]                    0.004    0.492    0.0477      0.0001  
+ALUOutW[10]                    0.004    0.505    0.0479      0.0001  
+ALUOutW[4]                     0.004    0.504    0.0479      0.0001  
+ALUOutW[6]                     0.004    0.489    0.0477      0.0001  
+ALUOutW[0]                     0.004    0.489    0.0478      0.0001  
+ALUOutW[14]                    0.004    0.508    0.0482      0.0001  
+ALUOutW[30]                    0.004    0.489    0.0481      0.0001  
+ALUOutW[29]                    0.004    0.488    0.0482      0.0001  
+ALUOutW[15]                    0.004    0.511    0.0487      0.0001  
+ALUOutW[21]                    0.004    0.503    0.0486      0.0001  
+ALUOutW[2]                     0.004    0.501    0.0485      0.0001  
+ALUOutW[1]                     0.004    0.498    0.0487      0.0001  
+ALUOutW[24]                    0.004    0.502    0.0489      0.0001  
+ALUOutE[0]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[1]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[2]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[3]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[4]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[5]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[6]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[7]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[8]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[9]                     0.568    0.500    0.0500      0.0157  d
+ALUOutE[10]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[11]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[12]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[13]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[14]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[15]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[16]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[17]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[18]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[19]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[20]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[21]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[22]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[23]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[24]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[25]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[26]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[27]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[28]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[29]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[30]                    0.568    0.500    0.0500      0.0157  d
+ALUOutE[31]                    0.568    0.500    0.0500      0.0157  d
+inst_rom/dataIO[0]             0.000    0.000    0.0000      0.0000  d
+n45                            1.674    0.000    0.0000      0.0000  d
+net10974                       0.000    0.000    0.0000      0.0000  d
+net10975                       0.000    0.000    0.0000      0.0000  d
+net10976                       0.000    0.000    0.0000      0.0000  d
+net10977                       0.000    0.000    0.0000      0.0000  d
+net10978                       0.000    0.000    0.0000      0.0000  d
+net10979                       0.000    0.000    0.0000      0.0000  d
+net10980                       0.000    0.000    0.0000      0.0000  d
+net10981                       0.000    0.000    0.0000      0.0000  d
+net10982                       0.000    0.000    0.0000      0.0000  d
+net10983                       0.000    0.000    0.0000      0.0000  d
+net10984                       0.000    0.000    0.0000      0.0000  d
+net10985                       0.000    0.000    0.0000      0.0000  d
+net10986                       0.000    0.000    0.0000      0.0000  d
+net10987                       0.000    0.000    0.0000      0.0000  d
+net10988                       0.000    0.000    0.0000      0.0000  d
+net10989                       0.000    0.000    0.0000      0.0000  d
+net10990                       0.000    0.000    0.0000      0.0000  d
+net10991                       0.000    0.000    0.0000      0.0000  d
+net10992                       0.000    0.000    0.0000      0.0000  d
+net10993                       0.000    0.000    0.0000      0.0000  d
+net10994                       0.000    0.000    0.0000      0.0000  d
+net10995                       0.000    0.000    0.0000      0.0000  d
+net10996                       0.000    0.000    0.0000      0.0000  d
+net10997                       0.000    0.000    0.0000      0.0000  d
+net10998                       0.000    0.000    0.0000      0.0000  d
+net10999                       0.000    0.000    0.0000      0.0000  d
+net11000                       0.000    0.000    0.0000      0.0000  d
+net11001                       0.000    0.000    0.0000      0.0000  d
+net11002                       0.000    0.000    0.0000      0.0000  d
+net11003                       0.000    0.000    0.0000      0.0000  d
+net11004                       0.000    0.000    0.0000      0.0000  d
+net11005                       0.000    0.000    0.0000      0.0000  d
+net11006                       0.000    0.000    0.0000      0.0000  d
+--------------------------------------------------------------------------------
+Total (131 nets)                                           982.2440 nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+      m  -  Multiply-driven net
+
+                          Net         Driver     Tot Dynamic     Driver
+                          Switching   Internal   Power           Leakage
+Net                       Power       Power      (% Net/Tot)     Power    Attrs
+--------------------------------------------------------------------------------
+ALUOutM[18]                  0.0145     3.0128     3.027 (0%)   8722476.0000
+ALUOutM[11]                  0.0146     3.0073     3.022 (0%)   8731743.0000
+ALUOutM[3]                   0.0146     3.0056     3.020 (0%)   8731397.0000
+ALUOutM[22]                  0.0148     3.0034     3.018 (0%)   8716355.0000
+ALUOutM[12]                  0.0147     3.0025     3.017 (0%)   8726554.0000
+ALUOutM[17]                  0.0147     3.0006     3.015 (0%)   8730774.0000
+ALUOutM[20]                  0.0149     2.9999     3.015 (0%)   8721707.0000
+ALUOutM[25]                  0.0148     2.9999     3.015 (0%)   8728225.0000
+ALUOutM[28]                  0.0148     2.9991     3.014 (0%)   8727234.0000
+ALUOutM[31]                  0.0147     2.9989     3.014 (0%)   8739198.0000
+ALUOutM[7]                   0.0149     2.9984     3.013 (0%)   8719625.0000
+ALUOutM[8]                   0.0148     2.9983     3.013 (0%)   8727715.0000
+ALUOutM[13]                  0.0148     2.9980     3.013 (0%)   8728909.0000
+ALUOutM[9]                   0.0149     2.9942     3.009 (0%)   8726069.0000
+ALUOutM[23]                  0.0148     2.9940     3.009 (0%)   8736307.0000
+ALUOutM[19]                  0.0150     2.9935     3.008 (0%)   8723912.0000
+ALUOutM[10]                  0.0150     2.9919     3.007 (0%)   8723620.0000
+ALUOutM[4]                   0.0150     2.9917     3.007 (0%)   8723930.0000
+ALUOutM[26]                  0.0149     2.9902     3.005 (0%)   8734946.0000
+ALUOutM[27]                  0.0150     2.9899     3.005 (0%)   8732616.0000
+ALUOutM[14]                  0.0151     2.9895     3.005 (1%)   8720935.0000
+ALUOutM[5]                   0.0149     2.9890     3.004 (0%)   8735815.0000
+ALUOutM[16]                  0.0149     2.9887     3.004 (0%)   8735009.0000
+ALUOutM[6]                   0.0150     2.9871     3.002 (0%)   8737536.0000
+ALUOutM[0]                   0.0150     2.9859     3.001 (0%)   8737810.0000
+ALUOutM[15]                  0.0152     2.9851     3.000 (1%)   8717643.0000
+ALUOutM[30]                  0.0151     2.9832     2.998 (1%)   8737375.0000
+ALUOutM[21]                  0.0152     2.9826     2.998 (1%)   8725293.0000
+ALUOutM[2]                   0.0152     2.9819     2.997 (1%)   8727150.0000
+ALUOutM[29]                  0.0151     2.9805     2.996 (1%)   8738943.0000
+ALUOutM[1]                   0.0152     2.9784     2.994 (1%)   8730004.0000
+ALUOutM[24]                  0.0153     2.9778     2.993 (1%)   8725939.0000
+ALUOutW[18]               1.114e-04     2.7863     2.786 (0%)   8721896.0000
+ALUOutW[11]               1.116e-04     2.7828     2.783 (0%)   8732070.0000
+ALUOutW[3]                1.119e-04     2.7806     2.781 (0%)   8731698.0000
+ALUOutW[12]               1.129e-04     2.7748     2.775 (0%)   8726421.0000
+ALUOutW[31]               1.125e-04     2.7747     2.775 (0%)   8739971.0000
+ALUOutW[17]               1.129e-04     2.7739     2.774 (0%)   8731025.0000
+ALUOutW[25]               1.132e-04     2.7721     2.772 (0%)   8728254.0000
+ALUOutW[22]               1.136e-04     2.7719     2.772 (0%)   8714979.0000
+ALUOutW[28]               1.134e-04     2.7707     2.771 (0%)   8727167.0000
+ALUOutW[13]               1.134e-04     2.7700     2.770 (0%)   8728999.0000
+ALUOutW[8]                1.136e-04     2.7697     2.770 (0%)   8727696.0000
+ALUOutW[20]               1.137e-04     2.7696     2.770 (0%)   8721036.0000
+ALUOutW[23]               1.134e-04     2.7677     2.768 (0%)   8736939.0000
+ALUOutW[7]                1.142e-04     2.7667     2.767 (0%)   8718694.0000
+ALUOutW[9]                1.143e-04     2.7642     2.764 (0%)   8725886.0000
+ALUOutW[19]               1.147e-04     2.7623     2.762 (0%)   8723498.0000
+ALUOutW[26]               1.143e-04     2.7623     2.762 (0%)   8735497.0000
+ALUOutW[27]               1.145e-04     2.7612     2.761 (0%)   8733009.0000
+ALUOutW[5]                1.144e-04     2.7611     2.761 (0%)   8736420.0000
+ALUOutW[16]               1.144e-04     2.7606     2.761 (0%)   8735565.0000
+ALUOutW[10]               1.149e-04     2.7602     2.760 (0%)   8723173.0000
+ALUOutW[4]                1.149e-04     2.7601     2.760 (0%)   8723518.0000
+ALUOutW[6]                1.145e-04     2.7595     2.760 (0%)   8738233.0000
+ALUOutW[0]                1.147e-04     2.7580     2.758 (0%)   8738520.0000
+ALUOutW[14]               1.156e-04     2.7562     2.756 (0%)   8720170.0000
+ALUOutW[30]               1.153e-04     2.7542     2.754 (0%)   8738065.0000
+ALUOutW[29]               1.155e-04     2.7515     2.752 (0%)   8739705.0000
+ALUOutW[15]               1.167e-04     2.7491     2.749 (0%)   8716448.0000
+ALUOutW[21]               1.164e-04     2.7491     2.749 (0%)   8725029.0000
+ALUOutW[2]                1.163e-04     2.7490     2.749 (0%)   8727075.0000
+ALUOutW[1]                1.167e-04     2.7455     2.746 (0%)   8730191.0000
+ALUOutW[24]               1.172e-04     2.7432     2.743 (0%)   8725742.0000
+ALUOutE[0]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[1]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[2]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[3]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[4]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[5]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[6]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[7]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[8]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[9]                   0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[10]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[11]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[12]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[13]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[14]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[15]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[16]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[17]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[18]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[19]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[20]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[21]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[22]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[23]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[24]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[25]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[26]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[27]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[28]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[29]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[30]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+ALUOutE[31]                  0.0157     0.0000  1.57e-02 (100%)    0.0000   d
+inst_rom/dataIO[0]           0.0000     0.0000     0.000 (N/A)     0.0000   d
+n45                          0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10974                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10975                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10976                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10977                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10978                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10979                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10980                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10981                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10982                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10983                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10984                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10985                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10986                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10987                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10988                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10989                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10990                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10991                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10992                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10993                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10994                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10995                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10996                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10997                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10998                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net10999                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11000                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11001                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11002                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11003                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11004                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11005                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+net11006                     0.0000     0.0000     0.000 (N/A)     0.0000   d
+--------------------------------------------------------------------------------
+Totals (131 nets)          982.244nW  184.219uW  185.201uW (1%)  558.645uW
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+inst_ALUOut_ff_EM/temp_reg[18]    3.0128    0.0145    3.027 (100%) 8722476.0000  
+inst_ALUOut_ff_EM/temp_reg[11]    3.0073    0.0146    3.022 (100%) 8731743.0000  
+inst_ALUOut_ff_EM/temp_reg[3]    3.0056    0.0146    3.020 (100%) 8731397.0000  
+inst_ALUOut_ff_EM/temp_reg[22]    3.0034    0.0148    3.018 (100%) 8716355.0000  
+inst_ALUOut_ff_EM/temp_reg[12]    3.0025    0.0147    3.017 (100%) 8726554.0000  
+inst_ALUOut_ff_EM/temp_reg[17]    3.0006    0.0147    3.015 (100%) 8730774.0000  
+inst_ALUOut_ff_EM/temp_reg[20]    2.9999    0.0149    3.015 (100%) 8721707.0000  
+inst_ALUOut_ff_EM/temp_reg[25]    2.9999    0.0148    3.015 (100%) 8728225.0000  
+inst_ALUOut_ff_EM/temp_reg[28]    2.9991    0.0148    3.014 (100%) 8727234.0000  
+inst_ALUOut_ff_EM/temp_reg[31]    2.9989    0.0147    3.014 (100%) 8739198.0000  
+inst_ALUOut_ff_EM/temp_reg[7]    2.9984    0.0149    3.013 (100%) 8719625.0000  
+inst_ALUOut_ff_EM/temp_reg[8]    2.9983    0.0148    3.013 (100%) 8727715.0000  
+inst_ALUOut_ff_EM/temp_reg[13]    2.9980    0.0148    3.013 (100%) 8728909.0000  
+inst_ALUOut_ff_EM/temp_reg[9]    2.9942    0.0149    3.009 (100%) 8726069.0000  
+inst_ALUOut_ff_EM/temp_reg[23]    2.9940    0.0148    3.009 (100%) 8736307.0000  
+inst_ALUOut_ff_EM/temp_reg[19]    2.9935    0.0150    3.008 (100%) 8723912.0000  
+inst_ALUOut_ff_EM/temp_reg[10]    2.9919    0.0150    3.007 (100%) 8723620.0000  
+inst_ALUOut_ff_EM/temp_reg[4]    2.9917    0.0150    3.007 (100%) 8723930.0000  
+inst_ALUOut_ff_EM/temp_reg[26]    2.9902    0.0149    3.005 (100%) 8734946.0000  
+inst_ALUOut_ff_EM/temp_reg[27]    2.9899    0.0150    3.005 (100%) 8732616.0000  
+inst_ALUOut_ff_EM/temp_reg[14]    2.9895    0.0151    3.005 (99%) 8720935.0000  
+inst_ALUOut_ff_EM/temp_reg[5]    2.9890    0.0149    3.004 (100%) 8735815.0000  
+inst_ALUOut_ff_EM/temp_reg[16]    2.9887    0.0149    3.004 (100%) 8735009.0000  
+inst_ALUOut_ff_EM/temp_reg[6]    2.9871    0.0150    3.002 (100%) 8737536.0000  
+inst_ALUOut_ff_EM/temp_reg[0]    2.9859    0.0150    3.001 (100%) 8737810.0000  
+inst_ALUOut_ff_EM/temp_reg[15]    2.9851    0.0152    3.000 (99%) 8717643.0000  
+inst_ALUOut_ff_EM/temp_reg[30]    2.9832    0.0151    2.998 (99%) 8737375.0000  
+inst_ALUOut_ff_EM/temp_reg[21]    2.9826    0.0152    2.998 (99%) 8725293.0000  
+inst_ALUOut_ff_EM/temp_reg[2]    2.9819    0.0152    2.997 (99%) 8727150.0000  
+inst_ALUOut_ff_EM/temp_reg[29]    2.9805    0.0151    2.996 (99%) 8738943.0000  
+inst_ALUOut_ff_EM/temp_reg[1]    2.9784    0.0152    2.994 (99%) 8730004.0000  
+inst_ALUOut_ff_EM/temp_reg[24]    2.9778    0.0153    2.993 (99%) 8725939.0000  
+inst_ALUOut_ff_MW/temp_reg[18]    2.7863 1.113e-04    2.786 (100%) 8721896.0000  
+inst_ALUOut_ff_MW/temp_reg[11]    2.7828 1.116e-04    2.783 (100%) 8732070.0000  
+inst_ALUOut_ff_MW/temp_reg[3]    2.7806 1.118e-04    2.781 (100%) 8731698.0000  
+inst_ALUOut_ff_MW/temp_reg[12]    2.7748 1.128e-04    2.775 (100%) 8726421.0000  
+inst_ALUOut_ff_MW/temp_reg[31]    2.7747 1.125e-04    2.775 (100%) 8739971.0000  
+inst_ALUOut_ff_MW/temp_reg[17]    2.7739 1.128e-04    2.774 (100%) 8731025.0000  
+inst_ALUOut_ff_MW/temp_reg[25]    2.7721 1.132e-04    2.772 (100%) 8728254.0000  
+inst_ALUOut_ff_MW/temp_reg[22]    2.7719 1.137e-04    2.772 (100%) 8714979.0000  
+inst_ALUOut_ff_MW/temp_reg[28]    2.7707 1.135e-04    2.771 (100%) 8727167.0000  
+inst_ALUOut_ff_MW/temp_reg[13]    2.7700 1.132e-04    2.770 (100%) 8728999.0000  
+inst_ALUOut_ff_MW/temp_reg[8]    2.7697 1.135e-04    2.770 (100%) 8727696.0000  
+inst_ALUOut_ff_MW/temp_reg[20]    2.7696 1.137e-04    2.770 (100%) 8721036.0000  
+inst_ALUOut_ff_MW/temp_reg[23]    2.7677 1.135e-04    2.768 (100%) 8736939.0000  
+inst_ALUOut_ff_MW/temp_reg[7]    2.7667 1.142e-04    2.767 (100%) 8718694.0000  
+inst_ALUOut_ff_MW/temp_reg[9]    2.7642 1.142e-04    2.764 (100%) 8725886.0000  
+inst_ALUOut_ff_MW/temp_reg[19]    2.7623 1.147e-04    2.762 (100%) 8723498.0000  
+inst_ALUOut_ff_MW/temp_reg[26]    2.7623 1.142e-04    2.762 (100%) 8735497.0000  
+inst_ALUOut_ff_MW/temp_reg[27]    2.7612 1.144e-04    2.761 (100%) 8733009.0000  
+inst_ALUOut_ff_MW/temp_reg[5]    2.7611 1.144e-04    2.761 (100%) 8736420.0000  
+inst_ALUOut_ff_MW/temp_reg[16]    2.7606 1.144e-04    2.761 (100%) 8735565.0000  
+inst_ALUOut_ff_MW/temp_reg[10]    2.7602 1.149e-04    2.760 (100%) 8723173.0000  
+inst_ALUOut_ff_MW/temp_reg[4]    2.7601 1.149e-04    2.760 (100%) 8723518.0000  
+inst_ALUOut_ff_MW/temp_reg[6]    2.7595 1.144e-04    2.760 (100%) 8738233.0000  
+inst_ALUOut_ff_MW/temp_reg[0]    2.7580 1.147e-04    2.758 (100%) 8738520.0000  
+inst_ALUOut_ff_MW/temp_reg[14]    2.7562 1.156e-04    2.756 (100%) 8720170.0000  
+inst_ALUOut_ff_MW/temp_reg[30]    2.7542 1.154e-04    2.754 (100%) 8738065.0000  
+inst_ALUOut_ff_MW/temp_reg[29]    2.7515 1.156e-04    2.752 (100%) 8739705.0000  
+inst_ALUOut_ff_MW/temp_reg[15]    2.7491 1.166e-04    2.749 (100%) 8716448.0000  
+inst_ALUOut_ff_MW/temp_reg[21]    2.7491 1.163e-04    2.749 (100%) 8725029.0000  
+inst_ALUOut_ff_MW/temp_reg[2]    2.7490 1.163e-04    2.749 (100%) 8727075.0000  
+inst_ALUOut_ff_MW/temp_reg[1]    2.7455 1.168e-04    2.746 (100%) 8730191.0000  
+inst_ALUOut_ff_MW/temp_reg[24]    2.7432 1.173e-04    2.743 (100%) 8725742.0000  
+inst_alu                   0.0000    0.5010      0.501 (0%)       0.0000   
+--------------------------------------------------------------------------------
+Totals (65 cells)        184.219uW 982.244nW   185.201uW (99%)  558.645uW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+      a  -  User annotated State/Path Dependent (SDPD) information
+      e  -  Estimated SDPD from user annotated non-SDPD switching activity
+      d  -  Estimated SDPD from default annotated non-SDPD switching activity
+
+               Toggling Source   State Pin Toggle Internal     Leakage
+Cell           Pin      of Path  Cond  Rate       Power        Power    Attrs
+--------------------------------------------------------------------------------
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK Q QN')  0.0032 2.520e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK Q' QN)  0.0031 7.808e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK' Q QN')  0.0032    0.0112      d r
+   inst_ALUOut_ff_EM/temp_reg[18] D (CLK' Q QN')  0.0032 8.482e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[18] D     0.0155   3.980e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[18] D     0.0155      0.0267              d f
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D' Q' QN)  0.0610    0.2079      d r
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D' Q' QN)  0.0610    0.1813      d f
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D Q QN')  0.0640    0.1472       d r
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D Q QN')  0.0640    0.2566       d f
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D' Q QN')  0.0640    0.2178      d r
+   inst_ALUOut_ff_EM/temp_reg[18] CLK (D' Q QN')  0.0640    0.3524      d f
+   inst_ALUOut_ff_EM/temp_reg[18] CLK   0.3110      0.9444              d r
+   inst_ALUOut_ff_EM/temp_reg[18] CLK   0.3110      1.2943              d f
+   inst_ALUOut_ff_EM/temp_reg[18] Q CLK  0.0232  -1.261e-01               r
+   inst_ALUOut_ff_EM/temp_reg[18] Q CLK  0.0232  -7.964e-02               f
+   inst_ALUOut_ff_EM/temp_reg[18] QN CLK  0.0233 -2.159e-01               r
+   inst_ALUOut_ff_EM/temp_reg[18] QN CLK  0.0233 -2.211e-01               f
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK' D' Q' QN)             467267.9688  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK' D' Q QN')             490251.9062  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK D' Q' QN)              549275.9375  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK D' Q QN')              586919.0625  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK' D Q QN')              506727.8438  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK D Q' QN)               557392.8750  
+   inst_ALUOut_ff_EM/temp_reg[18] (CLK D Q QN')               421268.6250  
+   inst_ALUOut_ff_EM/temp_reg[18] default                     5143371.0000  
+inst_ALUOut_ff_EM/temp_reg[18]  (Cell Total)        3.0128    8722476.0000
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK Q QN')  0.0031 2.420e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK Q' QN)  0.0032 8.132e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK' Q QN')  0.0031    0.0107      d r
+   inst_ALUOut_ff_EM/temp_reg[11] D (CLK' Q QN')  0.0031 8.145e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[11] D     0.0157   4.013e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[11] D     0.0157      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D' Q' QN)  0.0635    0.2165      d r
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D' Q' QN)  0.0635    0.1888      d f
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D Q QN')  0.0615    0.1414       d r
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D Q QN')  0.0615    0.2465       d f
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D' Q QN')  0.0615    0.2092      d r
+   inst_ALUOut_ff_EM/temp_reg[11] CLK (D' Q QN')  0.0615    0.3384      d f
+   inst_ALUOut_ff_EM/temp_reg[11] CLK   0.3135      0.9521              d r
+   inst_ALUOut_ff_EM/temp_reg[11] CLK   0.3135      1.3049              d f
+   inst_ALUOut_ff_EM/temp_reg[11] Q CLK  0.0233  -1.264e-01               r
+   inst_ALUOut_ff_EM/temp_reg[11] Q CLK  0.0233  -7.980e-02               f
+   inst_ALUOut_ff_EM/temp_reg[11] QN CLK  0.0233 -2.160e-01               r
+   inst_ALUOut_ff_EM/temp_reg[11] QN CLK  0.0233 -2.213e-01               f
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK' D' Q' QN)             486651.3125  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK' D' Q QN')             470796.2812  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK D' Q' QN)              572061.1875  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK D' Q QN')              563627.1875  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK' D Q QN')              486618.3750  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK D Q' QN)               580514.8125  
+   inst_ALUOut_ff_EM/temp_reg[11] (CLK D Q QN')               404550.5938  
+   inst_ALUOut_ff_EM/temp_reg[11] default                     5166922.5000  
+inst_ALUOut_ff_EM/temp_reg[11]  (Cell Total)        3.0073    8731743.0000
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK Q QN')  0.0031    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK Q QN')  0.0031 2.424e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK Q' QN)  0.0032 8.120e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK Q' QN)  0.0032    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK' Q QN')  0.0031    0.0107       d r
+   inst_ALUOut_ff_EM/temp_reg[3] D (CLK' Q QN')  0.0031 8.158e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[3] D      0.0157   4.011e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[3] D      0.0157      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D' Q' QN)  0.0634    0.2162       d r
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D' Q' QN)  0.0634    0.1885       d f
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D Q QN')  0.0616    0.1416        d r
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D Q QN')  0.0616    0.2468        d f
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D' Q QN')  0.0616    0.2095       d r
+   inst_ALUOut_ff_EM/temp_reg[3] CLK (D' Q QN')  0.0616    0.3389       d f
+   inst_ALUOut_ff_EM/temp_reg[3] CLK    0.3134      0.9518              d r
+   inst_ALUOut_ff_EM/temp_reg[3] CLK    0.3134      1.3045              d f
+   inst_ALUOut_ff_EM/temp_reg[3] Q CLK  0.0233   -1.267e-01               r
+   inst_ALUOut_ff_EM/temp_reg[3] Q CLK  0.0233   -7.999e-02               f
+   inst_ALUOut_ff_EM/temp_reg[3] QN CLK  0.0233  -2.167e-01               r
+   inst_ALUOut_ff_EM/temp_reg[3] QN CLK  0.0233  -2.220e-01               f
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK' D' Q' QN)              485905.4375  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK' D' Q QN')              471530.5625  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK D' Q' QN)               571184.4375  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK D' Q QN')               564506.2500  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK' D Q QN')               487377.3125  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK D Q' QN)                579625.0625  
+   inst_ALUOut_ff_EM/temp_reg[3] (CLK D Q QN')                405181.5312  
+   inst_ALUOut_ff_EM/temp_reg[3] default                      5166086.0000  
+inst_ALUOut_ff_EM/temp_reg[3]  (Cell Total)         3.0056    8731397.0000
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK Q QN')  0.0033    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK Q QN')  0.0033 2.585e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK Q' QN)  0.0030 7.605e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK Q' QN)  0.0030    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK' Q QN')  0.0033    0.0114      d r
+   inst_ALUOut_ff_EM/temp_reg[22] D (CLK' Q QN')  0.0033 8.701e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[22] D     0.0155   3.958e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[22] D     0.0155      0.0266              d f
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D' Q' QN)  0.0594    0.2025      d r
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D' Q' QN)  0.0594    0.1766      d f
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D Q QN')  0.0657    0.1510       d r
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D Q QN')  0.0657    0.2633       d f
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D' Q QN')  0.0657    0.2234      d r
+   inst_ALUOut_ff_EM/temp_reg[22] CLK (D' Q QN')  0.0657    0.3615      d f
+   inst_ALUOut_ff_EM/temp_reg[22] CLK   0.3093      0.9392              d r
+   inst_ALUOut_ff_EM/temp_reg[22] CLK   0.3093      1.2871              d f
+   inst_ALUOut_ff_EM/temp_reg[22] Q CLK  0.0237  -1.287e-01               r
+   inst_ALUOut_ff_EM/temp_reg[22] Q CLK  0.0237  -8.125e-02               f
+   inst_ALUOut_ff_EM/temp_reg[22] QN CLK  0.0237 -2.200e-01               r
+   inst_ALUOut_ff_EM/temp_reg[22] QN CLK  0.0237 -2.253e-01               f
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK' D' Q' QN)             455070.8438  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK' D' Q QN')             502908.7500  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK D' Q' QN)              534938.1875  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK D' Q QN')              602071.5000  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK' D Q QN')              519810.0312  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK D Q' QN)               542843.1875  
+   inst_ALUOut_ff_EM/temp_reg[22] (CLK D Q QN')               432144.5000  
+   inst_ALUOut_ff_EM/temp_reg[22] default                     5126568.0000  
+inst_ALUOut_ff_EM/temp_reg[22]  (Cell Total)        3.0034    8716355.0000
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK Q QN')  0.0031 2.476e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK Q' QN)  0.0031 7.949e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK' Q QN')  0.0031    0.0110      d r
+   inst_ALUOut_ff_EM/temp_reg[12] D (CLK' Q QN')  0.0031 8.335e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[12] D     0.0156   3.995e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[12] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D' Q' QN)  0.0621    0.2116      d r
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D' Q' QN)  0.0621    0.1845      d f
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D Q QN')  0.0629    0.1447       d r
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D Q QN')  0.0629    0.2522       d f
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D' Q QN')  0.0629    0.2140      d r
+   inst_ALUOut_ff_EM/temp_reg[12] CLK (D' Q QN')  0.0629    0.3463      d f
+   inst_ALUOut_ff_EM/temp_reg[12] CLK   0.3121      0.9478              d r
+   inst_ALUOut_ff_EM/temp_reg[12] CLK   0.3121      1.2990              d f
+   inst_ALUOut_ff_EM/temp_reg[12] Q CLK  0.0235  -1.278e-01               r
+   inst_ALUOut_ff_EM/temp_reg[12] Q CLK  0.0235  -8.070e-02               f
+   inst_ALUOut_ff_EM/temp_reg[12] QN CLK  0.0235 -2.186e-01               r
+   inst_ALUOut_ff_EM/temp_reg[12] QN CLK  0.0235 -2.239e-01               f
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK' D' Q' QN)             475657.2188  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK' D' Q QN')             481734.4062  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK D' Q' QN)              559137.6250  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK D' Q QN')              576722.0625  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK' D Q QN')              497924.0938  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK D Q' QN)               567400.1875  
+   inst_ALUOut_ff_EM/temp_reg[12] (CLK D Q QN')               413949.6250  
+   inst_ALUOut_ff_EM/temp_reg[12] default                     5154029.0000  
+inst_ALUOut_ff_EM/temp_reg[12]  (Cell Total)        3.0025    8726554.0000
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK Q QN')  0.0031 2.431e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK Q' QN)  0.0032 8.098e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK' Q QN')  0.0031    0.0108      d r
+   inst_ALUOut_ff_EM/temp_reg[17] D (CLK' Q QN')  0.0031 8.181e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[17] D     0.0157   4.009e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[17] D     0.0157      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D' Q' QN)  0.0633    0.2156      d r
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D' Q' QN)  0.0633    0.1880      d f
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D Q QN')  0.0617    0.1420       d r
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D Q QN')  0.0617    0.2475       d f
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D' Q QN')  0.0617    0.2101      d r
+   inst_ALUOut_ff_EM/temp_reg[17] CLK (D' Q QN')  0.0617    0.3399      d f
+   inst_ALUOut_ff_EM/temp_reg[17] CLK   0.3133      0.9513              d r
+   inst_ALUOut_ff_EM/temp_reg[17] CLK   0.3133      1.3038              d f
+   inst_ALUOut_ff_EM/temp_reg[17] Q CLK  0.0235  -1.278e-01               r
+   inst_ALUOut_ff_EM/temp_reg[17] Q CLK  0.0235  -8.072e-02               f
+   inst_ALUOut_ff_EM/temp_reg[17] QN CLK  0.0235 -2.184e-01               r
+   inst_ALUOut_ff_EM/temp_reg[17] QN CLK  0.0235 -2.237e-01               f
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK' D' Q' QN)             484571.7812  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK' D' Q QN')             472846.0938  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK D' Q' QN)              569616.6875  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK D' Q QN')              566081.1875  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK' D Q QN')              488737.0625  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK D Q' QN)               578034.1875  
+   inst_ALUOut_ff_EM/temp_reg[17] (CLK D Q QN')               406311.9688  
+   inst_ALUOut_ff_EM/temp_reg[17] default                     5164575.5000  
+inst_ALUOut_ff_EM/temp_reg[17]  (Cell Total)        3.0006    8730774.0000
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK Q QN')  0.0032 2.528e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK Q' QN)  0.0030 7.782e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK Q' QN)  0.0030    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK' Q QN')  0.0032    0.0112      d r
+   inst_ALUOut_ff_EM/temp_reg[20] D (CLK' Q QN')  0.0032 8.510e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[20] D     0.0155   3.977e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[20] D     0.0155      0.0267              d f
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D' Q' QN)  0.0608    0.2072      d r
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D' Q' QN)  0.0608    0.1807      d f
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D Q QN')  0.0642    0.1477       d r
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D Q QN')  0.0642    0.2575       d f
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D' Q QN')  0.0642    0.2185      d r
+   inst_ALUOut_ff_EM/temp_reg[20] CLK (D' Q QN')  0.0642    0.3535      d f
+   inst_ALUOut_ff_EM/temp_reg[20] CLK   0.3108      0.9437              d r
+   inst_ALUOut_ff_EM/temp_reg[20] CLK   0.3108      1.2934              d f
+   inst_ALUOut_ff_EM/temp_reg[20] Q CLK  0.0237  -1.288e-01               r
+   inst_ALUOut_ff_EM/temp_reg[20] Q CLK  0.0237  -8.133e-02               f
+   inst_ALUOut_ff_EM/temp_reg[20] QN CLK  0.0237 -2.203e-01               r
+   inst_ALUOut_ff_EM/temp_reg[20] QN CLK  0.0237 -2.256e-01               f
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK' D' Q' QN)             465710.4688  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK' D' Q QN')             491849.8750  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK D' Q' QN)              547445.1250  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK D' Q QN')              588832.0625  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK' D Q QN')              508379.5312  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK D Q' QN)               555534.9375  
+   inst_ALUOut_ff_EM/temp_reg[20] (CLK D Q QN')               422641.7500  
+   inst_ALUOut_ff_EM/temp_reg[20] default                     5141313.0000  
+inst_ALUOut_ff_EM/temp_reg[20]  (Cell Total)        2.9999    8721707.0000
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK Q QN')  0.0031 2.458e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK Q' QN)  0.0031 8.007e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK' Q QN')  0.0031    0.0109      d r
+   inst_ALUOut_ff_EM/temp_reg[25] D (CLK' Q QN')  0.0031 8.274e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[25] D     0.0156   4.000e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[25] D     0.0156      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D' Q' QN)  0.0626    0.2132      d r
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D' Q' QN)  0.0626    0.1859      d f
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D Q QN')  0.0624    0.1436       d r
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D Q QN')  0.0624    0.2503       d f
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D' Q QN')  0.0624    0.2125      d r
+   inst_ALUOut_ff_EM/temp_reg[25] CLK (D' Q QN')  0.0624    0.3437      d f
+   inst_ALUOut_ff_EM/temp_reg[25] CLK   0.3126      0.9492              d r
+   inst_ALUOut_ff_EM/temp_reg[25] CLK   0.3126      1.3009              d f
+   inst_ALUOut_ff_EM/temp_reg[25] Q CLK  0.0236  -1.282e-01               r
+   inst_ALUOut_ff_EM/temp_reg[25] Q CLK  0.0236  -8.095e-02               f
+   inst_ALUOut_ff_EM/temp_reg[25] QN CLK  0.0236 -2.191e-01               r
+   inst_ALUOut_ff_EM/temp_reg[25] QN CLK  0.0236 -2.245e-01               f
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK' D' Q' QN)             479158.6562  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK' D' Q QN')             478223.6250  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK D' Q' QN)              563253.5000  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK D' Q QN')              572519.0000  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK' D Q QN')              494295.3125  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK D Q' QN)               571576.9375  
+   inst_ALUOut_ff_EM/temp_reg[25] (CLK D Q QN')               410932.8125  
+   inst_ALUOut_ff_EM/temp_reg[25] default                     5158265.5000  
+inst_ALUOut_ff_EM/temp_reg[25]  (Cell Total)        2.9999    8728225.0000
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK Q QN')  0.0031 2.469e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK Q' QN)  0.0031 7.972e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK' Q QN')  0.0031    0.0109      d r
+   inst_ALUOut_ff_EM/temp_reg[28] D (CLK' Q QN')  0.0031 8.310e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[28] D     0.0156   3.997e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[28] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D' Q' QN)  0.0623    0.2123      d r
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D' Q' QN)  0.0623    0.1851      d f
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D Q QN')  0.0627    0.1443       d r
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D Q QN')  0.0627    0.2514       d f
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D' Q QN')  0.0627    0.2134      d r
+   inst_ALUOut_ff_EM/temp_reg[28] CLK (D' Q QN')  0.0627    0.3452      d f
+   inst_ALUOut_ff_EM/temp_reg[28] CLK   0.3123      0.9484              d r
+   inst_ALUOut_ff_EM/temp_reg[28] CLK   0.3123      1.2997              d f
+   inst_ALUOut_ff_EM/temp_reg[28] Q CLK  0.0237  -1.284e-01               r
+   inst_ALUOut_ff_EM/temp_reg[28] Q CLK  0.0237  -8.111e-02               f
+   inst_ALUOut_ff_EM/temp_reg[28] QN CLK  0.0237 -2.196e-01               r
+   inst_ALUOut_ff_EM/temp_reg[28] QN CLK  0.0237 -2.249e-01               f
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK' D' Q' QN)             477075.6875  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK' D' Q QN')             480309.0000  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK D' Q' QN)              560805.0000  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK D' Q QN')              575015.6250  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK' D Q QN')              496450.7812  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK D Q' QN)               569092.2500  
+   inst_ALUOut_ff_EM/temp_reg[28] (CLK D Q QN')               412724.7812  
+   inst_ALUOut_ff_EM/temp_reg[28] default                     5155760.5000  
+inst_ALUOut_ff_EM/temp_reg[28]  (Cell Total)        2.9991    8727234.0000
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK Q QN')  0.0030 2.338e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK Q' QN)  0.0033 8.408e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK Q' QN)  0.0033    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK' Q QN')  0.0030    0.0103      d r
+   inst_ALUOut_ff_EM/temp_reg[31] D (CLK' Q QN')  0.0030 7.870e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[31] D     0.0158   4.038e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[31] D     0.0158      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D' Q' QN)  0.0657    0.2238      d r
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D' Q' QN)  0.0657    0.1952      d f
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D Q QN')  0.0594    0.1366       d r
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D Q QN')  0.0594    0.2381       d f
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D' Q QN')  0.0594    0.2021      d r
+   inst_ALUOut_ff_EM/temp_reg[31] CLK (D' Q QN')  0.0594    0.3269      d f
+   inst_ALUOut_ff_EM/temp_reg[31] CLK   0.3155      0.9582              d r
+   inst_ALUOut_ff_EM/temp_reg[31] CLK   0.3155      1.3132              d f
+   inst_ALUOut_ff_EM/temp_reg[31] Q CLK  0.0235  -1.274e-01               r
+   inst_ALUOut_ff_EM/temp_reg[31] Q CLK  0.0235  -8.043e-02               f
+   inst_ALUOut_ff_EM/temp_reg[31] QN CLK  0.0234 -2.174e-01               r
+   inst_ALUOut_ff_EM/temp_reg[31] QN CLK  0.0234 -2.227e-01               f
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK' D' Q' QN)             503128.4375  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK' D' Q QN')             454861.9062  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK D' Q' QN)              591430.1250  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK D' Q QN')              544550.8750  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK' D Q QN')              470148.4688  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK D Q' QN)               600169.9375  
+   inst_ALUOut_ff_EM/temp_reg[31] (CLK D Q QN')               390858.3125  
+   inst_ALUOut_ff_EM/temp_reg[31] default                     5184050.0000  
+inst_ALUOut_ff_EM/temp_reg[31]  (Cell Total)        2.9989    8739198.0000
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK Q QN')  0.0032    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK Q QN')  0.0032 2.551e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK Q' QN)  0.0030 7.712e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK Q' QN)  0.0030    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK' Q QN')  0.0032    0.0113       d r
+   inst_ALUOut_ff_EM/temp_reg[7] D (CLK' Q QN')  0.0032 8.584e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[7] D      0.0155   3.970e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[7] D      0.0155      0.0267              d f
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D' Q' QN)  0.0603    0.2053       d r
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D' Q' QN)  0.0603    0.1791       d f
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D Q QN')  0.0648    0.1490        d r
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D Q QN')  0.0648    0.2597        d f
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D' Q QN')  0.0648    0.2204       d r
+   inst_ALUOut_ff_EM/temp_reg[7] CLK (D' Q QN')  0.0648    0.3566       d f
+   inst_ALUOut_ff_EM/temp_reg[7] CLK    0.3102      0.9420              d r
+   inst_ALUOut_ff_EM/temp_reg[7] CLK    0.3102      1.2910              d f
+   inst_ALUOut_ff_EM/temp_reg[7] Q CLK  0.0238   -1.294e-01               r
+   inst_ALUOut_ff_EM/temp_reg[7] Q CLK  0.0238   -8.170e-02               f
+   inst_ALUOut_ff_EM/temp_reg[7] QN CLK  0.0238  -2.211e-01               r
+   inst_ALUOut_ff_EM/temp_reg[7] QN CLK  0.0238  -2.264e-01               f
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK' D' Q' QN)              461531.6875  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK' D' Q QN')              496163.5000  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK D' Q' QN)               542532.9375  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK D' Q QN')               593996.2500  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK' D Q QN')               512838.0938  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK D Q' QN)                550550.1875  
+   inst_ALUOut_ff_EM/temp_reg[7] (CLK D Q QN')                426348.3750  
+   inst_ALUOut_ff_EM/temp_reg[7] default                      5135664.5000  
+inst_ALUOut_ff_EM/temp_reg[7]  (Cell Total)         2.9984    8719625.0000
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK Q QN')  0.0031    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK Q QN')  0.0031 2.464e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK Q' QN)  0.0031 7.989e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK Q' QN)  0.0031    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK' Q QN')  0.0031    0.0109       d r
+   inst_ALUOut_ff_EM/temp_reg[8] D (CLK' Q QN')  0.0031 8.292e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[8] D      0.0156   3.999e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[8] D      0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D' Q' QN)  0.0624    0.2127       d r
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D' Q' QN)  0.0624    0.1855       d f
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D Q QN')  0.0626    0.1440        d r
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D Q QN')  0.0626    0.2509        d f
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D' Q QN')  0.0626    0.2129       d r
+   inst_ALUOut_ff_EM/temp_reg[8] CLK (D' Q QN')  0.0626    0.3445       d f
+   inst_ALUOut_ff_EM/temp_reg[8] CLK    0.3124      0.9488              d r
+   inst_ALUOut_ff_EM/temp_reg[8] CLK    0.3124      1.3003              d f
+   inst_ALUOut_ff_EM/temp_reg[8] Q CLK  0.0237   -1.286e-01               r
+   inst_ALUOut_ff_EM/temp_reg[8] Q CLK  0.0237   -8.123e-02               f
+   inst_ALUOut_ff_EM/temp_reg[8] QN CLK  0.0237  -2.197e-01               r
+   inst_ALUOut_ff_EM/temp_reg[8] QN CLK  0.0237  -2.250e-01               f
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK' D' Q' QN)              478087.3750  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK' D' Q QN')              479294.9688  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK D' Q' QN)               561994.2500  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK D' Q QN')               573801.6250  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK' D Q QN')               495402.6875  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK D Q' QN)                570299.0625  
+   inst_ALUOut_ff_EM/temp_reg[8] (CLK D Q QN')                411853.4375  
+   inst_ALUOut_ff_EM/temp_reg[8] default                      5156982.5000  
+inst_ALUOut_ff_EM/temp_reg[8]  (Cell Total)         2.9983    8727715.0000
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK Q QN')  0.0031 2.451e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK Q' QN)  0.0031 8.031e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK' Q QN')  0.0031    0.0108      d r
+   inst_ALUOut_ff_EM/temp_reg[13] D (CLK' Q QN')  0.0031 8.249e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[13] D     0.0156   4.003e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[13] D     0.0156      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D' Q' QN)  0.0627    0.2138      d r
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D' Q' QN)  0.0627    0.1865      d f
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D Q QN')  0.0623    0.1432       d r
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D Q QN')  0.0623    0.2496       d f
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D' Q QN')  0.0623    0.2118      d r
+   inst_ALUOut_ff_EM/temp_reg[13] CLK (D' Q QN')  0.0623    0.3427      d f
+   inst_ALUOut_ff_EM/temp_reg[13] CLK   0.3127      0.9498              d r
+   inst_ALUOut_ff_EM/temp_reg[13] CLK   0.3127      1.3017              d f
+   inst_ALUOut_ff_EM/temp_reg[13] Q CLK  0.0236  -1.284e-01               r
+   inst_ALUOut_ff_EM/temp_reg[13] Q CLK  0.0236  -8.107e-02               f
+   inst_ALUOut_ff_EM/temp_reg[13] QN CLK  0.0237 -2.198e-01               r
+   inst_ALUOut_ff_EM/temp_reg[13] QN CLK  0.0237 -2.251e-01               f
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK' D' Q' QN)             480601.6875  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK' D' Q QN')             476784.0625  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK D' Q' QN)              564949.8125  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK D' Q QN')              570795.6250  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK' D Q QN')              492807.3750  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK D Q' QN)               573298.3125  
+   inst_ALUOut_ff_EM/temp_reg[13] (CLK D Q QN')               409695.8125  
+   inst_ALUOut_ff_EM/temp_reg[13] default                     5159976.5000  
+inst_ALUOut_ff_EM/temp_reg[13]  (Cell Total)        2.9980    8728909.0000
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK Q QN')  0.0032    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK Q QN')  0.0032 2.482e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK Q' QN)  0.0031 7.932e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK Q' QN)  0.0031    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK' Q QN')  0.0032    0.0110       d r
+   inst_ALUOut_ff_EM/temp_reg[9] D (CLK' Q QN')  0.0032 8.352e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[9] D      0.0156   3.993e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[9] D      0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D' Q' QN)  0.0620    0.2112       d r
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D' Q' QN)  0.0620    0.1842       d f
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D Q QN')  0.0630    0.1450        d r
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D Q QN')  0.0630    0.2527        d f
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D' Q QN')  0.0630    0.2145       d r
+   inst_ALUOut_ff_EM/temp_reg[9] CLK (D' Q QN')  0.0630    0.3470       d f
+   inst_ALUOut_ff_EM/temp_reg[9] CLK    0.3120      0.9474              d r
+   inst_ALUOut_ff_EM/temp_reg[9] CLK    0.3120      1.2984              d f
+   inst_ALUOut_ff_EM/temp_reg[9] Q CLK  0.0238   -1.294e-01               r
+   inst_ALUOut_ff_EM/temp_reg[9] Q CLK  0.0238   -8.172e-02               f
+   inst_ALUOut_ff_EM/temp_reg[9] QN CLK  0.0239  -2.215e-01               r
+   inst_ALUOut_ff_EM/temp_reg[9] QN CLK  0.0239  -2.269e-01               f
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK' D' Q' QN)              474648.1562  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK' D' Q QN')              482750.9688  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK D' Q' QN)               557951.4375  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK D' Q QN')               577939.0625  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK' D Q QN')               498974.8125  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK D Q' QN)                566196.5000  
+   inst_ALUOut_ff_EM/temp_reg[9] (CLK D Q QN')                414823.1250  
+   inst_ALUOut_ff_EM/temp_reg[9] default                      5152785.0000  
+inst_ALUOut_ff_EM/temp_reg[9]  (Cell Total)         2.9942    8726069.0000
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK Q QN')  0.0030 2.370e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK Q' QN)  0.0032 8.299e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK' Q QN')  0.0030    0.0105      d r
+   inst_ALUOut_ff_EM/temp_reg[23] D (CLK' Q QN')  0.0030 7.977e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[23] D     0.0157   4.029e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[23] D     0.0157      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D' Q' QN)  0.0648    0.2210      d r
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D' Q' QN)  0.0648    0.1927      d f
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D Q QN')  0.0602    0.1385       d r
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D Q QN')  0.0602    0.2414       d f
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D' Q QN')  0.0602    0.2048      d r
+   inst_ALUOut_ff_EM/temp_reg[23] CLK (D' Q QN')  0.0602    0.3314      d f
+   inst_ALUOut_ff_EM/temp_reg[23] CLK   0.3148      0.9559              d r
+   inst_ALUOut_ff_EM/temp_reg[23] CLK   0.3148      1.3100              d f
+   inst_ALUOut_ff_EM/temp_reg[23] Q CLK  0.0237  -1.284e-01               r
+   inst_ALUOut_ff_EM/temp_reg[23] Q CLK  0.0237  -8.111e-02               f
+   inst_ALUOut_ff_EM/temp_reg[23] QN CLK  0.0237 -2.198e-01               r
+   inst_ALUOut_ff_EM/temp_reg[23] QN CLK  0.0237 -2.251e-01               f
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK' D' Q' QN)             496639.5312  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK' D' Q QN')             461072.7500  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK D' Q' QN)              583802.3750  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK D' Q QN')              551986.3750  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK' D Q QN')              476568.0625  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK D Q' QN)               592429.5000  
+   inst_ALUOut_ff_EM/temp_reg[23] (CLK D Q QN')               396195.2500  
+   inst_ALUOut_ff_EM/temp_reg[23] default                     5177613.0000  
+inst_ALUOut_ff_EM/temp_reg[23]  (Cell Total)        2.9940    8736307.0000
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK Q QN')  0.0032 2.505e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK Q' QN)  0.0031 7.857e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK' Q QN')  0.0032    0.0111      d r
+   inst_ALUOut_ff_EM/temp_reg[19] D (CLK' Q QN')  0.0032 8.430e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[19] D     0.0156   3.985e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[19] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D' Q' QN)  0.0614    0.2092      d r
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D' Q' QN)  0.0614    0.1824      d f
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D Q QN')  0.0636    0.1463       d r
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D Q QN')  0.0636    0.2551       d f
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D' Q QN')  0.0636    0.2165      d r
+   inst_ALUOut_ff_EM/temp_reg[19] CLK (D' Q QN')  0.0636    0.3502      d f
+   inst_ALUOut_ff_EM/temp_reg[19] CLK   0.3114      0.9456              d r
+   inst_ALUOut_ff_EM/temp_reg[19] CLK   0.3114      1.2959              d f
+   inst_ALUOut_ff_EM/temp_reg[19] Q CLK  0.0239  -1.299e-01               r
+   inst_ALUOut_ff_EM/temp_reg[19] Q CLK  0.0239  -8.201e-02               f
+   inst_ALUOut_ff_EM/temp_reg[19] QN CLK  0.0239 -2.220e-01               r
+   inst_ALUOut_ff_EM/temp_reg[19] QN CLK  0.0239 -2.274e-01               f
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK' D' Q' QN)             470197.6250  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK' D' Q QN')             487260.4062  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK D' Q' QN)              552719.8125  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK D' Q QN')              583337.6875  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK' D Q QN')              503635.8125  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK D Q' QN)               560887.5625  
+   inst_ALUOut_ff_EM/temp_reg[19] (CLK D Q QN')               418698.0625  
+   inst_ALUOut_ff_EM/temp_reg[19] default                     5147175.0000  
+inst_ALUOut_ff_EM/temp_reg[19]  (Cell Total)        2.9935    8723912.0000
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK Q QN')  0.0032 2.508e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK Q' QN)  0.0031 7.847e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK' Q QN')  0.0032    0.0111      d r
+   inst_ALUOut_ff_EM/temp_reg[10] D (CLK' Q QN')  0.0032 8.441e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[10] D     0.0156   3.984e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[10] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D' Q' QN)  0.0613    0.2089      d r
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D' Q' QN)  0.0613    0.1822      d f
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D Q QN')  0.0637    0.1465       d r
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D Q QN')  0.0637    0.2554       d f
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D' Q QN')  0.0637    0.2167      d r
+   inst_ALUOut_ff_EM/temp_reg[10] CLK (D' Q QN')  0.0637    0.3507      d f
+   inst_ALUOut_ff_EM/temp_reg[10] CLK   0.3113      0.9454              d r
+   inst_ALUOut_ff_EM/temp_reg[10] CLK   0.3113      1.2956              d f
+   inst_ALUOut_ff_EM/temp_reg[10] Q CLK  0.0240  -1.302e-01               r
+   inst_ALUOut_ff_EM/temp_reg[10] Q CLK  0.0240  -8.220e-02               f
+   inst_ALUOut_ff_EM/temp_reg[10] QN CLK  0.0240 -2.226e-01               r
+   inst_ALUOut_ff_EM/temp_reg[10] QN CLK  0.0240 -2.280e-01               f
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK' D' Q' QN)             469599.4062  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK' D' Q QN')             487869.7500  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK D' Q' QN)              552016.6250  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK D' Q QN')              584067.1875  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK' D Q QN')              504265.6250  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK D Q' QN)               560174.0000  
+   inst_ALUOut_ff_EM/temp_reg[10] (CLK D Q QN')               419221.6562  
+   inst_ALUOut_ff_EM/temp_reg[10] default                     5146405.5000  
+inst_ALUOut_ff_EM/temp_reg[10]  (Cell Total)        2.9919    8723620.0000
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK Q QN')  0.0032    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK Q QN')  0.0032 2.505e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK Q' QN)  0.0031 7.858e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK Q' QN)  0.0031    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK' Q QN')  0.0032    0.0111       d r
+   inst_ALUOut_ff_EM/temp_reg[4] D (CLK' Q QN')  0.0032 8.430e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[4] D      0.0156   3.985e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[4] D      0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D' Q' QN)  0.0614    0.2092       d r
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D' Q' QN)  0.0614    0.1824       d f
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D Q QN')  0.0636    0.1463        d r
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D Q QN')  0.0636    0.2550        d f
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D' Q QN')  0.0636    0.2165       d r
+   inst_ALUOut_ff_EM/temp_reg[4] CLK (D' Q QN')  0.0636    0.3502       d f
+   inst_ALUOut_ff_EM/temp_reg[4] CLK    0.3114      0.9456              d r
+   inst_ALUOut_ff_EM/temp_reg[4] CLK    0.3114      1.2959              d f
+   inst_ALUOut_ff_EM/temp_reg[4] Q CLK  0.0240   -1.302e-01               r
+   inst_ALUOut_ff_EM/temp_reg[4] Q CLK  0.0240   -8.219e-02               f
+   inst_ALUOut_ff_EM/temp_reg[4] QN CLK  0.0240  -2.227e-01               r
+   inst_ALUOut_ff_EM/temp_reg[4] QN CLK  0.0240  -2.281e-01               f
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK' D' Q' QN)              470236.2812  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK' D' Q QN')              487221.0312  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK D' Q' QN)               552765.2500  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK D' Q QN')               583290.5625  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK' D Q QN')               503595.1250  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK D Q' QN)                560933.6875  
+   inst_ALUOut_ff_EM/temp_reg[4] (CLK D Q QN')                418664.2188  
+   inst_ALUOut_ff_EM/temp_reg[4] default                      5147224.5000  
+inst_ALUOut_ff_EM/temp_reg[4]  (Cell Total)         2.9917    8723930.0000
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK Q QN')  0.0030 2.385e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK Q' QN)  0.0032 8.249e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK' Q QN')  0.0030    0.0106      d r
+   inst_ALUOut_ff_EM/temp_reg[26] D (CLK' Q QN')  0.0030 8.027e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[26] D     0.0157   4.024e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[26] D     0.0157      0.0270              d f
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D' Q' QN)  0.0645    0.2196      d r
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D' Q' QN)  0.0645    0.1915      d f
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D Q QN')  0.0606    0.1394       d r
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D Q QN')  0.0606    0.2429       d f
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D' Q QN')  0.0606    0.2061      d r
+   inst_ALUOut_ff_EM/temp_reg[26] CLK (D' Q QN')  0.0606    0.3335      d f
+   inst_ALUOut_ff_EM/temp_reg[26] CLK   0.3144      0.9548              d r
+   inst_ALUOut_ff_EM/temp_reg[26] CLK   0.3144      1.3085              d f
+   inst_ALUOut_ff_EM/temp_reg[26] Q CLK  0.0238  -1.294e-01               r
+   inst_ALUOut_ff_EM/temp_reg[26] Q CLK  0.0238  -8.173e-02               f
+   inst_ALUOut_ff_EM/temp_reg[26] QN CLK  0.0238 -2.212e-01               r
+   inst_ALUOut_ff_EM/temp_reg[26] QN CLK  0.0238 -2.265e-01               f
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK' D' Q' QN)             493628.4688  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK' D' Q QN')             463983.0000  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK D' Q' QN)              580262.8750  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK D' Q QN')              555470.4375  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK' D Q QN')              479576.0938  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK D Q' QN)               588837.6875  
+   inst_ALUOut_ff_EM/temp_reg[26] (CLK D Q QN')               398696.0000  
+   inst_ALUOut_ff_EM/temp_reg[26] default                     5174491.0000  
+inst_ALUOut_ff_EM/temp_reg[26]  (Cell Total)        2.9902    8734946.0000
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK Q QN')  0.0031    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK Q QN')  0.0031 2.411e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK Q' QN)  0.0032 8.164e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK' Q QN')  0.0031    0.0107      d r
+   inst_ALUOut_ff_EM/temp_reg[27] D (CLK' Q QN')  0.0031 8.113e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[27] D     0.0157   4.016e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[27] D     0.0157      0.0270              d f
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D' Q' QN)  0.0638    0.2174      d r
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D' Q' QN)  0.0638    0.1895      d f
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D Q QN')  0.0612    0.1408       d r
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D Q QN')  0.0612    0.2455       d f
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D' Q QN')  0.0612    0.2083      d r
+   inst_ALUOut_ff_EM/temp_reg[27] CLK (D' Q QN')  0.0612    0.3371      d f
+   inst_ALUOut_ff_EM/temp_reg[27] CLK   0.3138      0.9529              d r
+   inst_ALUOut_ff_EM/temp_reg[27] CLK   0.3138      1.3059              d f
+   inst_ALUOut_ff_EM/temp_reg[27] Q CLK  0.0239  -1.297e-01               r
+   inst_ALUOut_ff_EM/temp_reg[27] Q CLK  0.0239  -8.187e-02               f
+   inst_ALUOut_ff_EM/temp_reg[27] QN CLK  0.0239 -2.217e-01               r
+   inst_ALUOut_ff_EM/temp_reg[27] QN CLK  0.0239 -2.271e-01               f
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK' D' Q' QN)             488538.5000  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK' D' Q QN')             468943.7188  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK D' Q' QN)              574279.5625  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK D' Q QN')              561409.3125  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK' D Q QN')              484703.5312  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK D Q' QN)               582765.9375  
+   inst_ALUOut_ff_EM/temp_reg[27] (CLK D Q QN')               402958.6875  
+   inst_ALUOut_ff_EM/temp_reg[27] default                     5169016.5000  
+inst_ALUOut_ff_EM/temp_reg[27]  (Cell Total)        2.9899    8732616.0000
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK Q QN')  0.0032 2.537e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK Q' QN)  0.0030 7.756e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK Q' QN)  0.0030    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK' Q QN')  0.0032    0.0112      d r
+   inst_ALUOut_ff_EM/temp_reg[14] D (CLK' Q QN')  0.0032 8.537e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[14] D     0.0155   3.975e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[14] D     0.0155      0.0267              d f
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D' Q' QN)  0.0606    0.2065      d r
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D' Q' QN)  0.0606    0.1801      d f
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D Q QN')  0.0644    0.1482       d r
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D Q QN')  0.0644    0.2583       d f
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D' Q QN')  0.0644    0.2192      d r
+   inst_ALUOut_ff_EM/temp_reg[14] CLK (D' Q QN')  0.0644    0.3547      d f
+   inst_ALUOut_ff_EM/temp_reg[14] CLK   0.3105      0.9431              d r
+   inst_ALUOut_ff_EM/temp_reg[14] CLK   0.3105      1.2925              d f
+   inst_ALUOut_ff_EM/temp_reg[14] Q CLK  0.0241  -1.309e-01               r
+   inst_ALUOut_ff_EM/temp_reg[14] Q CLK  0.0241  -8.264e-02               f
+   inst_ALUOut_ff_EM/temp_reg[14] QN CLK  0.0241 -2.239e-01               r
+   inst_ALUOut_ff_EM/temp_reg[14] QN CLK  0.0241 -2.293e-01               f
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK' D' Q' QN)             464155.6250  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK' D' Q QN')             493450.4375  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK D' Q' QN)              545617.3750  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK D' Q QN')              590748.2500  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK' D Q QN')              510033.8438  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK D Q' QN)               553680.1875  
+   inst_ALUOut_ff_EM/temp_reg[14] (CLK D Q QN')               424017.0625  
+   inst_ALUOut_ff_EM/temp_reg[14] default                     5139232.5000  
+inst_ALUOut_ff_EM/temp_reg[14]  (Cell Total)        2.9895    8720935.0000
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK Q QN')  0.0030    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK Q QN')  0.0030 2.376e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK Q' QN)  0.0032 8.281e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK Q' QN)  0.0032    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK' Q QN')  0.0030    0.0105       d r
+   inst_ALUOut_ff_EM/temp_reg[5] D (CLK' Q QN')  0.0030 7.995e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[5] D      0.0157   4.027e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[5] D      0.0157      0.0270              d f
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D' Q' QN)  0.0647    0.2205       d r
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D' Q' QN)  0.0647    0.1923       d f
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D Q QN')  0.0603    0.1388        d r
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D Q QN')  0.0603    0.2419        d f
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D' Q QN')  0.0603    0.2053       d r
+   inst_ALUOut_ff_EM/temp_reg[5] CLK (D' Q QN')  0.0603    0.3322       d f
+   inst_ALUOut_ff_EM/temp_reg[5] CLK    0.3146      0.9555              d r
+   inst_ALUOut_ff_EM/temp_reg[5] CLK    0.3146      1.3095              d f
+   inst_ALUOut_ff_EM/temp_reg[5] Q CLK  0.0238   -1.295e-01               r
+   inst_ALUOut_ff_EM/temp_reg[5] Q CLK  0.0238   -8.179e-02               f
+   inst_ALUOut_ff_EM/temp_reg[5] QN CLK  0.0239  -2.215e-01               r
+   inst_ALUOut_ff_EM/temp_reg[5] QN CLK  0.0239  -2.269e-01               f
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK' D' Q' QN)              495549.0312  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK' D' Q QN')              462124.7188  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK D' Q' QN)               582520.5000  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK D' Q QN')               553245.7500  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK' D Q QN')               477655.3750  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK D Q' QN)                591128.6875  
+   inst_ALUOut_ff_EM/temp_reg[5] (CLK D Q QN')                397099.1875  
+   inst_ALUOut_ff_EM/temp_reg[5] default                      5176492.5000  
+inst_ALUOut_ff_EM/temp_reg[5]  (Cell Total)         2.9890    8735815.0000
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK Q QN')  0.0030 2.384e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK Q' QN)  0.0032 8.251e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK Q' QN)  0.0032    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK' Q QN')  0.0030    0.0106      d r
+   inst_ALUOut_ff_EM/temp_reg[16] D (CLK' Q QN')  0.0030 8.025e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[16] D     0.0157   4.024e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[16] D     0.0157      0.0270              d f
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D' Q' QN)  0.0645    0.2197      d r
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D' Q' QN)  0.0645    0.1916      d f
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D Q QN')  0.0606    0.1393       d r
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D Q QN')  0.0606    0.2428       d f
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D' Q QN')  0.0606    0.2061      d r
+   inst_ALUOut_ff_EM/temp_reg[16] CLK (D' Q QN')  0.0606    0.3334      d f
+   inst_ALUOut_ff_EM/temp_reg[16] CLK   0.3144      0.9548              d r
+   inst_ALUOut_ff_EM/temp_reg[16] CLK   0.3144      1.3086              d f
+   inst_ALUOut_ff_EM/temp_reg[16] Q CLK  0.0239  -1.296e-01               r
+   inst_ALUOut_ff_EM/temp_reg[16] Q CLK  0.0239  -8.182e-02               f
+   inst_ALUOut_ff_EM/temp_reg[16] QN CLK  0.0239 -2.218e-01               r
+   inst_ALUOut_ff_EM/temp_reg[16] QN CLK  0.0239 -2.272e-01               f
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK' D' Q' QN)             493767.0312  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK' D' Q QN')             463848.7500  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK D' Q' QN)              580425.7500  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK D' Q QN')              555309.7500  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK' D Q QN')              479437.3438  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK D Q' QN)               589002.9375  
+   inst_ALUOut_ff_EM/temp_reg[16] (CLK D Q QN')               398580.6250  
+   inst_ALUOut_ff_EM/temp_reg[16] default                     5174636.5000  
+inst_ALUOut_ff_EM/temp_reg[16]  (Cell Total)        2.9887    8735009.0000
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK Q QN')  0.0030    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK Q QN')  0.0030 2.357e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK Q' QN)  0.0033 8.345e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK Q' QN)  0.0033    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK' Q QN')  0.0030    0.0104       d r
+   inst_ALUOut_ff_EM/temp_reg[6] D (CLK' Q QN')  0.0030 7.932e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[6] D      0.0158   4.033e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[6] D      0.0158      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D' Q' QN)  0.0652    0.2222       d r
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D' Q' QN)  0.0652    0.1938       d f
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D Q QN')  0.0599    0.1377        d r
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D Q QN')  0.0599    0.2400        d f
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D' Q QN')  0.0599    0.2037       d r
+   inst_ALUOut_ff_EM/temp_reg[6] CLK (D' Q QN')  0.0599    0.3295       d f
+   inst_ALUOut_ff_EM/temp_reg[6] CLK    0.3151      0.9569              d r
+   inst_ALUOut_ff_EM/temp_reg[6] CLK    0.3151      1.3114              d f
+   inst_ALUOut_ff_EM/temp_reg[6] Q CLK  0.0239   -1.297e-01               r
+   inst_ALUOut_ff_EM/temp_reg[6] Q CLK  0.0239   -8.187e-02               f
+   inst_ALUOut_ff_EM/temp_reg[6] QN CLK  0.0239  -2.218e-01               r
+   inst_ALUOut_ff_EM/temp_reg[6] QN CLK  0.0239  -2.272e-01               f
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK' D' Q' QN)              499381.1875  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK' D' Q QN')              458438.5000  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK D' Q' QN)               587025.2500  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK D' Q QN')               548832.6875  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK' D Q QN')               473845.2812  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK D Q' QN)                595699.9375  
+   inst_ALUOut_ff_EM/temp_reg[6] (CLK D Q QN')                393931.6562  
+   inst_ALUOut_ff_EM/temp_reg[6] default                      5180381.0000  
+inst_ALUOut_ff_EM/temp_reg[6]  (Cell Total)         2.9871    8737536.0000
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK Q QN')  0.0030    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK Q QN')  0.0030 2.354e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK Q' QN)  0.0033 8.355e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK Q' QN)  0.0033    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK' Q QN')  0.0030    0.0104       d r
+   inst_ALUOut_ff_EM/temp_reg[0] D (CLK' Q QN')  0.0030 7.921e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[0] D      0.0158   4.034e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[0] D      0.0158      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D' Q' QN)  0.0653    0.2225       d r
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D' Q' QN)  0.0653    0.1940       d f
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D Q QN')  0.0598    0.1375        d r
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D Q QN')  0.0598    0.2397        d f
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D' Q QN')  0.0598    0.2034       d r
+   inst_ALUOut_ff_EM/temp_reg[0] CLK (D' Q QN')  0.0598    0.3291       d f
+   inst_ALUOut_ff_EM/temp_reg[0] CLK    0.3152      0.9571              d r
+   inst_ALUOut_ff_EM/temp_reg[0] CLK    0.3152      1.3117              d f
+   inst_ALUOut_ff_EM/temp_reg[0] Q CLK  0.0239   -1.299e-01               r
+   inst_ALUOut_ff_EM/temp_reg[0] Q CLK  0.0239   -8.203e-02               f
+   inst_ALUOut_ff_EM/temp_reg[0] QN CLK  0.0239  -2.222e-01               r
+   inst_ALUOut_ff_EM/temp_reg[0] QN CLK  0.0239  -2.276e-01               f
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK' D' Q' QN)              499998.1250  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK' D' Q QN')              457847.7812  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK D' Q' QN)               587750.4375  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK D' Q QN')               548125.5000  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK' D Q QN')               473234.7188  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK D Q' QN)                596435.8750  
+   inst_ALUOut_ff_EM/temp_reg[0] (CLK D Q QN')                393424.0625  
+   inst_ALUOut_ff_EM/temp_reg[0] default                      5180993.5000  
+inst_ALUOut_ff_EM/temp_reg[0]  (Cell Total)         2.9859    8737810.0000
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK Q QN')  0.0033    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK Q QN')  0.0033 2.572e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK Q' QN)  0.0030 7.647e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK Q' QN)  0.0030    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK' Q QN')  0.0033    0.0114      d r
+   inst_ALUOut_ff_EM/temp_reg[15] D (CLK' Q QN')  0.0033 8.655e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[15] D     0.0155   3.963e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[15] D     0.0155      0.0266              d f
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D' Q' QN)  0.0597    0.2036      d r
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D' Q' QN)  0.0597    0.1775      d f
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D Q QN')  0.0653    0.1503       d r
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D Q QN')  0.0653    0.2619       d f
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D' Q QN')  0.0653    0.2222      d r
+   inst_ALUOut_ff_EM/temp_reg[15] CLK (D' Q QN')  0.0653    0.3596      d f
+   inst_ALUOut_ff_EM/temp_reg[15] CLK   0.3096      0.9403              d r
+   inst_ALUOut_ff_EM/temp_reg[15] CLK   0.3096      1.2886              d f
+   inst_ALUOut_ff_EM/temp_reg[15] Q CLK  0.0243  -1.321e-01               r
+   inst_ALUOut_ff_EM/temp_reg[15] Q CLK  0.0243  -8.344e-02               f
+   inst_ALUOut_ff_EM/temp_reg[15] QN CLK  0.0243 -2.259e-01               r
+   inst_ALUOut_ff_EM/temp_reg[15] QN CLK  0.0243 -2.314e-01               f
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK' D' Q' QN)             457600.1250  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK' D' Q QN')             500257.0000  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK D' Q' QN)              537911.3750  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK D' Q QN')              598896.9375  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK' D Q QN')              517069.1875  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK D Q' QN)               545860.3125  
+   inst_ALUOut_ff_EM/temp_reg[15] (CLK D Q QN')               429865.9062  
+   inst_ALUOut_ff_EM/temp_reg[15] default                     5130182.5000  
+inst_ALUOut_ff_EM/temp_reg[15]  (Cell Total)        2.9851    8717643.0000
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK Q QN')  0.0030 2.358e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK Q' QN)  0.0033 8.339e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK Q' QN)  0.0033    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK' Q QN')  0.0030    0.0104      d r
+   inst_ALUOut_ff_EM/temp_reg[30] D (CLK' Q QN')  0.0030 7.937e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[30] D     0.0158   4.032e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[30] D     0.0158      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D' Q' QN)  0.0652    0.2220      d r
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D' Q' QN)  0.0652    0.1936      d f
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D Q QN')  0.0599    0.1378       d r
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D Q QN')  0.0599    0.2402       d f
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D' Q QN')  0.0599    0.2038      d r
+   inst_ALUOut_ff_EM/temp_reg[30] CLK (D' Q QN')  0.0599    0.3298      d f
+   inst_ALUOut_ff_EM/temp_reg[30] CLK   0.3150      0.9568              d r
+   inst_ALUOut_ff_EM/temp_reg[30] CLK   0.3150      1.3112              d f
+   inst_ALUOut_ff_EM/temp_reg[30] Q CLK  0.0240  -1.306e-01               r
+   inst_ALUOut_ff_EM/temp_reg[30] Q CLK  0.0240  -8.247e-02               f
+   inst_ALUOut_ff_EM/temp_reg[30] QN CLK  0.0240 -2.231e-01               r
+   inst_ALUOut_ff_EM/temp_reg[30] QN CLK  0.0240 -2.285e-01               f
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK' D' Q' QN)             499023.1562  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK' D' Q QN')             458781.6875  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK D' Q' QN)              586604.3750  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK D' Q QN')              549243.5625  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK' D Q QN')              474200.0000  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK D Q' QN)               595272.8750  
+   inst_ALUOut_ff_EM/temp_reg[30] (CLK D Q QN')               394226.5625  
+   inst_ALUOut_ff_EM/temp_reg[30] default                     5180023.0000  
+inst_ALUOut_ff_EM/temp_reg[30]  (Cell Total)        2.9832    8737375.0000
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK Q QN')  0.0032 2.490e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK Q' QN)  0.0031 7.905e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK' Q QN')  0.0032    0.0110      d r
+   inst_ALUOut_ff_EM/temp_reg[21] D (CLK' Q QN')  0.0032 8.380e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[21] D     0.0156   3.990e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[21] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D' Q' QN)  0.0618    0.2105      d r
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D' Q' QN)  0.0618    0.1835      d f
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D Q QN')  0.0632    0.1455       d r
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D Q QN')  0.0632    0.2536       d f
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D' Q QN')  0.0632    0.2152      d r
+   inst_ALUOut_ff_EM/temp_reg[21] CLK (D' Q QN')  0.0632    0.3481      d f
+   inst_ALUOut_ff_EM/temp_reg[21] CLK   0.3118      0.9468              d r
+   inst_ALUOut_ff_EM/temp_reg[21] CLK   0.3118      1.2975              d f
+   inst_ALUOut_ff_EM/temp_reg[21] Q CLK  0.0243  -1.318e-01               r
+   inst_ALUOut_ff_EM/temp_reg[21] Q CLK  0.0243  -8.325e-02               f
+   inst_ALUOut_ff_EM/temp_reg[21] QN CLK  0.0243 -2.255e-01               r
+   inst_ALUOut_ff_EM/temp_reg[21] QN CLK  0.0243 -2.309e-01               f
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK' D' Q' QN)             473039.6562  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK' D' Q QN')             484375.9375  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK D' Q' QN)              556060.6250  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK D' Q QN')              579884.4375  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK' D Q QN')              500654.3750  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK D Q' QN)               564277.7500  
+   inst_ALUOut_ff_EM/temp_reg[21] (CLK D Q QN')               416219.4375  
+   inst_ALUOut_ff_EM/temp_reg[21] default                     5150781.0000  
+inst_ALUOut_ff_EM/temp_reg[21]  (Cell Total)        2.9826    8725293.0000
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK Q QN')  0.0031    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK Q QN')  0.0031 2.470e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK Q' QN)  0.0031 7.969e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK Q' QN)  0.0031    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK' Q QN')  0.0031    0.0109       d r
+   inst_ALUOut_ff_EM/temp_reg[2] D (CLK' Q QN')  0.0031 8.313e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[2] D      0.0156   3.997e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[2] D      0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D' Q' QN)  0.0623    0.2122       d r
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D' Q' QN)  0.0623    0.1850       d f
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D Q QN')  0.0627    0.1443        d r
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D Q QN')  0.0627    0.2515        d f
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D' Q QN')  0.0627    0.2135       d r
+   inst_ALUOut_ff_EM/temp_reg[2] CLK (D' Q QN')  0.0627    0.3454       d f
+   inst_ALUOut_ff_EM/temp_reg[2] CLK    0.3123      0.9483              d r
+   inst_ALUOut_ff_EM/temp_reg[2] CLK    0.3123      1.2996              d f
+   inst_ALUOut_ff_EM/temp_reg[2] Q CLK  0.0243   -1.318e-01               r
+   inst_ALUOut_ff_EM/temp_reg[2] Q CLK  0.0243   -8.320e-02               f
+   inst_ALUOut_ff_EM/temp_reg[2] QN CLK  0.0243  -2.254e-01               r
+   inst_ALUOut_ff_EM/temp_reg[2] QN CLK  0.0243  -2.309e-01               f
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK' D' Q' QN)              476900.6875  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK' D' Q QN')              480484.5938  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK D' Q' QN)               560599.3125  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK D' Q QN')               575225.8125  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK' D Q QN')               496632.2812  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK D Q' QN)                568883.5000  
+   inst_ALUOut_ff_EM/temp_reg[2] (CLK D Q QN')                412875.6562  
+   inst_ALUOut_ff_EM/temp_reg[2] default                      5155547.5000  
+inst_ALUOut_ff_EM/temp_reg[2]  (Cell Total)         2.9819    8727150.0000
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK Q QN')  0.0030    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK Q QN')  0.0030 2.341e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK Q' QN)  0.0033 8.398e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK Q' QN)  0.0033    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK' Q QN')  0.0030    0.0104      d r
+   inst_ALUOut_ff_EM/temp_reg[29] D (CLK' Q QN')  0.0030 7.879e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[29] D     0.0158   4.038e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[29] D     0.0158      0.0271              d f
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D' Q' QN)  0.0656    0.2236      d r
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D' Q' QN)  0.0656    0.1950      d f
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D Q QN')  0.0595    0.1368       d r
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D Q QN')  0.0595    0.2384       d f
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D' Q QN')  0.0595    0.2023      d r
+   inst_ALUOut_ff_EM/temp_reg[29] CLK (D' Q QN')  0.0595    0.3273      d f
+   inst_ALUOut_ff_EM/temp_reg[29] CLK   0.3155      0.9580              d r
+   inst_ALUOut_ff_EM/temp_reg[29] CLK   0.3155      1.3130              d f
+   inst_ALUOut_ff_EM/temp_reg[29] Q CLK  0.0241  -1.308e-01               r
+   inst_ALUOut_ff_EM/temp_reg[29] Q CLK  0.0241  -8.262e-02               f
+   inst_ALUOut_ff_EM/temp_reg[29] QN CLK  0.0241 -2.238e-01               r
+   inst_ALUOut_ff_EM/temp_reg[29] QN CLK  0.0241 -2.292e-01               f
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK' D' Q' QN)             502549.4062  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK' D' Q QN')             455412.7500  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK D' Q' QN)              590749.5000  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK D' Q QN')              545210.3125  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK' D Q QN')              470717.8438  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK D Q' QN)               599479.2500  
+   inst_ALUOut_ff_EM/temp_reg[29] (CLK D Q QN')               391331.6562  
+   inst_ALUOut_ff_EM/temp_reg[29] default                     5183492.0000  
+inst_ALUOut_ff_EM/temp_reg[29]  (Cell Total)        2.9805    8738943.0000
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK Q QN')  0.0031    0.0000        d r
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK Q QN')  0.0031 2.439e-03        d f
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK Q' QN)  0.0032 8.070e-04        d r
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK Q' QN)  0.0032    0.0000        d f
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK' Q QN')  0.0031    0.0108       d r
+   inst_ALUOut_ff_EM/temp_reg[1] D (CLK' Q QN')  0.0031 8.209e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[1] D      0.0157   4.007e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[1] D      0.0157      0.0269              d f
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D' Q' QN)  0.0631    0.2149       d r
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D' Q' QN)  0.0631    0.1874       d f
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D Q QN')  0.0619    0.1425        d r
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D Q QN')  0.0619    0.2484        d f
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D' Q QN')  0.0619    0.2108       d r
+   inst_ALUOut_ff_EM/temp_reg[1] CLK (D' Q QN')  0.0619    0.3410       d f
+   inst_ALUOut_ff_EM/temp_reg[1] CLK    0.3130      0.9507              d r
+   inst_ALUOut_ff_EM/temp_reg[1] CLK    0.3130      1.3029              d f
+   inst_ALUOut_ff_EM/temp_reg[1] Q CLK  0.0243   -1.322e-01               r
+   inst_ALUOut_ff_EM/temp_reg[1] Q CLK  0.0243   -8.348e-02               f
+   inst_ALUOut_ff_EM/temp_reg[1] QN CLK  0.0244  -2.261e-01               r
+   inst_ALUOut_ff_EM/temp_reg[1] QN CLK  0.0244  -2.316e-01               f
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK' D' Q' QN)              482927.0000  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK' D' Q QN')              474473.6250  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK D' Q' QN)               567683.2500  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK D' Q QN')               568029.6250  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK' D Q QN')               490419.3125  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK D Q' QN)                576072.1250  
+   inst_ALUOut_ff_EM/temp_reg[1] (CLK D Q QN')                407710.5000  
+   inst_ALUOut_ff_EM/temp_reg[1] default                      5162689.0000  
+inst_ALUOut_ff_EM/temp_reg[1]  (Cell Total)         2.9784    8730004.0000
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK Q QN')  0.0032    0.0000       d r
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK Q QN')  0.0032 2.483e-03       d f
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK Q' QN)  0.0031 7.927e-04       d r
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK Q' QN)  0.0031    0.0000       d f
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK' Q QN')  0.0032    0.0110      d r
+   inst_ALUOut_ff_EM/temp_reg[24] D (CLK' Q QN')  0.0032 8.357e-03      d f
+   inst_ALUOut_ff_EM/temp_reg[24] D     0.0156   3.992e-03              d r
+   inst_ALUOut_ff_EM/temp_reg[24] D     0.0156      0.0268              d f
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D' Q' QN)  0.0619    0.2111      d r
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D' Q' QN)  0.0619    0.1841      d f
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D Q QN')  0.0631    0.1451       d r
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D Q QN')  0.0631    0.2529       d f
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D' Q QN')  0.0631    0.2146      d r
+   inst_ALUOut_ff_EM/temp_reg[24] CLK (D' Q QN')  0.0631    0.3472      d f
+   inst_ALUOut_ff_EM/temp_reg[24] CLK   0.3119      0.9473              d r
+   inst_ALUOut_ff_EM/temp_reg[24] CLK   0.3119      1.2983              d f
+   inst_ALUOut_ff_EM/temp_reg[24] Q CLK  0.0244  -1.327e-01               r
+   inst_ALUOut_ff_EM/temp_reg[24] Q CLK  0.0244  -8.381e-02               f
+   inst_ALUOut_ff_EM/temp_reg[24] QN CLK  0.0244 -2.270e-01               r
+   inst_ALUOut_ff_EM/temp_reg[24] QN CLK  0.0244 -2.325e-01               f
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK' D' Q' QN)             474376.6250  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK' D' Q QN')             483024.9375  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK D' Q' QN)              557632.2500  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK D' Q QN')              578267.0625  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK' D Q QN')              499258.0000  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK D Q' QN)               565872.6250  
+   inst_ALUOut_ff_EM/temp_reg[24] (CLK D Q QN')               415058.5312  
+   inst_ALUOut_ff_EM/temp_reg[24] default                     5152449.0000  
+inst_ALUOut_ff_EM/temp_reg[24]  (Cell Total)        2.9778    8725939.0000
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK Q QN')  0.0030    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK Q QN')  0.0030 2.656e-03         f
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK Q' QN)  0.0028 9.450e-04         r
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK Q' QN)  0.0028    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK' Q QN')  0.0030    0.0106        r
+   inst_ALUOut_ff_MW/temp_reg[18] D (CLK' Q QN')  0.0030 8.523e-03        f
+   inst_ALUOut_ff_MW/temp_reg[18] D     0.0144   4.817e-03                r
+   inst_ALUOut_ff_MW/temp_reg[18] D     0.0144      0.0272                f
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D' Q' QN)  0.0603    0.2054      d r
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D' Q' QN)  0.0603    0.1791      d f
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D Q QN')  0.0648    0.1490       d r
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D Q QN')  0.0648    0.2597       d f
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D' Q QN')  0.0633    0.2152      d r
+   inst_ALUOut_ff_MW/temp_reg[18] CLK (D' Q QN')  0.0633    0.3482      d f
+   inst_ALUOut_ff_MW/temp_reg[18] CLK   0.3117      0.9466              d r
+   inst_ALUOut_ff_MW/temp_reg[18] CLK   0.3117      1.2973              d f
+   inst_ALUOut_ff_MW/temp_reg[18] Q CLK  0.0232  -2.194e-01               r
+   inst_ALUOut_ff_MW/temp_reg[18] Q CLK  0.0232  -2.126e-01               f
+   inst_ALUOut_ff_MW/temp_reg[18] QN CLK  0.0233 -2.159e-01               r
+   inst_ALUOut_ff_MW/temp_reg[18] QN CLK  0.0233 -2.211e-01               f
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK' D' Q' QN)             461735.1250  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK' D' Q QN')             484446.9062  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK D' Q' QN)              542772.1250  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK D' Q QN')              579969.4375  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK' D Q QN')              512727.9375  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK D Q' QN)               563992.8125  
+   inst_ALUOut_ff_MW/temp_reg[18] (CLK D Q QN')               426256.7812  
+   inst_ALUOut_ff_MW/temp_reg[18] default                     5149995.0000  
+inst_ALUOut_ff_MW/temp_reg[18]  (Cell Total)        2.7863    8721896.0000
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK Q QN')  0.0029 2.556e-03         f
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK Q' QN)  0.0030 9.861e-04         r
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK' Q QN')  0.0029    0.0102        r
+   inst_ALUOut_ff_MW/temp_reg[11] D (CLK' Q QN')  0.0029 8.201e-03        f
+   inst_ALUOut_ff_MW/temp_reg[11] D     0.0146   4.866e-03                r
+   inst_ALUOut_ff_MW/temp_reg[11] D     0.0146      0.0274                f
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D' Q' QN)  0.0641    0.2183      d r
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D' Q' QN)  0.0641    0.1904      d f
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D Q QN')  0.0610    0.1402       d r
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D Q QN')  0.0610    0.2444       d f
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D' Q QN')  0.0620    0.2109      d r
+   inst_ALUOut_ff_MW/temp_reg[11] CLK (D' Q QN')  0.0620    0.3412      d f
+   inst_ALUOut_ff_MW/temp_reg[11] CLK   0.3130      0.9505              d r
+   inst_ALUOut_ff_MW/temp_reg[11] CLK   0.3130      1.3026              d f
+   inst_ALUOut_ff_MW/temp_reg[11] Q CLK  0.0233  -2.198e-01               r
+   inst_ALUOut_ff_MW/temp_reg[11] Q CLK  0.0233  -2.130e-01               f
+   inst_ALUOut_ff_MW/temp_reg[11] QN CLK  0.0233 -2.160e-01               r
+   inst_ALUOut_ff_MW/temp_reg[11] QN CLK  0.0233 -2.213e-01               f
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK' D' Q' QN)             490760.1875  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK' D' Q QN')             474771.2812  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK D' Q' QN)              576891.1875  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK D' Q QN')              568385.9375  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK' D Q QN')              482509.7500  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK D Q' QN)               575613.4375  
+   inst_ALUOut_ff_MW/temp_reg[11] (CLK D Q QN')               401134.8750  
+   inst_ALUOut_ff_MW/temp_reg[11] default                     5162004.0000  
+inst_ALUOut_ff_MW/temp_reg[11]  (Cell Total)        2.7828    8732070.0000
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK Q QN')  0.0029    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK Q QN')  0.0029 2.566e-03          f
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK Q' QN)  0.0030 9.870e-04          r
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK Q' QN)  0.0030    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK' Q QN')  0.0029    0.0102         r
+   inst_ALUOut_ff_MW/temp_reg[3] D (CLK' Q QN')  0.0029 8.234e-03         f
+   inst_ALUOut_ff_MW/temp_reg[3] D      0.0146   4.876e-03                r
+   inst_ALUOut_ff_MW/temp_reg[3] D      0.0146      0.0275                f
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D' Q' QN)  0.0639    0.2178       d r
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D' Q' QN)  0.0639    0.1900       d f
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D Q QN')  0.0611    0.1405        d r
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D Q QN')  0.0611    0.2449        d f
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D' Q QN')  0.0620    0.2111       d r
+   inst_ALUOut_ff_MW/temp_reg[3] CLK (D' Q QN')  0.0620    0.3415       d f
+   inst_ALUOut_ff_MW/temp_reg[3] CLK    0.3129      0.9504              d r
+   inst_ALUOut_ff_MW/temp_reg[3] CLK    0.3129      1.3025              d f
+   inst_ALUOut_ff_MW/temp_reg[3] Q CLK  0.0233   -2.203e-01               r
+   inst_ALUOut_ff_MW/temp_reg[3] Q CLK  0.0233   -2.135e-01               f
+   inst_ALUOut_ff_MW/temp_reg[3] QN CLK  0.0233  -2.167e-01               r
+   inst_ALUOut_ff_MW/temp_reg[3] QN CLK  0.0233  -2.220e-01               f
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK' D' Q' QN)              489632.4062  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK' D' Q QN')              475147.2812  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK D' Q' QN)               575565.5000  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK D' Q QN')               568836.0625  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK' D Q QN')               483639.0938  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK D Q' QN)                575179.2500  
+   inst_ALUOut_ff_MW/temp_reg[3] (CLK D Q QN')                402073.7500  
+   inst_ALUOut_ff_MW/temp_reg[3] default                      5161624.0000  
+inst_ALUOut_ff_MW/temp_reg[3]  (Cell Total)         2.7806    8731698.0000
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK Q QN')  0.0030    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK Q QN')  0.0030 2.645e-03         f
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK Q' QN)  0.0029 9.748e-04         r
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK' Q QN')  0.0030    0.0106        r
+   inst_ALUOut_ff_MW/temp_reg[12] D (CLK' Q QN')  0.0030 8.487e-03        f
+   inst_ALUOut_ff_MW/temp_reg[12] D     0.0147   4.899e-03                r
+   inst_ALUOut_ff_MW/temp_reg[12] D     0.0147      0.0276                f
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D' Q' QN)  0.0619    0.2110      d r
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D' Q' QN)  0.0619    0.1840      d f
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D Q QN')  0.0631    0.1451       d r
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D Q QN')  0.0631    0.2529       d f
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D' Q QN')  0.0627    0.2134      d r
+   inst_ALUOut_ff_MW/temp_reg[12] CLK (D' Q QN')  0.0627    0.3452      d f
+   inst_ALUOut_ff_MW/temp_reg[12] CLK   0.3123      0.9484              d r
+   inst_ALUOut_ff_MW/temp_reg[12] CLK   0.3123      1.2997              d f
+   inst_ALUOut_ff_MW/temp_reg[12] Q CLK  0.0235  -2.223e-01               r
+   inst_ALUOut_ff_MW/temp_reg[12] Q CLK  0.0235  -2.154e-01               f
+   inst_ALUOut_ff_MW/temp_reg[12] QN CLK  0.0235 -2.186e-01               r
+   inst_ALUOut_ff_MW/temp_reg[12] QN CLK  0.0235 -2.239e-01               f
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK' D' Q' QN)             474224.9688  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK' D' Q QN')             480283.8438  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK D' Q' QN)              557453.9375  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK D' Q QN')              574985.5000  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK' D Q QN')              499423.4375  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK D Q' QN)               569108.6875  
+   inst_ALUOut_ff_MW/temp_reg[12] (CLK D Q QN')               415196.0938  
+   inst_ALUOut_ff_MW/temp_reg[12] default                     5155744.0000  
+inst_ALUOut_ff_MW/temp_reg[12]  (Cell Total)        2.7748    8726421.0000
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK Q QN')  0.0028    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK Q QN')  0.0028 2.489e-03         f
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK Q' QN)  0.0031 1.028e-03         r
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK Q' QN)  0.0031    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK' Q QN')  0.0028 9.932e-03        r
+   inst_ALUOut_ff_MW/temp_reg[31] D (CLK' Q QN')  0.0028 7.986e-03        f
+   inst_ALUOut_ff_MW/temp_reg[31] D     0.0148   4.936e-03                r
+   inst_ALUOut_ff_MW/temp_reg[31] D     0.0148      0.0278                f
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D' Q' QN)  0.0674    0.2295      d r
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D' Q' QN)  0.0674    0.2002      d f
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D Q QN')  0.0579    0.1332       d r
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D Q QN')  0.0579    0.2321       d f
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D' Q QN')  0.0609    0.2072      d r
+   inst_ALUOut_ff_MW/temp_reg[31] CLK (D' Q QN')  0.0609    0.3352      d f
+   inst_ALUOut_ff_MW/temp_reg[31] CLK   0.3139      0.9532              d r
+   inst_ALUOut_ff_MW/temp_reg[31] CLK   0.3139      1.3063              d f
+   inst_ALUOut_ff_MW/temp_reg[31] Q CLK  0.0235  -2.215e-01               r
+   inst_ALUOut_ff_MW/temp_reg[31] Q CLK  0.0235  -2.146e-01               f
+   inst_ALUOut_ff_MW/temp_reg[31] QN CLK  0.0234 -2.174e-01               r
+   inst_ALUOut_ff_MW/temp_reg[31] QN CLK  0.0234 -2.227e-01               f
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK' D' Q' QN)             515893.0000  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK' D' Q QN')             466401.9062  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK D' Q' QN)              606434.9375  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK D' Q QN')              558366.3125  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK' D Q QN')              458220.6562  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK D Q' QN)               584943.5000  
+   inst_ALUOut_ff_MW/temp_reg[31] (CLK D Q QN')               380942.1250  
+   inst_ALUOut_ff_MW/temp_reg[31] default                     5168768.5000  
+inst_ALUOut_ff_MW/temp_reg[31]  (Cell Total)        2.7747    8739971.0000
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK Q QN')  0.0029 2.597e-03         f
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK Q' QN)  0.0030 9.933e-04         r
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK' Q QN')  0.0029    0.0104        r
+   inst_ALUOut_ff_MW/temp_reg[17] D (CLK' Q QN')  0.0029 8.332e-03        f
+   inst_ALUOut_ff_MW/temp_reg[17] D     0.0147   4.918e-03                r
+   inst_ALUOut_ff_MW/temp_reg[17] D     0.0147      0.0277                f
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D' Q' QN)  0.0637    0.2169      d r
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D' Q' QN)  0.0637    0.1892      d f
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D Q QN')  0.0613    0.1411       d r
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D Q QN')  0.0613    0.2460       d f
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D' Q QN')  0.0621    0.2114      d r
+   inst_ALUOut_ff_MW/temp_reg[17] CLK (D' Q QN')  0.0621    0.3420      d f
+   inst_ALUOut_ff_MW/temp_reg[17] CLK   0.3129      0.9501              d r
+   inst_ALUOut_ff_MW/temp_reg[17] CLK   0.3129      1.3021              d f
+   inst_ALUOut_ff_MW/temp_reg[17] Q CLK  0.0235  -2.223e-01               r
+   inst_ALUOut_ff_MW/temp_reg[17] Q CLK  0.0235  -2.154e-01               f
+   inst_ALUOut_ff_MW/temp_reg[17] QN CLK  0.0235 -2.184e-01               r
+   inst_ALUOut_ff_MW/temp_reg[17] QN CLK  0.0235 -2.237e-01               f
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK' D' Q' QN)             487618.0938  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK' D' Q QN')             475818.6875  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK D' Q' QN)              573197.6875  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK D' Q QN')              569639.8750  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK' D Q QN')              485664.5625  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK D Q' QN)               574400.2500  
+   inst_ALUOut_ff_MW/temp_reg[17] (CLK D Q QN')               403757.6250  
+   inst_ALUOut_ff_MW/temp_reg[17] default                     5160928.5000  
+inst_ALUOut_ff_MW/temp_reg[17]  (Cell Total)        2.7739    8731025.0000
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK Q QN')  0.0029 2.633e-03         f
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK Q' QN)  0.0030 9.849e-04         r
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK' Q QN')  0.0029    0.0105        r
+   inst_ALUOut_ff_MW/temp_reg[25] D (CLK' Q QN')  0.0029 8.451e-03        f
+   inst_ALUOut_ff_MW/temp_reg[25] D     0.0148   4.921e-03                r
+   inst_ALUOut_ff_MW/temp_reg[25] D     0.0148      0.0277                f
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D' Q' QN)  0.0626    0.2133      d r
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D' Q' QN)  0.0626    0.1860      d f
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D Q QN')  0.0624    0.1435       d r
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D Q QN')  0.0624    0.2502       d f
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D' Q QN')  0.0625    0.2126      d r
+   inst_ALUOut_ff_MW/temp_reg[25] CLK (D' Q QN')  0.0625    0.3440      d f
+   inst_ALUOut_ff_MW/temp_reg[25] CLK   0.3125      0.9491              d r
+   inst_ALUOut_ff_MW/temp_reg[25] CLK   0.3125      1.3007              d f
+   inst_ALUOut_ff_MW/temp_reg[25] Q CLK  0.0236  -2.230e-01               r
+   inst_ALUOut_ff_MW/temp_reg[25] Q CLK  0.0236  -2.160e-01               f
+   inst_ALUOut_ff_MW/temp_reg[25] QN CLK  0.0236 -2.191e-01               r
+   inst_ALUOut_ff_MW/temp_reg[25] QN CLK  0.0236 -2.245e-01               f
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK' D' Q' QN)             479470.6250  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK' D' Q QN')             478535.0000  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK D' Q' QN)              563620.2500  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK D' Q QN')              572891.8125  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK' D Q QN')              493973.5000  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK D Q' QN)               571204.8125  
+   inst_ALUOut_ff_MW/temp_reg[25] (CLK D Q QN')               410665.2812  
+   inst_ALUOut_ff_MW/temp_reg[25] default                     5157892.5000  
+inst_ALUOut_ff_MW/temp_reg[25]  (Cell Total)        2.7721    8728254.0000
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK Q QN')  0.0031    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK Q QN')  0.0031 2.780e-03         f
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK Q' QN)  0.0028 9.389e-04         r
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK Q' QN)  0.0028    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK' Q QN')  0.0031    0.0111        r
+   inst_ALUOut_ff_MW/temp_reg[22] D (CLK' Q QN')  0.0031 8.919e-03        f
+   inst_ALUOut_ff_MW/temp_reg[22] D     0.0147   4.887e-03                r
+   inst_ALUOut_ff_MW/temp_reg[22] D     0.0147      0.0276                f
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D' Q' QN)  0.0579    0.1974      d r
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D' Q' QN)  0.0579    0.1722      d f
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D Q QN')  0.0673    0.1548       d r
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D Q QN')  0.0673    0.2698       d f
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D' Q QN')  0.0640    0.2179      d r
+   inst_ALUOut_ff_MW/temp_reg[22] CLK (D' Q QN')  0.0640    0.3525      d f
+   inst_ALUOut_ff_MW/temp_reg[22] CLK   0.3107      0.9437              d r
+   inst_ALUOut_ff_MW/temp_reg[22] CLK   0.3107      1.2933              d f
+   inst_ALUOut_ff_MW/temp_reg[22] Q CLK  0.0237  -2.238e-01               r
+   inst_ALUOut_ff_MW/temp_reg[22] Q CLK  0.0237  -2.168e-01               f
+   inst_ALUOut_ff_MW/temp_reg[22] QN CLK  0.0237 -2.200e-01               r
+   inst_ALUOut_ff_MW/temp_reg[22] QN CLK  0.0237 -2.253e-01               f
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK' D' Q' QN)             443775.5625  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK' D' Q QN')             490426.0625  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK D' Q' QN)              521660.5312  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK D' Q QN')              587127.5625  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK' D Q QN')              532712.1875  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK D Q' QN)               556317.0625  
+   inst_ALUOut_ff_MW/temp_reg[22] (CLK D Q QN')               442870.7188  
+   inst_ALUOut_ff_MW/temp_reg[22] default                     5140090.0000  
+inst_ALUOut_ff_MW/temp_reg[22]  (Cell Total)        2.7719    8714979.0000
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK Q QN')  0.0030    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK Q QN')  0.0030 2.650e-03         f
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK Q' QN)  0.0029 9.826e-04         r
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK' Q QN')  0.0030    0.0106        r
+   inst_ALUOut_ff_MW/temp_reg[28] D (CLK' Q QN')  0.0030 8.504e-03        f
+   inst_ALUOut_ff_MW/temp_reg[28] D     0.0148   4.926e-03                r
+   inst_ALUOut_ff_MW/temp_reg[28] D     0.0148      0.0278                f
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D' Q' QN)  0.0622    0.2119      d r
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D' Q' QN)  0.0622    0.1848      d f
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D Q QN')  0.0628    0.1445       d r
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D Q QN')  0.0628    0.2518       d f
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D' Q QN')  0.0626    0.2131      d r
+   inst_ALUOut_ff_MW/temp_reg[28] CLK (D' Q QN')  0.0626    0.3447      d f
+   inst_ALUOut_ff_MW/temp_reg[28] CLK   0.3124      0.9487              d r
+   inst_ALUOut_ff_MW/temp_reg[28] CLK   0.3124      1.3001              d f
+   inst_ALUOut_ff_MW/temp_reg[28] Q CLK  0.0237  -2.234e-01               r
+   inst_ALUOut_ff_MW/temp_reg[28] Q CLK  0.0237  -2.165e-01               f
+   inst_ALUOut_ff_MW/temp_reg[28] QN CLK  0.0237 -2.196e-01               r
+   inst_ALUOut_ff_MW/temp_reg[28] QN CLK  0.0237 -2.249e-01               f
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK' D' Q' QN)             476347.7188  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK' D' Q QN')             479576.1250  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK D' Q' QN)              559949.2500  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK D' Q QN')              574138.1875  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK' D Q QN')              497208.2812  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK D Q' QN)               569960.6250  
+   inst_ALUOut_ff_MW/temp_reg[28] (CLK D Q QN')               413354.5312  
+   inst_ALUOut_ff_MW/temp_reg[28] default                     5156632.0000  
+inst_ALUOut_ff_MW/temp_reg[28]  (Cell Total)        2.7707    8727167.0000
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK Q QN')  0.0029 2.629e-03         f
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK Q' QN)  0.0030 9.894e-04         r
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK' Q QN')  0.0029    0.0105        r
+   inst_ALUOut_ff_MW/temp_reg[13] D (CLK' Q QN')  0.0029 8.438e-03        f
+   inst_ALUOut_ff_MW/temp_reg[13] D     0.0148   4.931e-03                r
+   inst_ALUOut_ff_MW/temp_reg[13] D     0.0148      0.0278                f
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D' Q' QN)  0.0629    0.2143      d r
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D' Q' QN)  0.0629    0.1869      d f
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D Q QN')  0.0621    0.1429       d r
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D Q QN')  0.0621    0.2490       d f
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D' Q QN')  0.0624    0.2123      d r
+   inst_ALUOut_ff_MW/temp_reg[13] CLK (D' Q QN')  0.0624    0.3434      d f
+   inst_ALUOut_ff_MW/temp_reg[13] CLK   0.3126      0.9494              d r
+   inst_ALUOut_ff_MW/temp_reg[13] CLK   0.3126      1.3011              d f
+   inst_ALUOut_ff_MW/temp_reg[13] Q CLK  0.0236  -2.233e-01               r
+   inst_ALUOut_ff_MW/temp_reg[13] Q CLK  0.0236  -2.164e-01               f
+   inst_ALUOut_ff_MW/temp_reg[13] QN CLK  0.0237 -2.198e-01               r
+   inst_ALUOut_ff_MW/temp_reg[13] QN CLK  0.0237 -2.251e-01               f
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK' D' Q' QN)             481638.0938  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK' D' Q QN')             477812.2500  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK D' Q' QN)              566168.1250  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK D' Q QN')              572026.5000  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK' D Q QN')              491744.5938  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK D Q' QN)               572062.0000  
+   inst_ALUOut_ff_MW/temp_reg[13] (CLK D Q QN')               408812.2812  
+   inst_ALUOut_ff_MW/temp_reg[13] default                     5158735.5000  
+inst_ALUOut_ff_MW/temp_reg[13]  (Cell Total)        2.7700    8728999.0000
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK Q QN')  0.0030    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK Q QN')  0.0030 2.648e-03          f
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK Q' QN)  0.0030 9.861e-04          r
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK Q' QN)  0.0030    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK' Q QN')  0.0030    0.0106         r
+   inst_ALUOut_ff_MW/temp_reg[8] D (CLK' Q QN')  0.0030 8.499e-03         f
+   inst_ALUOut_ff_MW/temp_reg[8] D      0.0148   4.936e-03                r
+   inst_ALUOut_ff_MW/temp_reg[8] D      0.0148      0.0278                f
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D' Q' QN)  0.0624    0.2126       d r
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D' Q' QN)  0.0624    0.1854       d f
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D Q QN')  0.0626    0.1440        d r
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D Q QN')  0.0626    0.2510        d f
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D' Q QN')  0.0625    0.2128       d r
+   inst_ALUOut_ff_MW/temp_reg[8] CLK (D' Q QN')  0.0625    0.3443       d f
+   inst_ALUOut_ff_MW/temp_reg[8] CLK    0.3125      0.9489              d r
+   inst_ALUOut_ff_MW/temp_reg[8] CLK    0.3125      1.3004              d f
+   inst_ALUOut_ff_MW/temp_reg[8] Q CLK  0.0237   -2.237e-01               r
+   inst_ALUOut_ff_MW/temp_reg[8] Q CLK  0.0237   -2.168e-01               f
+   inst_ALUOut_ff_MW/temp_reg[8] QN CLK  0.0237  -2.197e-01               r
+   inst_ALUOut_ff_MW/temp_reg[8] QN CLK  0.0237  -2.250e-01               f
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK' D' Q' QN)              477863.6875  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK' D' Q QN')              479070.7188  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK D' Q' QN)               561731.3125  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK D' Q QN')               573533.1250  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK' D Q QN')               495634.4688  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK D Q' QN)                570565.9375  
+   inst_ALUOut_ff_MW/temp_reg[8] (CLK D Q QN')                412046.1250  
+   inst_ALUOut_ff_MW/temp_reg[8] default                      5157250.5000  
+inst_ALUOut_ff_MW/temp_reg[8]  (Cell Total)         2.7697    8727696.0000
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK Q QN')  0.0030    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK Q QN')  0.0030 2.721e-03         f
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK Q' QN)  0.0029 9.618e-04         r
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK' Q QN')  0.0030    0.0109        r
+   inst_ALUOut_ff_MW/temp_reg[20] D (CLK' Q QN')  0.0030 8.733e-03        f
+   inst_ALUOut_ff_MW/temp_reg[20] D     0.0147   4.916e-03                r
+   inst_ALUOut_ff_MW/temp_reg[20] D     0.0147      0.0277                f
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D' Q' QN)  0.0600    0.2044      d r
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D' Q' QN)  0.0600    0.1783      d f
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D Q QN')  0.0651    0.1497       d r
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D Q QN')  0.0651    0.2609       d f
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D' Q QN')  0.0634    0.2156      d r
+   inst_ALUOut_ff_MW/temp_reg[20] CLK (D' Q QN')  0.0634    0.3488      d f
+   inst_ALUOut_ff_MW/temp_reg[20] CLK   0.3116      0.9462              d r
+   inst_ALUOut_ff_MW/temp_reg[20] CLK   0.3116      1.2968              d f
+   inst_ALUOut_ff_MW/temp_reg[20] Q CLK  0.0237  -2.240e-01               r
+   inst_ALUOut_ff_MW/temp_reg[20] Q CLK  0.0237  -2.171e-01               f
+   inst_ALUOut_ff_MW/temp_reg[20] QN CLK  0.0237 -2.203e-01               r
+   inst_ALUOut_ff_MW/temp_reg[20] QN CLK  0.0237 -2.256e-01               f
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK' D' Q' QN)             459428.6250  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK' D' Q QN')             485215.4688  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK D' Q' QN)              540060.8125  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK D' Q QN')              580889.5000  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK' D Q QN')              515236.9062  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK D Q' QN)               563028.4375  
+   inst_ALUOut_ff_MW/temp_reg[20] (CLK D Q QN')               428342.6250  
+   inst_ALUOut_ff_MW/temp_reg[20] default                     5148833.0000  
+inst_ALUOut_ff_MW/temp_reg[20]  (Cell Total)        2.7696    8721036.0000
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK Q QN')  0.0028    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK Q QN')  0.0028 2.544e-03         f
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK Q' QN)  0.0031 1.023e-03         r
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK Q' QN)  0.0031    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK' Q QN')  0.0028    0.0102        r
+   inst_ALUOut_ff_MW/temp_reg[23] D (CLK' Q QN')  0.0028 8.163e-03        f
+   inst_ALUOut_ff_MW/temp_reg[23] D     0.0149   4.965e-03                r
+   inst_ALUOut_ff_MW/temp_reg[23] D     0.0149      0.0280                f
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D' Q' QN)  0.0661    0.2251      d r
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D' Q' QN)  0.0661    0.1963      d f
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D Q QN')  0.0591    0.1359       d r
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D Q QN')  0.0591    0.2368       d f
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D' Q QN')  0.0613    0.2087      d r
+   inst_ALUOut_ff_MW/temp_reg[23] CLK (D' Q QN')  0.0613    0.3376      d f
+   inst_ALUOut_ff_MW/temp_reg[23] CLK   0.3135      0.9522              d r
+   inst_ALUOut_ff_MW/temp_reg[23] CLK   0.3135      1.3050              d f
+   inst_ALUOut_ff_MW/temp_reg[23] Q CLK  0.0237  -2.234e-01               r
+   inst_ALUOut_ff_MW/temp_reg[23] Q CLK  0.0237  -2.165e-01               f
+   inst_ALUOut_ff_MW/temp_reg[23] QN CLK  0.0237 -2.198e-01               r
+   inst_ALUOut_ff_MW/temp_reg[23] QN CLK  0.0237 -2.251e-01               f
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK' D' Q' QN)             505945.4688  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK' D' Q QN')             469712.2500  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK D' Q' QN)              594741.6250  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK D' Q QN')              562329.3750  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK' D Q QN')              467638.2188  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK D Q' QN)               581328.6250  
+   inst_ALUOut_ff_MW/temp_reg[23] (CLK D Q QN')               388771.4375  
+   inst_ALUOut_ff_MW/temp_reg[23] default                     5166472.5000  
+inst_ALUOut_ff_MW/temp_reg[23]  (Cell Total)        2.7677    8736939.0000
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK Q QN')  0.0031    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK Q QN')  0.0031 2.758e-03          f
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK Q' QN)  0.0029 9.575e-04          r
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK Q' QN)  0.0029    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK' Q QN')  0.0031    0.0110         r
+   inst_ALUOut_ff_MW/temp_reg[7] D (CLK' Q QN')  0.0031 8.849e-03         f
+   inst_ALUOut_ff_MW/temp_reg[7] D      0.0148   4.929e-03                r
+   inst_ALUOut_ff_MW/temp_reg[7] D      0.0148      0.0278                f
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D' Q' QN)  0.0592    0.2017       d r
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D' Q' QN)  0.0592    0.1759       d f
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D Q QN')  0.0659    0.1517        d r
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D Q QN')  0.0659    0.2644        d f
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D' Q QN')  0.0636    0.2165       d r
+   inst_ALUOut_ff_MW/temp_reg[7] CLK (D' Q QN')  0.0636    0.3502       d f
+   inst_ALUOut_ff_MW/temp_reg[7] CLK    0.3113      0.9453              d r
+   inst_ALUOut_ff_MW/temp_reg[7] CLK    0.3113      1.2955              d f
+   inst_ALUOut_ff_MW/temp_reg[7] Q CLK  0.0238   -2.250e-01               r
+   inst_ALUOut_ff_MW/temp_reg[7] Q CLK  0.0238   -2.180e-01               f
+   inst_ALUOut_ff_MW/temp_reg[7] QN CLK  0.0238  -2.211e-01               r
+   inst_ALUOut_ff_MW/temp_reg[7] QN CLK  0.0238  -2.264e-01               f
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK' D' Q' QN)              453259.2188  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK' D' Q QN')              487270.2812  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK D' Q' QN)               532808.6250  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK D' Q QN')               583349.5000  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK' D Q QN')               522030.1875  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK D Q' QN)                560418.1875  
+   inst_ALUOut_ff_MW/temp_reg[7] (CLK D Q QN')                433990.2188  
+   inst_ALUOut_ff_MW/temp_reg[7] default                      5145568.5000  
+inst_ALUOut_ff_MW/temp_reg[7]  (Cell Total)         2.7667    8718694.0000
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK Q QN')  0.0030    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK Q QN')  0.0030 2.684e-03          f
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK Q' QN)  0.0030 9.849e-04          r
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK Q' QN)  0.0030    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK' Q QN')  0.0030    0.0107         r
+   inst_ALUOut_ff_MW/temp_reg[9] D (CLK' Q QN')  0.0030 8.611e-03         f
+   inst_ALUOut_ff_MW/temp_reg[9] D      0.0149   4.958e-03                r
+   inst_ALUOut_ff_MW/temp_reg[9] D      0.0149      0.0280                f
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D' Q' QN)  0.0617    0.2103       d r
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D' Q' QN)  0.0617    0.1834       d f
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D Q QN')  0.0633    0.1456        d r
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D Q QN')  0.0633    0.2537        d f
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D' Q QN')  0.0628    0.2136       d r
+   inst_ALUOut_ff_MW/temp_reg[9] CLK (D' Q QN')  0.0628    0.3456       d f
+   inst_ALUOut_ff_MW/temp_reg[9] CLK    0.3122      0.9482              d r
+   inst_ALUOut_ff_MW/temp_reg[9] CLK    0.3122      1.2995              d f
+   inst_ALUOut_ff_MW/temp_reg[9] Q CLK  0.0238   -2.251e-01               r
+   inst_ALUOut_ff_MW/temp_reg[9] Q CLK  0.0238   -2.181e-01               f
+   inst_ALUOut_ff_MW/temp_reg[9] QN CLK  0.0239  -2.215e-01               r
+   inst_ALUOut_ff_MW/temp_reg[9] QN CLK  0.0239  -2.269e-01               f
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK' D' Q' QN)              472716.8438  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK' D' Q QN')              480786.6875  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK D' Q' QN)               555681.1875  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK D' Q QN')               575587.5000  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK' D Q QN')               501005.0938  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK D Q' QN)                568500.3125  
+   inst_ALUOut_ff_MW/temp_reg[9] (CLK D Q QN')                416511.0000  
+   inst_ALUOut_ff_MW/temp_reg[9] default                      5155097.5000  
+inst_ALUOut_ff_MW/temp_reg[9]  (Cell Total)         2.7642    8725886.0000
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK Q QN')  0.0030    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK Q QN')  0.0030 2.718e-03         f
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK Q' QN)  0.0029 9.792e-04         r
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK' Q QN')  0.0030    0.0108        r
+   inst_ALUOut_ff_MW/temp_reg[19] D (CLK' Q QN')  0.0030 8.723e-03        f
+   inst_ALUOut_ff_MW/temp_reg[19] D     0.0149   4.967e-03                r
+   inst_ALUOut_ff_MW/temp_reg[19] D     0.0149      0.0280                f
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D' Q' QN)  0.0609    0.2074      d r
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D' Q' QN)  0.0609    0.1808      d f
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D Q QN')  0.0642    0.1476       d r
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D Q QN')  0.0642    0.2573       d f
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D' Q QN')  0.0631    0.2146      d r
+   inst_ALUOut_ff_MW/temp_reg[19] CLK (D' Q QN')  0.0631    0.3472      d f
+   inst_ALUOut_ff_MW/temp_reg[19] CLK   0.3119      0.9472              d r
+   inst_ALUOut_ff_MW/temp_reg[19] CLK   0.3119      1.2982              d f
+   inst_ALUOut_ff_MW/temp_reg[19] Q CLK  0.0239  -2.259e-01               r
+   inst_ALUOut_ff_MW/temp_reg[19] Q CLK  0.0239  -2.189e-01               f
+   inst_ALUOut_ff_MW/temp_reg[19] QN CLK  0.0239 -2.220e-01               r
+   inst_ALUOut_ff_MW/temp_reg[19] QN CLK  0.0239 -2.274e-01               f
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK' D' Q' QN)             466084.1250  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK' D' Q QN')             482997.6562  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK D' Q' QN)              547884.3750  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK D' Q QN')              578234.3750  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK' D Q QN')              508041.8438  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK D Q' QN)               565794.4375  
+   inst_ALUOut_ff_MW/temp_reg[19] (CLK D Q QN')               422361.0000  
+   inst_ALUOut_ff_MW/temp_reg[19] default                     5152099.5000  
+inst_ALUOut_ff_MW/temp_reg[19]  (Cell Total)        2.7623    8723498.0000
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK Q QN')  0.0029 2.580e-03         f
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK Q' QN)  0.0031 1.025e-03         r
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK Q' QN)  0.0031    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK' Q QN')  0.0029    0.0103        r
+   inst_ALUOut_ff_MW/temp_reg[26] D (CLK' Q QN')  0.0029 8.278e-03        f
+   inst_ALUOut_ff_MW/temp_reg[26] D     0.0150   4.998e-03                r
+   inst_ALUOut_ff_MW/temp_reg[26] D     0.0150      0.0282                f
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D' Q' QN)  0.0655    0.2231      d r
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D' Q' QN)  0.0655    0.1945      d f
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D Q QN')  0.0596    0.1372       d r
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D Q QN')  0.0596    0.2391       d f
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D' Q QN')  0.0615    0.2094      d r
+   inst_ALUOut_ff_MW/temp_reg[26] CLK (D' Q QN')  0.0615    0.3387      d f
+   inst_ALUOut_ff_MW/temp_reg[26] CLK   0.3134      0.9517              d r
+   inst_ALUOut_ff_MW/temp_reg[26] CLK   0.3134      1.3043              d f
+   inst_ALUOut_ff_MW/temp_reg[26] Q CLK  0.0238  -2.251e-01               r
+   inst_ALUOut_ff_MW/temp_reg[26] Q CLK  0.0238  -2.181e-01               f
+   inst_ALUOut_ff_MW/temp_reg[26] QN CLK  0.0238 -2.212e-01               r
+   inst_ALUOut_ff_MW/temp_reg[26] QN CLK  0.0238 -2.265e-01               f
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK' D' Q' QN)             501351.4062  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK' D' Q QN')             471242.1250  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK D' Q' QN)              589341.2500  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK D' Q QN')              564160.9375  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK' D Q QN')              472072.9688  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK D Q' QN)               579625.1250  
+   inst_ALUOut_ff_MW/temp_reg[26] (CLK D Q QN')               392458.2500  
+   inst_ALUOut_ff_MW/temp_reg[26] default                     5165245.5000  
+inst_ALUOut_ff_MW/temp_reg[26]  (Cell Total)        2.7623    8735497.0000
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK Q QN')  0.0029 2.612e-03         f
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK Q' QN)  0.0030 1.016e-03         r
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK' Q QN')  0.0029    0.0104        r
+   inst_ALUOut_ff_MW/temp_reg[27] D (CLK' Q QN')  0.0029 8.381e-03        f
+   inst_ALUOut_ff_MW/temp_reg[27] D     0.0150   4.996e-03                r
+   inst_ALUOut_ff_MW/temp_reg[27] D     0.0150      0.0282                f
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D' Q' QN)  0.0644    0.2196      d r
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D' Q' QN)  0.0644    0.1915      d f
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D Q QN')  0.0606    0.1394       d r
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D Q QN')  0.0606    0.2429       d f
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D' Q QN')  0.0619    0.2105      d r
+   inst_ALUOut_ff_MW/temp_reg[27] CLK (D' Q QN')  0.0619    0.3406      d f
+   inst_ALUOut_ff_MW/temp_reg[27] CLK   0.3131      0.9508              d r
+   inst_ALUOut_ff_MW/temp_reg[27] CLK   0.3131      1.3031              d f
+   inst_ALUOut_ff_MW/temp_reg[27] Q CLK  0.0239  -2.255e-01               r
+   inst_ALUOut_ff_MW/temp_reg[27] Q CLK  0.0239  -2.185e-01               f
+   inst_ALUOut_ff_MW/temp_reg[27] QN CLK  0.0239 -2.217e-01               r
+   inst_ALUOut_ff_MW/temp_reg[27] QN CLK  0.0239 -2.271e-01               f
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK' D' Q' QN)             493617.4375  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK' D' Q QN')             473818.9688  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK D' Q' QN)              580249.9375  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK D' Q QN')              567245.8750  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK' D Q QN')              479664.4375  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK D Q' QN)               576707.3125  
+   inst_ALUOut_ff_MW/temp_reg[27] (CLK D Q QN')               398769.4062  
+   inst_ALUOut_ff_MW/temp_reg[27] default                     5162935.5000  
+inst_ALUOut_ff_MW/temp_reg[27]  (Cell Total)        2.7612    8733009.0000
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK Q QN')  0.0029    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK Q QN')  0.0029 2.571e-03          f
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK Q' QN)  0.0031 1.029e-03          r
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK Q' QN)  0.0031    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK' Q QN')  0.0029    0.0103         r
+   inst_ALUOut_ff_MW/temp_reg[5] D (CLK' Q QN')  0.0029 8.251e-03         f
+   inst_ALUOut_ff_MW/temp_reg[5] D      0.0150   5.005e-03                r
+   inst_ALUOut_ff_MW/temp_reg[5] D      0.0150      0.0282                f
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D' Q' QN)  0.0658    0.2244       d r
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D' Q' QN)  0.0658    0.1957       d f
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D Q QN')  0.0593    0.1364        d r
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D Q QN')  0.0593    0.2376        d f
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D' Q QN')  0.0614    0.2089       d r
+   inst_ALUOut_ff_MW/temp_reg[5] CLK (D' Q QN')  0.0614    0.3380       d f
+   inst_ALUOut_ff_MW/temp_reg[5] CLK    0.3135      0.9520              d r
+   inst_ALUOut_ff_MW/temp_reg[5] CLK    0.3135      1.3047              d f
+   inst_ALUOut_ff_MW/temp_reg[5] Q CLK  0.0238   -2.253e-01               r
+   inst_ALUOut_ff_MW/temp_reg[5] Q CLK  0.0238   -2.183e-01               f
+   inst_ALUOut_ff_MW/temp_reg[5] QN CLK  0.0239  -2.215e-01               r
+   inst_ALUOut_ff_MW/temp_reg[5] QN CLK  0.0239  -2.269e-01               f
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK' D' Q' QN)              504280.0625  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK' D' Q QN')              470266.8438  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK D' Q' QN)               592783.8750  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK D' Q QN')               562993.3125  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK' D Q QN')               469239.6562  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK D Q' QN)                580713.6875  
+   inst_ALUOut_ff_MW/temp_reg[5] (CLK D Q QN')                390102.7812  
+   inst_ALUOut_ff_MW/temp_reg[5] default                      5166039.5000  
+inst_ALUOut_ff_MW/temp_reg[5]  (Cell Total)         2.7611    8736420.0000
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK Q QN')  0.0029 2.582e-03         f
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK Q' QN)  0.0031 1.026e-03         r
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK Q' QN)  0.0031    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK' Q QN')  0.0029    0.0103        r
+   inst_ALUOut_ff_MW/temp_reg[16] D (CLK' Q QN')  0.0029 8.285e-03        f
+   inst_ALUOut_ff_MW/temp_reg[16] D     0.0150   5.003e-03                r
+   inst_ALUOut_ff_MW/temp_reg[16] D     0.0150      0.0282                f
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D' Q' QN)  0.0655    0.2232      d r
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D' Q' QN)  0.0655    0.1946      d f
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D Q QN')  0.0596    0.1371       d r
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D Q QN')  0.0596    0.2390       d f
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D' Q QN')  0.0615    0.2093      d r
+   inst_ALUOut_ff_MW/temp_reg[16] CLK (D' Q QN')  0.0615    0.3387      d f
+   inst_ALUOut_ff_MW/temp_reg[16] CLK   0.3134      0.9517              d r
+   inst_ALUOut_ff_MW/temp_reg[16] CLK   0.3134      1.3043              d f
+   inst_ALUOut_ff_MW/temp_reg[16] Q CLK  0.0239  -2.254e-01               r
+   inst_ALUOut_ff_MW/temp_reg[16] Q CLK  0.0239  -2.184e-01               f
+   inst_ALUOut_ff_MW/temp_reg[16] QN CLK  0.0239 -2.218e-01               r
+   inst_ALUOut_ff_MW/temp_reg[16] QN CLK  0.0239 -2.272e-01               f
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK' D' Q' QN)             501562.5312  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK' D' Q QN')             471171.9062  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK D' Q' QN)              589589.4375  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK D' Q QN')              564076.8750  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK' D Q QN')              471868.0938  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK D Q' QN)               579703.8750  
+   inst_ALUOut_ff_MW/temp_reg[16] (CLK D Q QN')               392287.9375  
+   inst_ALUOut_ff_MW/temp_reg[16] default                     5165304.0000  
+inst_ALUOut_ff_MW/temp_reg[16]  (Cell Total)        2.7606    8735565.0000
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK Q QN')  0.0031    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK Q QN')  0.0031 2.728e-03         f
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK Q' QN)  0.0029 9.803e-04         r
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK' Q QN')  0.0031    0.0109        r
+   inst_ALUOut_ff_MW/temp_reg[10] D (CLK' Q QN')  0.0031 8.755e-03        f
+   inst_ALUOut_ff_MW/temp_reg[10] D     0.0149   4.977e-03                r
+   inst_ALUOut_ff_MW/temp_reg[10] D     0.0149      0.0281                f
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D' Q' QN)  0.0607    0.2070      d r
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D' Q' QN)  0.0607    0.1805      d f
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D Q QN')  0.0643    0.1479       d r
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D Q QN')  0.0643    0.2578       d f
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D' Q QN')  0.0631    0.2147      d r
+   inst_ALUOut_ff_MW/temp_reg[10] CLK (D' Q QN')  0.0631    0.3474      d f
+   inst_ALUOut_ff_MW/temp_reg[10] CLK   0.3119      0.9471              d r
+   inst_ALUOut_ff_MW/temp_reg[10] CLK   0.3119      1.2980              d f
+   inst_ALUOut_ff_MW/temp_reg[10] Q CLK  0.0240  -2.264e-01               r
+   inst_ALUOut_ff_MW/temp_reg[10] Q CLK  0.0240  -2.194e-01               f
+   inst_ALUOut_ff_MW/temp_reg[10] QN CLK  0.0240 -2.226e-01               r
+   inst_ALUOut_ff_MW/temp_reg[10] QN CLK  0.0240 -2.280e-01               f
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK' D' Q' QN)             465195.0312  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK' D' Q QN')             483294.0000  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK D' Q' QN)              546839.2500  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK D' Q QN')              578589.1875  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK' D Q QN')              508995.1875  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK D Q' QN)               565427.8750  
+   inst_ALUOut_ff_MW/temp_reg[10] (CLK D Q QN')               423153.5625  
+   inst_ALUOut_ff_MW/temp_reg[10] default                     5151678.5000  
+inst_ALUOut_ff_MW/temp_reg[10]  (Cell Total)        2.7602    8723173.0000
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK Q QN')  0.0030    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK Q QN')  0.0030 2.724e-03          f
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK Q' QN)  0.0029 9.814e-04          r
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK Q' QN)  0.0029    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK' Q QN')  0.0030    0.0109         r
+   inst_ALUOut_ff_MW/temp_reg[4] D (CLK' Q QN')  0.0030 8.741e-03         f
+   inst_ALUOut_ff_MW/temp_reg[4] D      0.0149   4.977e-03                r
+   inst_ALUOut_ff_MW/temp_reg[4] D      0.0149      0.0281                f
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D' Q' QN)  0.0609    0.2074       d r
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D' Q' QN)  0.0609    0.1809       d f
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D Q QN')  0.0642    0.1476        d r
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D Q QN')  0.0642    0.2573        d f
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D' Q QN')  0.0631    0.2146       d r
+   inst_ALUOut_ff_MW/temp_reg[4] CLK (D' Q QN')  0.0631    0.3471       d f
+   inst_ALUOut_ff_MW/temp_reg[4] CLK    0.3119      0.9472              d r
+   inst_ALUOut_ff_MW/temp_reg[4] CLK    0.3119      1.2982              d f
+   inst_ALUOut_ff_MW/temp_reg[4] Q CLK  0.0240   -2.264e-01               r
+   inst_ALUOut_ff_MW/temp_reg[4] Q CLK  0.0240   -2.193e-01               f
+   inst_ALUOut_ff_MW/temp_reg[4] QN CLK  0.0240  -2.227e-01               r
+   inst_ALUOut_ff_MW/temp_reg[4] QN CLK  0.0240  -2.281e-01               f
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK' D' Q' QN)              466141.6250  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK' D' Q QN')              482978.4688  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK D' Q' QN)               547951.9375  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK D' Q QN')               578211.4375  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK' D Q QN')               507980.2812  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK D Q' QN)                565818.1250  
+   inst_ALUOut_ff_MW/temp_reg[4] (CLK D Q QN')                422309.8125  
+   inst_ALUOut_ff_MW/temp_reg[4] default                      5152126.5000  
+inst_ALUOut_ff_MW/temp_reg[4]  (Cell Total)         2.7601    8723518.0000
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK Q QN')  0.0029    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK Q QN')  0.0029 2.553e-03          f
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK Q' QN)  0.0031 1.038e-03          r
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK Q' QN)  0.0031    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK' Q QN')  0.0029    0.0102         r
+   inst_ALUOut_ff_MW/temp_reg[6] D (CLK' Q QN')  0.0029 8.194e-03         f
+   inst_ALUOut_ff_MW/temp_reg[6] D      0.0150   5.017e-03                r
+   inst_ALUOut_ff_MW/temp_reg[6] D      0.0150      0.0283                f
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D' Q' QN)  0.0666    0.2270       d r
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D' Q' QN)  0.0666    0.1979       d f
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D Q QN')  0.0586    0.1347        d r
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D Q QN')  0.0586    0.2348        d f
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D' Q QN')  0.0611    0.2081       d r
+   inst_ALUOut_ff_MW/temp_reg[6] CLK (D' Q QN')  0.0611    0.3366       d f
+   inst_ALUOut_ff_MW/temp_reg[6] CLK    0.3137      0.9526              d r
+   inst_ALUOut_ff_MW/temp_reg[6] CLK    0.3137      1.3055              d f
+   inst_ALUOut_ff_MW/temp_reg[6] Q CLK  0.0239   -2.255e-01               r
+   inst_ALUOut_ff_MW/temp_reg[6] Q CLK  0.0239   -2.185e-01               f
+   inst_ALUOut_ff_MW/temp_reg[6] QN CLK  0.0239  -2.218e-01               r
+   inst_ALUOut_ff_MW/temp_reg[6] QN CLK  0.0239  -2.272e-01               f
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK' D' Q' QN)              510140.5625  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK' D' Q QN')              468315.7500  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK D' Q' QN)               599672.9375  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK D' Q QN')               560657.5625  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK' D Q QN')               463636.0938  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK D Q' QN)                582865.3750  
+   inst_ALUOut_ff_MW/temp_reg[6] (CLK D Q QN')                385444.2500  
+   inst_ALUOut_ff_MW/temp_reg[6] default                      5167500.5000  
+inst_ALUOut_ff_MW/temp_reg[6]  (Cell Total)         2.7595    8738233.0000
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK Q QN')  0.0029    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK Q QN')  0.0029 2.555e-03          f
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK Q' QN)  0.0031 1.042e-03          r
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK Q' QN)  0.0031    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK' Q QN')  0.0029    0.0102         r
+   inst_ALUOut_ff_MW/temp_reg[0] D (CLK' Q QN')  0.0029 8.199e-03         f
+   inst_ALUOut_ff_MW/temp_reg[0] D      0.0151   5.028e-03                r
+   inst_ALUOut_ff_MW/temp_reg[0] D      0.0151      0.0283                f
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D' Q' QN)  0.0667    0.2274       d r
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D' Q' QN)  0.0667    0.1983       d f
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D Q QN')  0.0585    0.1345        d r
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D Q QN')  0.0585    0.2344        d f
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D' Q QN')  0.0611    0.2079       d r
+   inst_ALUOut_ff_MW/temp_reg[0] CLK (D' Q QN')  0.0611    0.3364       d f
+   inst_ALUOut_ff_MW/temp_reg[0] CLK    0.3137      0.9527              d r
+   inst_ALUOut_ff_MW/temp_reg[0] CLK    0.3137      1.3057              d f
+   inst_ALUOut_ff_MW/temp_reg[0] Q CLK  0.0239   -2.259e-01               r
+   inst_ALUOut_ff_MW/temp_reg[0] Q CLK  0.0239   -2.189e-01               f
+   inst_ALUOut_ff_MW/temp_reg[0] QN CLK  0.0239  -2.222e-01               r
+   inst_ALUOut_ff_MW/temp_reg[0] QN CLK  0.0239  -2.276e-01               f
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK' D' Q' QN)              511086.0625  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK' D' Q QN')              468001.0312  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK D' Q' QN)               600784.3750  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK D' Q QN')               560280.7500  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK' D Q QN')               462740.2188  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK D Q' QN)                583209.2500  
+   inst_ALUOut_ff_MW/temp_reg[0] (CLK D Q QN')                384699.4688  
+   inst_ALUOut_ff_MW/temp_reg[0] default                      5167719.5000  
+inst_ALUOut_ff_MW/temp_reg[0]  (Cell Total)         2.7580    8738520.0000
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK Q QN')  0.0031    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK Q QN')  0.0031 2.774e-03         f
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK Q' QN)  0.0029 9.740e-04         r
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK' Q QN')  0.0031    0.0111        r
+   inst_ALUOut_ff_MW/temp_reg[14] D (CLK' Q QN')  0.0031 8.902e-03        f
+   inst_ALUOut_ff_MW/temp_reg[14] D     0.0150   4.991e-03                r
+   inst_ALUOut_ff_MW/temp_reg[14] D     0.0150      0.0281                f
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D' Q' QN)  0.0597    0.2034      d r
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D' Q' QN)  0.0597    0.1774      d f
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D Q QN')  0.0654    0.1505       d r
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D Q QN')  0.0654    0.2622       d f
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D' Q QN')  0.0635    0.2159      d r
+   inst_ALUOut_ff_MW/temp_reg[14] CLK (D' Q QN')  0.0635    0.3493      d f
+   inst_ALUOut_ff_MW/temp_reg[14] CLK   0.3115      0.9459              d r
+   inst_ALUOut_ff_MW/temp_reg[14] CLK   0.3115      1.2963              d f
+   inst_ALUOut_ff_MW/temp_reg[14] Q CLK  0.0241  -2.276e-01               r
+   inst_ALUOut_ff_MW/temp_reg[14] Q CLK  0.0241  -2.206e-01               f
+   inst_ALUOut_ff_MW/temp_reg[14] QN CLK  0.0241 -2.239e-01               r
+   inst_ALUOut_ff_MW/temp_reg[14] QN CLK  0.0241 -2.293e-01               f
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK' D' Q' QN)             457129.8125  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK' D' Q QN')             485981.2188  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK D' Q' QN)              537358.5000  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK D' Q QN')              581806.2500  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK' D Q QN')              517754.0938  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK D Q' QN)               562061.1250  
+   inst_ALUOut_ff_MW/temp_reg[14] (CLK D Q QN')               430435.2812  
+   inst_ALUOut_ff_MW/temp_reg[14] default                     5147644.0000  
+inst_ALUOut_ff_MW/temp_reg[14]  (Cell Total)        2.7562    8720170.0000
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK Q QN')  0.0029 2.574e-03         f
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK Q' QN)  0.0031 1.045e-03         r
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK Q' QN)  0.0031    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK' Q QN')  0.0029    0.0103        r
+   inst_ALUOut_ff_MW/temp_reg[30] D (CLK' Q QN')  0.0029 8.259e-03        f
+   inst_ALUOut_ff_MW/temp_reg[30] D     0.0152   5.053e-03                r
+   inst_ALUOut_ff_MW/temp_reg[30] D     0.0152      0.0285                f
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D' Q' QN)  0.0665    0.2267      d r
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D' Q' QN)  0.0665    0.1977      d f
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D Q QN')  0.0586    0.1349       d r
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D Q QN')  0.0586    0.2351       d f
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D' Q QN')  0.0612    0.2081      d r
+   inst_ALUOut_ff_MW/temp_reg[30] CLK (D' Q QN')  0.0612    0.3367      d f
+   inst_ALUOut_ff_MW/temp_reg[30] CLK   0.3137      0.9526              d r
+   inst_ALUOut_ff_MW/temp_reg[30] CLK   0.3137      1.3055              d f
+   inst_ALUOut_ff_MW/temp_reg[30] Q CLK  0.0240  -2.271e-01               r
+   inst_ALUOut_ff_MW/temp_reg[30] Q CLK  0.0240  -2.201e-01               f
+   inst_ALUOut_ff_MW/temp_reg[30] QN CLK  0.0240 -2.231e-01               r
+   inst_ALUOut_ff_MW/temp_reg[30] QN CLK  0.0240 -2.285e-01               f
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK' D' Q' QN)             509592.0625  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK' D' Q QN')             468498.3125  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK D' Q' QN)              599028.1875  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK D' Q QN')              560876.0625  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK' D Q QN')              464156.8438  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK D Q' QN)               582665.5000  
+   inst_ALUOut_ff_MW/temp_reg[30] (CLK D Q QN')               385877.1562  
+   inst_ALUOut_ff_MW/temp_reg[30] default                     5167370.5000  
+inst_ALUOut_ff_MW/temp_reg[30]  (Cell Total)        2.7542    8738065.0000
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK Q QN')  0.0029    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK Q QN')  0.0029 2.560e-03         f
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK Q' QN)  0.0032 1.054e-03         r
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK Q' QN)  0.0032    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK' Q QN')  0.0029    0.0102        r
+   inst_ALUOut_ff_MW/temp_reg[29] D (CLK' Q QN')  0.0029 8.214e-03        f
+   inst_ALUOut_ff_MW/temp_reg[29] D     0.0152   5.069e-03                r
+   inst_ALUOut_ff_MW/temp_reg[29] D     0.0152      0.0286                f
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D' Q' QN)  0.0672    0.2291      d r
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D' Q' QN)  0.0672    0.1998      d f
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D Q QN')  0.0580    0.1334       d r
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D Q QN')  0.0580    0.2325       d f
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D' Q QN')  0.0609    0.2073      d r
+   inst_ALUOut_ff_MW/temp_reg[29] CLK (D' Q QN')  0.0609    0.3354      d f
+   inst_ALUOut_ff_MW/temp_reg[29] CLK   0.3138      0.9531              d r
+   inst_ALUOut_ff_MW/temp_reg[29] CLK   0.3138      1.3062              d f
+   inst_ALUOut_ff_MW/temp_reg[29] Q CLK  0.0241  -2.276e-01               r
+   inst_ALUOut_ff_MW/temp_reg[29] Q CLK  0.0241  -2.205e-01               f
+   inst_ALUOut_ff_MW/temp_reg[29] QN CLK  0.0241 -2.238e-01               r
+   inst_ALUOut_ff_MW/temp_reg[29] QN CLK  0.0241 -2.292e-01               f
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK' D' Q' QN)             515002.7500  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK' D' Q QN')             466698.0000  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK D' Q' QN)              605388.4375  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK D' Q QN')              558720.8125  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK' D Q QN')              459053.3125  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK D Q' QN)               584623.9375  
+   inst_ALUOut_ff_MW/temp_reg[29] (CLK D Q QN')               381634.3438  
+   inst_ALUOut_ff_MW/temp_reg[29] default                     5168583.0000  
+inst_ALUOut_ff_MW/temp_reg[29]  (Cell Total)        2.7515    8739705.0000
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK Q QN')  0.0032    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK Q QN')  0.0032 2.840e-03         f
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK Q' QN)  0.0029 9.696e-04         r
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK Q' QN)  0.0029    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK' Q QN')  0.0032    0.0113        r
+   inst_ALUOut_ff_MW/temp_reg[15] D (CLK' Q QN')  0.0032 9.112e-03        f
+   inst_ALUOut_ff_MW/temp_reg[15] D     0.0151   5.025e-03                r
+   inst_ALUOut_ff_MW/temp_reg[15] D     0.0151      0.0283                f
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D' Q' QN)  0.0584    0.1991      d r
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D' Q' QN)  0.0584    0.1736      d f
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D Q QN')  0.0668    0.1536       d r
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D Q QN')  0.0668    0.2677       d f
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D' Q QN')  0.0639    0.2173      d r
+   inst_ALUOut_ff_MW/temp_reg[15] CLK (D' Q QN')  0.0639    0.3516      d f
+   inst_ALUOut_ff_MW/temp_reg[15] CLK   0.3109      0.9443              d r
+   inst_ALUOut_ff_MW/temp_reg[15] CLK   0.3109      1.2941              d f
+   inst_ALUOut_ff_MW/temp_reg[15] Q CLK  0.0243  -2.298e-01               r
+   inst_ALUOut_ff_MW/temp_reg[15] Q CLK  0.0243  -2.227e-01               f
+   inst_ALUOut_ff_MW/temp_reg[15] QN CLK  0.0243 -2.259e-01               r
+   inst_ALUOut_ff_MW/temp_reg[15] QN CLK  0.0243 -2.314e-01               f
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK' D' Q' QN)             447480.2500  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK' D' Q QN')             489193.7500  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK D' Q' QN)              526015.3750  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK D' Q QN')              585652.2500  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK' D Q QN')              528504.2500  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK D Q' QN)               557932.1250  
+   inst_ALUOut_ff_MW/temp_reg[15] (CLK D Q QN')               439372.4375  
+   inst_ALUOut_ff_MW/temp_reg[15] default                     5142297.5000  
+inst_ALUOut_ff_MW/temp_reg[15]  (Cell Total)        2.7491    8716448.0000
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK Q QN')  0.0031    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK Q QN')  0.0031 2.743e-03         f
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK Q' QN)  0.0030 1.000e-03         r
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK' Q QN')  0.0031    0.0109        r
+   inst_ALUOut_ff_MW/temp_reg[21] D (CLK' Q QN')  0.0031 8.803e-03        f
+   inst_ALUOut_ff_MW/temp_reg[21] D     0.0151   5.048e-03                r
+   inst_ALUOut_ff_MW/temp_reg[21] D     0.0151      0.0285                f
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D' Q' QN)  0.0614    0.2093      d r
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D' Q' QN)  0.0614    0.1825      d f
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D Q QN')  0.0636    0.1463       d r
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D Q QN')  0.0636    0.2550       d f
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D' Q QN')  0.0629    0.2140      d r
+   inst_ALUOut_ff_MW/temp_reg[21] CLK (D' Q QN')  0.0629    0.3461      d f
+   inst_ALUOut_ff_MW/temp_reg[21] CLK   0.3121      0.9478              d r
+   inst_ALUOut_ff_MW/temp_reg[21] CLK   0.3121      1.2990              d f
+   inst_ALUOut_ff_MW/temp_reg[21] Q CLK  0.0243  -2.293e-01               r
+   inst_ALUOut_ff_MW/temp_reg[21] Q CLK  0.0243  -2.222e-01               f
+   inst_ALUOut_ff_MW/temp_reg[21] QN CLK  0.0243 -2.255e-01               r
+   inst_ALUOut_ff_MW/temp_reg[21] QN CLK  0.0243 -2.309e-01               f
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK' D' Q' QN)             470316.0312  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK' D' Q QN')             481587.0312  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK D' Q' QN)              552859.0000  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK D' Q QN')              576545.6250  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK' D Q QN')              503537.0312  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK D Q' QN)               567526.7500  
+   inst_ALUOut_ff_MW/temp_reg[21] (CLK D Q QN')               418615.9375  
+   inst_ALUOut_ff_MW/temp_reg[21] default                     5154041.5000  
+inst_ALUOut_ff_MW/temp_reg[21]  (Cell Total)        2.7491    8725029.0000
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK Q QN')  0.0030    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK Q QN')  0.0030 2.719e-03          f
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK Q' QN)  0.0030 1.008e-03          r
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK Q' QN)  0.0030    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK' Q QN')  0.0030    0.0109         r
+   inst_ALUOut_ff_MW/temp_reg[2] D (CLK' Q QN')  0.0030 8.727e-03         f
+   inst_ALUOut_ff_MW/temp_reg[2] D      0.0152   5.053e-03                r
+   inst_ALUOut_ff_MW/temp_reg[2] D      0.0152      0.0285                f
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D' Q' QN)  0.0622    0.2118       d r
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D' Q' QN)  0.0622    0.1847       d f
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D Q QN')  0.0628    0.1446        d r
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D Q QN')  0.0628    0.2520        d f
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D' Q QN')  0.0626    0.2131       d r
+   inst_ALUOut_ff_MW/temp_reg[2] CLK (D' Q QN')  0.0626    0.3448       d f
+   inst_ALUOut_ff_MW/temp_reg[2] CLK    0.3124      0.9486              d r
+   inst_ALUOut_ff_MW/temp_reg[2] CLK    0.3124      1.3001              d f
+   inst_ALUOut_ff_MW/temp_reg[2] Q CLK  0.0243   -2.292e-01               r
+   inst_ALUOut_ff_MW/temp_reg[2] Q CLK  0.0243   -2.220e-01               f
+   inst_ALUOut_ff_MW/temp_reg[2] QN CLK  0.0243  -2.254e-01               r
+   inst_ALUOut_ff_MW/temp_reg[2] QN CLK  0.0243  -2.309e-01               f
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK' D' Q' QN)              476085.6562  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK' D' Q QN')              479663.4375  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK D' Q' QN)               559641.2500  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK D' Q QN')               574242.7500  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK' D Q QN')               497481.0312  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK D Q' QN)                569855.7500  
+   inst_ALUOut_ff_MW/temp_reg[2] (CLK D Q QN')                413581.2500  
+   inst_ALUOut_ff_MW/temp_reg[2] default                      5156523.5000  
+inst_ALUOut_ff_MW/temp_reg[2]  (Cell Total)         2.7490    8727075.0000
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK Q QN')  0.0030    0.0000          r
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK Q QN')  0.0030 2.694e-03          f
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK Q' QN)  0.0031 1.024e-03          r
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK Q' QN)  0.0031    0.0000          f
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK' Q QN')  0.0030    0.0108         r
+   inst_ALUOut_ff_MW/temp_reg[1] D (CLK' Q QN')  0.0030 8.646e-03         f
+   inst_ALUOut_ff_MW/temp_reg[1] D      0.0152   5.083e-03                r
+   inst_ALUOut_ff_MW/temp_reg[1] D      0.0152      0.0287                f
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D' Q' QN)  0.0633    0.2158       d r
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D' Q' QN)  0.0633    0.1882       d f
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D Q QN')  0.0617    0.1419        d r
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D Q QN')  0.0617    0.2472        d f
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D' Q QN')  0.0622    0.2118       d r
+   inst_ALUOut_ff_MW/temp_reg[1] CLK (D' Q QN')  0.0622    0.3426       d f
+   inst_ALUOut_ff_MW/temp_reg[1] CLK    0.3128      0.9498              d r
+   inst_ALUOut_ff_MW/temp_reg[1] CLK    0.3128      1.3017              d f
+   inst_ALUOut_ff_MW/temp_reg[1] Q CLK  0.0243   -2.299e-01               r
+   inst_ALUOut_ff_MW/temp_reg[1] Q CLK  0.0243   -2.228e-01               f
+   inst_ALUOut_ff_MW/temp_reg[1] QN CLK  0.0244  -2.261e-01               r
+   inst_ALUOut_ff_MW/temp_reg[1] QN CLK  0.0244  -2.316e-01               f
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK' D' Q' QN)              485137.6875  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK' D' Q QN')              476645.5938  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK D' Q' QN)               570281.9375  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK D' Q QN')               570629.8125  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK' D Q QN')               488174.3438  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK D Q' QN)                573435.0625  
+   inst_ALUOut_ff_MW/temp_reg[1] (CLK D Q QN')                405844.1562  
+   inst_ALUOut_ff_MW/temp_reg[1] default                      5160042.5000  
+inst_ALUOut_ff_MW/temp_reg[1]  (Cell Total)         2.7455    8730191.0000
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK Q QN')  0.0031    0.0000         r
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK Q QN')  0.0031 2.754e-03         f
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK Q' QN)  0.0030 1.010e-03         r
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK Q' QN)  0.0030    0.0000         f
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK' Q QN')  0.0031    0.0110        r
+   inst_ALUOut_ff_MW/temp_reg[24] D (CLK' Q QN')  0.0031 8.837e-03        f
+   inst_ALUOut_ff_MW/temp_reg[24] D     0.0152   5.084e-03                r
+   inst_ALUOut_ff_MW/temp_reg[24] D     0.0152      0.0287                f
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D' Q' QN)  0.0617    0.2101      d r
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D' Q' QN)  0.0617    0.1833      d f
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D Q QN')  0.0633    0.1457       d r
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D Q QN')  0.0633    0.2540       d f
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D' Q QN')  0.0628    0.2137      d r
+   inst_ALUOut_ff_MW/temp_reg[24] CLK (D' Q QN')  0.0628    0.3457      d f
+   inst_ALUOut_ff_MW/temp_reg[24] CLK   0.3122      0.9481              d r
+   inst_ALUOut_ff_MW/temp_reg[24] CLK   0.3122      1.2994              d f
+   inst_ALUOut_ff_MW/temp_reg[24] Q CLK  0.0244  -2.308e-01               r
+   inst_ALUOut_ff_MW/temp_reg[24] Q CLK  0.0244  -2.237e-01               f
+   inst_ALUOut_ff_MW/temp_reg[24] QN CLK  0.0244 -2.270e-01               r
+   inst_ALUOut_ff_MW/temp_reg[24] QN CLK  0.0244 -2.325e-01               f
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK' D' Q' QN)             472311.2188  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK' D' Q QN')             480921.8750  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK D' Q' QN)              555204.3750  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK D' Q QN')              575749.3125  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK' D Q QN')              501431.7188  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK D Q' QN)               568336.3750  
+   inst_ALUOut_ff_MW/temp_reg[24] (CLK D Q QN')               416865.6562  
+   inst_ALUOut_ff_MW/temp_reg[24] default                     5154921.5000  
+inst_ALUOut_ff_MW/temp_reg[24]  (Cell Total)        2.7432    8725742.0000
+inst_alu                                            0.0000       0.0000
+--------------------------------------------------------------------------------
+Totals (65 cells)                                 184.219uW    558.645uW
+1

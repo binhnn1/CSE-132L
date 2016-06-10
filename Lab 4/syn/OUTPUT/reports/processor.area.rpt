@@ -1,0 +1,70 @@
+Warning: duplicate option '-nosplit' overrides previous value. (CMD-018)
+Warning: Design 'processor' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : processor
+Version: J-2014.09-SP4
+Date   : Sat Mar 12 01:01:09 2016
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_tt1p05vn40c (File: /users/ugrad2/2012/spring/pooriam/libraries/saed32lvt_tt1p05vn40c.db)
+
+Number of ports:                           34
+Number of nets:                           163
+Number of cells:                            5
+Number of combinational cells:              0
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       5
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:             422.895630
+Macro/Black Box area:                0.000000
+Net Interconnect area:             116.186540
+
+Total cell area:                   422.895630
+Total area:                        539.082170
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  --------------
+processor                          422.8956    100.0    0.0000     0.0000  0.0000  processor
+inst_ALUOut_ff_EM                  211.4478     50.0    0.0000   211.4478  0.0000  flipflop_S32_5
+inst_ALUOut_ff_MW                  211.4478     50.0    0.0000   211.4478  0.0000  flipflop_S32_1
+inst_mux_ResultW                     0.0000      0.0    0.0000     0.0000  0.0000  mux2to1_S32_1
+inst_rom                             0.0000      0.0    0.0000     0.0000  0.0000  rom_SIZE512
+--------------------------------  ---------  -------  --------  ---------  ------  --------------
+Total                                                   0.0000   422.8956  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                           Estimated  Perc. of
+  Module   Implem.  Count       Area cell area
+  -------- -------  ----- ---------- ---------
+  DW01_inc apparch      1    42.5698     10.1%
+  DW_cmp   apparch     11    70.5504     16.7%
+  -------- -------  ----- ---------- ---------
+  Total:               12   113.1201     26.7%
+
+Total synthetic cell area:              113.1201  26.7%  (estimated)
+
+1

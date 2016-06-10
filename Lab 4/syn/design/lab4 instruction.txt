@@ -1,0 +1,13 @@
+20020005				ADDI $2 $zero 5			$2 = 5
+ac020002					SW $2 2($zero)			Save $2 to RAM	
+2003000c				ADDI $3 $zero 12			$3 = 12
+2067fff7					ADDI $7 $3 -9				$7 = 3
+00e32025				OR $4 $7 $3					$4 = 16
+8c060002				LW $6 2($zero)			$6 = 5
+00c70820				ADD $1 $6 $7				$1 = 8
+00864025				OR $8 $4 $6					$8 = 16
+00c04822				SUB $9 $6 $zero			$9 = 5
+10880002				BEQ $4 $8 2					Condition met, flush and jump to 13
+20050013				ADDI $5 $zero 19			$5 = 0 -- Fetch, but flush
+20020001				ADDI $2 $zero 1			$2 = 1 -- No Execute
+0064202a				SLT $4 $3 $4				$4 = 1

@@ -1,0 +1,172 @@
+Warning: Detected use of obsolete/unsupported feature.  The following
+	will not be available in a future release of the application:
+	elaborate -update. Use plain elaborate instead (CMD-100)
+Loading db file '/ecelib/linware/synopsys15/dc/libraries/syn/gtech.db'
+Loading db file '/ecelib/linware/synopsys15/dc/libraries/syn/standard.sldb'
+  Loading link library 'saed32lvt_tt1p05vn40c'
+  Loading link library 'saed32sram_tt1p05vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:177: The initial value for signal 'PC' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:177: The initial value for signal 'PCF' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:177: The initial value for signal 'PCPlus4F' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:177: The initial value for signal 'PCPlus4D' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:177: The initial value for signal 'PCPlus4E' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:178: The initial value for signal 'InstrF' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:178: The initial value for signal 'InstrD' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:178: The initial value for signal 'InstrE' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:178: The initial value for signal 'InstrM' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/processor.vhd:178: The initial value for signal 'InstrW' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'processor'.
+Information: Building the design 'mux2to1' instantiated from design 'processor' with
+	the parameters "S=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pc_clock'. (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/pc.vhd:18: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine pc_clock line 20 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/pc.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'rom' instantiated from design 'processor' with
+	the parameters "SIZE=512". (HDL-193)
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|  rom_SIZE512/58  |  512   |    1    |      9       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'flipflop' instantiated from design 'processor' with
+	the parameters "S=32". (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd:18: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine flipflop_S32 line 20 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'controller'. (HDL-193)
+
+Statistics for case statements in always block at line 31 in file
+	'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/controller.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            48            |    auto/auto     |
+|            56            |    auto/auto     |
+|           103            |    auto/auto     |
+|           114            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'regfile'. (HDL-193)
+
+Inferred memory devices in process
+	in routine regfile line 27 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/regfile.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       mem_reg       | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|    regfile/39    |   32   |   32    |      5       | N  |
+|    regfile/44    |   32   |   32    |      5       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'sign_extender' instantiated from design 'processor' with
+	the parameters "SIZE=16". (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/sign_extender.vhd:17: The initial value for signal 'ex_0' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/sign_extender.vhd:18: The initial value for signal 'ex_1' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/sign_extender.vhd:21: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 21 in file
+	'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/sign_extender.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            21            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'flipflop1bit'. (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop1bit.vhd:17: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine flipflop1bit line 19 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop1bit.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'flipflop' instantiated from design 'processor' with
+	the parameters "S=6". (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd:18: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine flipflop_S6 line 20 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'flipflop' instantiated from design 'processor' with
+	the parameters "S=3". (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd:18: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine flipflop_S3 line 20 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux4to1' instantiated from design 'processor' with
+	the parameters "S=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'processor' with
+	the parameters "S=5". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu'. (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/alu.vhd:30: Constant value required. (ELAB-922)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'flipflop' instantiated from design 'processor' with
+	the parameters "S=5". (HDL-193)
+Warning:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd:18: The initial value for signal 'temp' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine flipflop_S5 line 20 in file
+		'/users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/flipflop.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      temp_reg       | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ram' instantiated from design 'processor' with
+	the parameters "SIZE=512". (HDL-193)
+Error:  /users/ugrad2/2015/summer/binhnn1/EECS112L/assignment4/syn/design/ram.vhd:33: Constant value required. (ELAB-922)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'hazard_control'. (HDL-193)
+Presto compilation completed successfully.
+Warning: Design 'processor' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
