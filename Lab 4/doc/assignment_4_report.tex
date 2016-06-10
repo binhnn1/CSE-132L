@@ -1,0 +1,286 @@
+\documentclass[paper=letter, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage{float}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{graphicx}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{hyperref}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} 
+\pagestyle{fancyplain} 
+\fancyhead{} 
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt} 
+\setlength{\headheight}{13.6pt} 
+
+\numberwithin{equation}{section} 
+\numberwithin{figure}{section} 
+\numberwithin{table}{section} 
+
+\setlength\parindent{0pt} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+
+\title{	
+\normalfont \normalsize 
+\textsc{University of California Irvine} 
+\textsc{Course: Organization of Digital Computers Laboratory (112L) \\ Winter 2016} \\ [25pt]
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Lab 3 Report - Jump and Branch Instruction\/
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Prepared by: Team The Powerful Processors \\ Jon Raphael Apostol - 32302252 \\ Binh Nguyen - 34707912 \\ Yixiang Yan - 16392389 \\ James Yi - 17492099 } % Your name
+
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+In this lab, we implemented the pipeline optimization technique to speed up the processor in the previous lab. The design section will be a description of the blocks we put in the design.
+
+
+
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	DESIGN
+%----------------------------------------------------------------------------------------
+
+\section{Design}
+
+\begin{center}
+Image of the current design:
+\end{center}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{design.png}
+	\label{fig:design}
+\end{figure}
+
+\begin{center}
+For our processor, we designed it in the following different blocks:
+\end{center}
+\begin{itemize}
+	\item The Program Counter (PC)
+	\begin{enumerate}
+		\item The program counter contains the address of the instruction that is being executed.
+		\item For our program counter we add 1 to the address everytime the clock hits a rising edge.
+	\end{enumerate}
+	\item PC Adder
+	\begin{enumerate}
+		\item This is where we add 1 to the program counter, while the program counter sends the address to the ROM.
+	\end{enumerate}
+	\item The Instruction Memory (ROM)
+	\begin{enumerate}
+		\item The instruction memory is implemented as a ROM. This is where the processor will receive the instructions from.
+		\item The imem.h file is where we store instructions in hexadecimal form. 
+	\end{enumerate}
+	\item The Register File
+	\begin{enumerate}
+		\item The register file contains all the registers that each may store 32-bits of data.
+	\end{enumerate}
+	\item The Data Memory (RAM)
+	\begin{enumerate}
+		\item The data memory will be a 512 long array of words with 32-bits each word.
+	\end{enumerate}
+	\item The ALU
+	\begin{enumerate}
+		\item The ALU is where the mathematics of the processor is carried out and then stored in either the register file or the data memory.
+		\item The ALU outputs a 0 or a 1 depending if there is a branch instruction.
+	\end{enumerate}
+	\item The Sign Extender
+	\begin{enumerate}
+		\item The sign extender lengthens the 15 downto 0 bits of the instruction to 32-bits as a way to carry out I-type instructions.
+	\end{enumerate}
+	\item The Multiplexer
+	\begin{enumerate}
+		\item The multiplexer selects one of two choices. This is used throughout the processor to select the type of instruction.
+	\end{enumerate}
+	\item The Controller
+	\begin{enumerate}
+		\item The controller chooses the ALU control and is also a factor in controlling the type of instruction.
+		\item This helps in controlling the jump and branch instructions as well sending a signal to control each of the muxes.
+	\end{enumerate}
+	\item The Hazard Control
+		\begin{enumerate}
+		\item The Hazard Control determines how to handle Data and Control Hazard.
+		\item This helped forwarding data and stall when needed.
+	\end{enumerate}
+	\item The D Flip Flop
+	\begin{enumerate}
+		\item The D Flip Flop is used to control data transfer between different stages of the pipelining.
+	\end{enumerate}
+
+\end{itemize}
+
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	TESTBENCH
+%----------------------------------------------------------------------------------------
+
+\section{Tests}
+
+\begin{center}
+For our tests we first did a reset instruction, then continued with the following commands in our imem.h file:
+\end{center}
+20020005\\
+ac020002\\
+2003000c\\
+2067fff7\\
+00e32025\\
+8c060002\\
+00c70820\\
+00864025\\
+00c04822\\
+10880002\\
+24ce000c\\
+20020001\\
+0064202a\\
+
+\begin{center}
+Commands (Translated) and Images:
+\end{center}
+RESET
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{reset.png}
+	\label{fig:reset}
+\end{figure}
+\pagebreak
+ADDI \$2 \$zero 5
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{1.png}
+	\label{fig:0}
+\end{figure}
+
+SW \$2 2(\$zero)
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{2.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+ADDI \$3 \$zero 12		
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{3.png}
+	\label{fig:tests}
+\end{figure}
+
+ADDI \$7 \$3 -9		
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{4.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+OR \$4 \$7 \$3		
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{5.png}
+	\label{fig:tests}
+\end{figure}
+
+LW \$6 2(\$zero)	
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{6.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+ADD \$1 \$6 \$7	
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{7.png}
+	\label{fig:tests}
+\end{figure}
+
+OR \$8 \$4 \$6	
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{8.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+SUB \$9 \$6 \$zero		
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{9.png}
+	\label{fig:tests}
+\end{figure}
+
+BEQ \$4 \$8 2	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=150mm]{10.png}
+	\label{fig:tests}
+\end{figure}
+
+ADDI \$14 \$6 12	\\	
+This instruction is fetched, but then flushed because the branching condition is met.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=150mm]{11.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+SLT \$4 \$3 \$4		
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=150mm]{13.png}
+	\label{fig:tests}
+\end{figure}
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+% SYNTHESIS
+%----------------------------------------------------------------------------------------
+
+\section{Synthesis}
+For the synthesis we received the following results:
+\\
+Cell Area = 422.895
+\\
+Design Area = 539.083
+\\
+Power = 558.645
+\\
+Critical Path = 0.07
+Max frequency = 1/0.07 = 14.28
+\\
+For the more detailed reports of the synthesis of our design they can be found inside the synth/MIPS/reports folder.
+\\
+\pagebreak
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\section{Conclusion}
+In the end, our program compiled fully with some warnings. These warnings do not affect the results of the instructions loaded. All instructions were tested, data hazard and control hazard are handled properly.
+\\ \\
+In addition, we weren't be able to perform the synthesis part of the last assignment, so there are no data to be compared. However, theoretically, we believe our CPU has been speed up significantly as a result of pipelining implementation.
+\end{document}
